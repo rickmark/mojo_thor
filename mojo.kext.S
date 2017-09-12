@@ -25,7 +25,7 @@
 0xffffff7f92f2ca76: xorl   %ebx, %ebx
 0xffffff7f92f2ca78: testl  %eax, %eax
 0xffffff7f92f2ca7a: jne    0xffffff7f92f2ca81
-0xffffff7f92f2ca7c: movl   $0x1, %ebx
+0xffffff7f92f2ca7c: movl   $0x1, %ebx                ; xref 0xffffff7f92f2ca5f
 0xffffff7f92f2ca81: leaq   0x137a(%rip), %rsi
 0xffffff7f92f2ca88: leaq   -0x70(%rbp), %rdi
 0xffffff7f92f2ca8c: movl   $0x50, %edx
@@ -34,7 +34,7 @@
 0xffffff7f92f2ca98: je     0xffffff7f92f2caae
 0xffffff7f92f2ca9a: testl  %ebx, %ebx
 0xffffff7f92f2ca9c: jne    0xffffff7f92f2cab8
-0xffffff7f92f2ca9e: leaq   0x1363(%rip), %rdi
+0xffffff7f92f2ca9e: leaq   0x1363(%rip), %rdi        ; xref 0xffffff7f92f2ca46
 0xffffff7f92f2caa5: xorl   %eax, %eax
 0xffffff7f92f2caa7: callq  0xffffff800f919b70        ; kprintf at pe_kprintf.c:109
 0xffffff7f92f2caac: jmp    0xffffff7f92f2cb05
@@ -45,13 +45,13 @@
 0xffffff7f92f2cac6: leaq   0x1008(%rip), %rdi
 0xffffff7f92f2cacd: leaq   0x1073(%rip), %rsi
 0xffffff7f92f2cad4: callq  0xffffff800f2bf1f0        ; kdp_register_send_receive at kdp_udp.c:418
-0xffffff7f92f2cad9: movb   $0x6b, -0x80(%rbp)
-0xffffff7f92f2cadd: movb   $0x64, -0x7f(%rbp)
-0xffffff7f92f2cae1: movb   $0x70, -0x7e(%rbp)
-0xffffff7f92f2cae5: movb   $0x6d, -0x7d(%rbp)
-0xffffff7f92f2cae9: movb   $0x6a, -0x7c(%rbp)
-0xffffff7f92f2caed: movb   $0x6f, -0x7b(%rbp)
-0xffffff7f92f2caf1: movl   $0x100007f, -0x78(%rbp)   ; imm = 0x100007F
+0xffffff7f92f2cad9: movb   $0x6b, -0x80(%rbp)        ;
+0xffffff7f92f2cadd: movb   $0x64, -0x7f(%rbp)        ;
+0xffffff7f92f2cae1: movb   $0x70, -0x7e(%rbp)        ; imm MAC = 6b:64:70:6d:6a:6f
+0xffffff7f92f2cae5: movb   $0x6d, -0x7d(%rbp)        ;
+0xffffff7f92f2cae9: movb   $0x6a, -0x7c(%rbp)        ;
+0xffffff7f92f2caed: movb   $0x6f, -0x7b(%rbp)        ;
+0xffffff7f92f2caf1: movl   $0x100007f, -0x78(%rbp)   ; imm = 0x100007F, IP = 16.0.0.63
 0xffffff7f92f2caf8: leaq   -0x78(%rbp), %rdi
 0xffffff7f92f2cafc: leaq   -0x80(%rbp), %rsi
 0xffffff7f92f2cb00: callq  0xffffff800f2bf4b0        ; kdp_set_ip_and_mac_addresses at kdp_udp.c:736
@@ -102,8 +102,8 @@
 0xffffff7f92f2cb9e: callq  0xffffff7f92f2d49f
 0xffffff7f92f2cba3: movzbl %al, %eax
 0xffffff7f92f2cba6: cmpl   $0x5a, %eax
-0xffffff7f92f2cba9: je     0xffffff7f92f2cbb9
-0xffffff7f92f2cbab: leaq   0x12a8(%rip), %rdi
+0xffffff7f92f2cba9: je     0xffffff7f92f2cbb9        ; xref 0xffffff7f92f2cbb9 (debug disabled, jump)
+0xffffff7f92f2cbab: leaq   0x12a8(%rip), %rdi        ; LoadEffectiveAddresssQWord RIP - 0x12a8 = Kernel / User boundry (0x7FFFFFFFFFFFFFFF) - Mirror, (Second Indirection), reflects across address -80 - border - +80
 0xffffff7f92f2cbb2: xorl   %eax, %eax
 0xffffff7f92f2cbb4: callq  0xffffff800f919b70        ; kprintf at pe_kprintf.c:109
 0xffffff7f92f2cbb9: movl   $0x3ff, %edi              ; imm = 0x3FF
@@ -113,8 +113,8 @@
 0xffffff7f92f2cbcd: callq  0xffffff7f92f2d49f
 0xffffff7f92f2cbd2: movzbl %al, %eax
 0xffffff7f92f2cbd5: cmpl   $0xa5, %eax
-0xffffff7f92f2cbda: je     0xffffff7f92f2cbea
-0xffffff7f92f2cbdc: leaq   0x128c(%rip), %rdi
+0xffffff7f92f2cbda: je     0xffffff7f92f2cbea        ; if debugging enabled, kprintf, or jump to 0xffffff7f92f2cbea
+0xffffff7f92f2cbdc: leaq   0x128c(%rip), %rdi        ; stack = kprintf
 0xffffff7f92f2cbe3: xorl   %eax, %eax
 0xffffff7f92f2cbe5: callq  0xffffff800f919b70        ; kprintf at pe_kprintf.c:109
 0xffffff7f92f2cbea: callq  0xffffff800f919e60        ; serial_init at pe_serial.c:372
