@@ -44,7 +44,7 @@ CRC32 packets transmitted across serial.
 
 PE_parse_boot_argn
 
-kdp_match_name = mojo1 mojo2
+kdp_match_name = mojo, mojo1, mojo2
 
 OSMetaClass MojoKDP and OSService MojoKDP
 
@@ -63,7 +63,9 @@ Allows for the toucher and CoreSimulator to run in concert to emulate mobile dev
 
 ### The initial Software Update
 
-Hacked versions of iTunes (thus AppleMobileDevice) and Apple Remote Desktop client.  (Also GKData, bogus, and ChineseWordList)
+Hacked versions of iTunes (thus AppleMobileDevice) and Apple Remote Desktop client. 
+
+* Also GKData for various Opaque blocks of legitimate software, bogus, and ChineseWordList)
 
 
 
