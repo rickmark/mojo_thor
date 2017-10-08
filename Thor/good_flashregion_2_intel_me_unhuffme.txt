@@ -1,0 +1,71 @@
+
+Flash partition table (20 entries):
+	partition:  PSVN(type:3) at 00000bc0, size:40
+	partition:  FOVD(type:3) at 00000c00, size:400
+	partition:  MDES(type:3) at 00001000, size:1000
+	partition:  FCRS(type:3) at 00002000, size:1000
+	partition:  EFFS(type:4) at 00003000, size:40000
+	partition:  NVCL(type:2) at ffffffff, size:69c9
+	partition:  NVCP(type:2) at ffffffff, size:a3c0
+	partition:  NVHM(type:2) at ffffffff, size:58
+	partition:  NVJC(type:2) at ffffffff, size:3da0
+	partition:  NVKR(type:2) at ffffffff, size:5fb4
+	partition:  NVNF(type:2) at ffffffff, size:175f
+	partition:  NVSH(type:2) at ffffffff, size:22c0
+	partition:  NVSM(type:2) at ffffffff, size:1de8
+	partition:  NVTD(type:2) at ffffffff, size:1feb
+	partition:  NVUK(type:2) at ffffffff, size:8940
+	partition:  TMNN(type:2) at ffffffff, size:1a6
+	partition:  GLUT(type:3) at 00043000, size:4000
+	partition:  FTPR(type:0) at 00047000, size:88000
+	partition:  NFTP(type:0) at 000cf000, size:77000
+	partition:  MDMV(type:0) at 00146000, size:37000
+
+Code partition: FTPR(8 modules, v9.1.20.1035)
+		 0           UPDATE     lzma at:   60678 va:2003e000+1000
+		 1             ROMP  huffman at:     8c0 va:200d3000+1000
+		 2              BUP  huffman at:     8c0 va:200d5000+17000
+		 3           KERNEL  huffman at:     8c0 va:200f1000+4b000
+		 4           POLICY  huffman at:     8c0 va:2033d000+1f000
+		 5         HOSTCOMM     lzma at:   608a2 va:203c7000+e000
+		 6              TDT     lzma at:   68bad va:206dc000+b000
+		 7              FPF     lzma at:   6df69 va:206af000+4000
+
+Code partition: NFTP(11 modules, v9.1.20.1035)
+		 0          ClsPriv     lzma at:   50238 va:20746000+2000
+		 1          SESSMGR     lzma at:   50610 va:20749000+20000
+		 2     SESSMGR_PRIV     lzma at:   5c8ba va:20148000+f000
+		 3              CLS     lzma at:   634fd va:20710000+5000
+		 4        utilities  huffman at:     780 va:2035e000+8000
+		 5             MCTP  huffman at:     780 va:20367000+8000
+		 6        NET_STACK  huffman at:     780 va:20371000+47000
+		 7              ICC     lzma at:   65d2f va:203de000+5000
+		 8              BOP  huffman at:     780 va:203bf000+7000
+		 9           HOTHAM  huffman at:     780 va:2031b000+7000
+		10              NFC     lzma at:   681ef va:20810000+d000
+
+Code partition: MDMV(2 modules, v9.1.20.1035)
+		 0             Pavp     lzma at:     3f4 va:20040000+29000
+		 1              JOM     lzma at:   15b6c va:20090000+42000
+
+        UPDATE	d112a1e87577abf9d91a807bb6639118513e8ac4c5697182cc254bdc465cc79c lzma
+          ROMP	f497f07179d7f8fbb5c6a0389e2ddc5ea62bcd8978e4233ac1fbdbe59305b1f0 [MATCH]
+           BUP	d38c2b249814154855862d9fa1f5a43ad13e7ccaad3b1d05cb9388b4c5fa376e [MATCH]
+        KERNEL	a5f36a679f3ee9e127c4a074240bf9563a3ae89241c6aae8c15dcb86a8603938 [MATCH]
+        POLICY	e2a36f5c097e7595f13b711d10908b28c9fe7f368b456384f5eabef4752f3338 [MATCH]
+      HOSTCOMM	f51add9de3a5f49cf54c69fa86bd2e4235cc3b5d725d5bf41da777d35dade686 lzma
+           TDT	0b1c7f5048ab2e9ef774279889755ce7e5f6e6606e76afa8750d23075c2000ca lzma
+           FPF	0278fbe63fc7fffce605da8c6cbf4caf0367c5952a5f7df8cf550e9d0766239c lzma
+       ClsPriv	e5eda5fb6d75c6f2591ac0401d172e23b0eec38c11d69058e6fd73b9e745ac03 lzma
+       SESSMGR	5dd73dc86a7063c55e81f0ab28b6ec148271f7498d8671a7a83ba3af83734c70 lzma
+  SESSMGR_PRIV	7536278159f09eb95489554faa8efe7447b3c24169f86395193ea8585fd93b98 lzma
+           CLS	cf3d9873544d10925517774d7c9699daf2f5b1718169d61e2691b34098db3d5d lzma
+     utilities	4b8bc2a2d46527d013e3eab4e858837db5a9b440848ecb3615976469c98aee4e [MATCH]
+          MCTP	e4d62cac84635cf6a32e27984e19c855d535e6f587784c6091ea31f92066a26d [MATCH]
+     NET_STACK	080ca9edc7c1da6db2c09ee6ba70a1e875030868433eb79ddd78091e8099ce61 [MATCH]
+           ICC	c3d5f4961e5f0f819699d13b7306f5e54594816ce6af15e1358d10686b25fa45 lzma
+           BOP	1542e2bbc372b0c0c36e9496b8de736f00f1e7b149b6b412a2f45ccbddea61e0 [MATCH]
+        HOTHAM	269a0bd1830722105575f3b26d587aa36ef89a1e2d19a4cb8a7920c937d37230 [MATCH]
+           NFC	c708d949fdf19ed1dc6ea90428862e2342dc9cf289696c90b3d22fb95760897f lzma
+          Pavp	bc1f98b88f1c4386e3d1fcd7b6a1f3c3f91bd5efb36d09778e8a047f43966056 lzma
+           JOM	8f5099dd70ef08c852a31979f6f64c5713bb2ab5e30f4b9e3258ca53cd0be8ed lzma
