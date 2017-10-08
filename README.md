@@ -5,8 +5,10 @@ Mojo / Thor / Loki are a triad of malware that infects the EFI of Apple MacBooks
 ## Contents
 
 * notes.md - Notes and rants about various components, not fully finalized or proven.
-* mojo.kext - The MojoKDP kernel module pulled from a virtual machine kernel memory.  (does not exist on disk)
-* APPLE - the contents of the machines EFI partition.  The most interesting of note is in UPDATERS\\TBTH\\ThorUtil
+* Thor/INFO.md - information about Thor's firmware and comparison against a "known good"
+* Thor/thor.fd - The "Thor" firmware
+* MojoKDP/mojo.kext - The MojoKDP kernel module pulled from a virtual machine kernel memory.  (does not exist on disk)
+* ESP/APPLE - the contents of the machines EFI partition.  The most interesting of note is in UPDATERS\\TBTH\\ThorUtil
 * logs - Unusual install and system logs from a Thor infected system.
 
 ## Detection (direct)
