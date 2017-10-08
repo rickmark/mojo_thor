@@ -1,17 +1,17 @@
-File good.efi is 8388608 bytes
-FLMAP0:    0x00040003
-  NR:      0
+File good.fd is 8388608 bytes
+FLMAP0:    0x03040003
+  NR:      3
   FRBA:    0x40
   NC:      1
   FCBA:    0x30
-FLMAP1:    0x58100208
-  ISL:     0x58
+FLMAP1:    0x15100206
+  ISL:     0x15
   FPSBA:   0x100
   NM:      2
-  FMBA:    0x80
-FLMAP2:    0x00310330
-  PSL:     0x3103
-  FMSBA:   0x300
+  FMBA:    0x60
+FLMAP2:    0x00210120
+  PSL:     0x2101
+  FMSBA:   0x200
 FLUMAP1:   0x000008df
   Intel ME VSCC Table Length (VTL):        8
   Intel ME VSCC Table Base Address (VTBA): 0x000df0
@@ -79,40 +79,32 @@ ME VSCC table:
     Upper Block / Sector Erase Size:    4KB
 
 OEM Section:
-00: ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff
-10: ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff
-20: ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff
+00: 33 64 31 34 35 66 38 32 31 38 34 62 33 31 37 65
+10: 32 33 32 61 63 35 37 63 36 64 30 63 65 36 32 31
+20: 0a ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff
 30: ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff
 
 Found Region Section
 FLREG0:    0x00000000
   Flash Region 0 (Flash Descriptor): 00000000 - 00000fff 
-FLREG1:    0x07ff0137
-  Flash Region 1 (BIOS): 00137000 - 007fffff 
-FLREG2:    0x01360002
-  Flash Region 2 (Intel ME): 00002000 - 00136fff 
+FLREG1:    0x07ff018e
+  Flash Region 1 (BIOS): 0018e000 - 007fffff 
+FLREG2:    0x018d0002
+  Flash Region 2 (Intel ME): 00002000 - 0018dfff 
 FLREG3:    0x00007fff
-  Flash Region 3 (GbE): 07fff000 - 00000fff (unused)
+  Flash Region 3 (GbE): 00fff000 - 00000fff (unused)
 FLREG4:    0x00010001
   Flash Region 4 (Platform Data): 00001000 - 00001fff 
-FLREG5:    0x00007fff
-  Flash Region 5 (Reserved): 07fff000 - 00000fff (unused)
-FLREG6:    0x00007fff
-  Flash Region 6 (Reserved): 07fff000 - 00000fff (unused)
-FLREG7:    0x00007fff
-  Flash Region 7 (Reserved): 07fff000 - 00000fff (unused)
-FLREG8:    0x00007fff
-  Flash Region 8 (EC): 07fff000 - 00000fff (unused)
 
 Found Component Section
-FLCOMP     0x125c00f4
-  Dual Output Fast Read Support:       not supported
-  Read ID/Read Status Clock Frequency: 48MHz
-  Write/Erase Clock Frequency:         48MHz
-  Fast Read Clock Frequency:           48MHz
+FLCOMP     0x64900044
+  Dual Output Fast Read Support:       supported
+  Read ID/Read Status Clock Frequency: 50MHz
+  Write/Erase Clock Frequency:         50MHz
+  Fast Read Clock Frequency:           50MHz
   Fast Read Support:                   supported
-  Read Clock Frequency:                17MHz
-  Component 2 Density:                 UNUSED
+  Read Clock Frequency:                20MHz
+  Component 2 Density:                 512KB
   Component 1 Density:                 8MB
 FLILL      0x00000000
   Invalid Instruction 3: 0x00
@@ -123,82 +115,69 @@ FLPB       0x00000000
   Flash Partition Boundary Address: 0x000000
 
 Found PCH Strap Section
-PCHSTRP0:  0x00d00000
-PCHSTRP1:  0x00000100
+PCHSTRP0:  0x2020d7a2
+PCHSTRP1:  0x040001ff
 PCHSTRP2:  0x00000000
 PCHSTRP3:  0x00000000
-PCHSTRP4:  0x00000000
-PCHSTRP5:  0x00010000
-PCHSTRP6:  0x00000100
+PCHSTRP4:  0x00c8e004
+PCHSTRP5:  0x00000000
+PCHSTRP6:  0x00000000
 PCHSTRP7:  0x00000000
 PCHSTRP8:  0x00000000
-PCHSTRP9:  0x00000000
-PCHSTRP10: 0x00030000
-PCHSTRP11: 0x43890100
-PCHSTRP12: 0x00010000
+PCHSTRP9:  0x7050058c
+PCHSTRP10: 0x00c00000
+PCHSTRP11: 0x87000089
+PCHSTRP12: 0x00000000
 PCHSTRP13: 0x00000000
 PCHSTRP14: 0x00000000
-PCHSTRP15: 0x00010000
-PCHSTRP16: 0x00000100
-PCHSTRP17: 0x00000000
+PCHSTRP15: 0x0018433e
+PCHSTRP16: 0x00000000
+PCHSTRP17: 0x00000002
 
 Found Master Section
-FLMSTR1:   0x01afff00 (Host CPU/BIOS)
-  EC Region Write Access:            disabled
-  Platform Data Region Write Access: enabled
+FLMSTR1:   0x0aff0000 (Host CPU/BIOS)
+  Platform Data Region Write Access: disabled
   GbE Region Write Access:           enabled
   Intel ME Region Write Access:      disabled
   Host CPU/BIOS Region Write Access: enabled
   Flash Descriptor Write Access:     disabled
-  EC Region Read Access:             enabled
   Platform Data Region Read Access:  enabled
   GbE Region Read Access:            enabled
   Intel ME Region Read Access:       enabled
   Host CPU/BIOS Region Read Access:  enabled
   Flash Descriptor Read Access:      enabled
-FLMSTR2:   0x00c00d00 (Intel ME)
-  EC Region Write Access:            disabled
+  Requester ID:                      0x0000
+
+FLMSTR2:   0x0c0d0000 (Intel ME)
   Platform Data Region Write Access: disabled
   GbE Region Write Access:           enabled
   Intel ME Region Write Access:      enabled
   Host CPU/BIOS Region Write Access: disabled
   Flash Descriptor Write Access:     disabled
-  EC Region Read Access:             disabled
   Platform Data Region Read Access:  disabled
   GbE Region Read Access:            enabled
   Intel ME Region Read Access:       enabled
   Host CPU/BIOS Region Read Access:  disabled
   Flash Descriptor Read Access:      enabled
-FLMSTR3:   0x00800800 (GbE)
-  EC Region Write Access:            disabled
-  Platform Data Region Write Access: disabled
+  Requester ID:                      0x0000
+
+FLMSTR3:   0xffff0118 (GbE)
+  Platform Data Region Write Access: enabled
   GbE Region Write Access:           enabled
-  Intel ME Region Write Access:      disabled
-  Host CPU/BIOS Region Write Access: disabled
-  Flash Descriptor Write Access:     disabled
-  EC Region Read Access:             disabled
-  Platform Data Region Read Access:  disabled
+  Intel ME Region Write Access:      enabled
+  Host CPU/BIOS Region Write Access: enabled
+  Flash Descriptor Write Access:     enabled
+  Platform Data Region Read Access:  enabled
   GbE Region Read Access:            enabled
-  Intel ME Region Read Access:       disabled
-  Host CPU/BIOS Region Read Access:  disabled
-  Flash Descriptor Read Access:      disabled
-FLMSTR5:   0x02002000 (EC)
-  EC Region Write Access:            disabled
-  Platform Data Region Write Access: disabled
-  GbE Region Write Access:           disabled
-  Intel ME Region Write Access:      disabled
-  Host CPU/BIOS Region Write Access: disabled
-  Flash Descriptor Write Access:     disabled
-  EC Region Read Access:             disabled
-  Platform Data Region Read Access:  disabled
-  GbE Region Read Access:            disabled
-  Intel ME Region Read Access:       disabled
-  Host CPU/BIOS Region Read Access:  disabled
-  Flash Descriptor Read Access:      disabled
+  Intel ME Region Read Access:       enabled
+  Host CPU/BIOS Region Read Access:  enabled
+  Flash Descriptor Read Access:      enabled
+  Requester ID:                      0x0118
+
 Found Processor Strap Section
-????:      0x00001000
-????:      0x81198002
-????:      0x00000295
+????:      0x00000000
+????:      0xffffffff
+????:      0xffffffff
 ????:      0xffffffff
 ????:      0xffffffff
 ????:      0xffffffff
