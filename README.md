@@ -1,16 +1,17 @@
 # About
 
-Mojo / Thor / Loki are a triad of malware that infects the EFI of Apple MacBooks.
+Mojo / Thor / Loki are a triad of malware that infects the SMC, EFI and macOS of Apple MacBooks.
 
 ## Contents
 
-* notes.md - Notes and rants about various components, not fully finalized or proven.
-* Thor/INFO.md - information about Thor's firmware and comparison against a "known good"
-* Thor/thor.fd - The "Thor" firmware
-* MojoKDP/mojo.kext - The MojoKDP kernel module pulled from a virtual machine kernel memory.  (does not exist on disk)
-* ESP/APPLE - the contents of the machines EFI partition.  The most interesting of note is in UPDATERS\\TBTH\\ThorUtil
-* logs - Unusual install and system logs from a Thor infected system.
-* SMC - examples of the Apple \*.smc format.
+* [Firmware/bad.fd](https://github.com/rickmark/mojo_thor/blob/master/Firmware/bad.fd) - The "Thor / Loki" firmware from a known bad laptop
+* [Firmware/INFO.md](https://github.com/rickmark/mojo_thor/blob/master/Firmware/INFO.md) - information about Thor's firmware and comparison against a "known good"
+* [notes.md](https://github.com/rickmark/mojo_thor/blob/master/notes.md) - Notes and rants about various components, not fully finalized or proven.
+* [MojoKDP/mojo.kext](https://github.com/rickmark/mojo_thor/blob/master/MojoKDP/mojo.kext) - The MojoKDP kernel module pulled from a virtual machine kernel memory.  Injected by DMA / uDMA
+* [MojoKDP/mojo.kext.S](https://github.com/rickmark/mojo_thor/blob/master/MojoKDP/mojo.kext.S) - Annotated disassembly
+* ESP/APPLE - the contents of the machines EFI partition.  The most interesting of note is in `UPDATERS\\TBTH\\ThorUtil`
+* logs - Unusual install and system logs from a Thor infected system, much of my interpretation is in [notes.md](https://github.com/rickmark/mojo_thor/blob/master/notes.md)
+* SMC - examples of the Apple \*.smc format.  See also [smcutil](https://github.com/rickmark/smcutil)
 
 ## See Also
 
