@@ -115,7 +115,7 @@ ACPI table shadowing with manufacturer Loki are services that in fact are part o
 
 “Error SPI enabled after EFI Platform Exit”
 
-Loki Controls:
+Loki Controls (therefore my guess is Loki is the EFI firmware):
 
 UEFI - Unified Extensible Firmware Interface (Loki uses one based on EDK2 / Tiano Core)
 HPET - High Precession Event Timer (first pass at non-maskable interrupts)
