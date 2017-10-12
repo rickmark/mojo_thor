@@ -10,7 +10,7 @@ Third, MojoKDP is on every laptop (3 MacBooks) in my house.  There's always the 
 
 ## The general story.
 
-Apple products make use of EFI (as opposed to BIOS) to perform early boot.  This generally provides a chain of trust for binaries all the way from the firmware to the apps downloaded from the App Store. 
+Apple products make use of EFI (as opposed to BIOS) to perform early boot.  This generally provides a chain of trust for binaries all the way from the firmware to the apps downloaded from the App Store.
 
 ## IOCs
 
@@ -63,7 +63,7 @@ Allows for the toucher and CoreSimulator to run in concert to emulate mobile dev
 
 ### The initial Software Update
 
-Hacked versions of iTunes (thus AppleMobileDevice) and Apple Remote Desktop client. 
+Hacked versions of iTunes (thus AppleMobileDevice) and Apple Remote Desktop client.
 
 * Also GKData for various Opaque blocks of legitimate software, bogus, and ChineseWordList)
 
@@ -125,6 +125,11 @@ SBST - Smart Battery Specification Table - Can allow “dark wake” by conservi
 FACP / FADT - Fixed ACPI Capibility Pointer / Descritpion Table
 ECDT - Embedded Controller Boot Resources Table - Self explanatory
 
+### Apple SMC
+
+Which is which, EFI, SMC, Thunderbolt controller, and Thor and Loki
+
+When I reverse engineered the Apple EFI BIOS the mismatching regions are likely encrypted with keys stored in the SMC.  This is part of the DSMOS idea of having core pieces of code protected by their upper layer.  Also, DSMOS I would venture a guess is decrypted by uDMA from the Stellaris SMC chip on the board.  This is "Apple Genuine" hardware validation.  The problem here is, just as it allows Apple to protect there "DRM" code, it is just as useful for a bad actor to use for storing malware.
 
 ### Ghost Telephonist and VoLTE baseband hijack
 
@@ -141,5 +146,3 @@ TbtPEG12 - Thunderbolt 1/2
 ### Thor and the Thunderbolt bus
 
 Thunderbolt speed requires DMA, allows for injecting of KEXT modification of kernel data structures.
-
-
