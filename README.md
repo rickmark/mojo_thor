@@ -16,12 +16,12 @@ Mojo / Thor / Loki are a triad of malware that infects the SMC, EFI and macOS of
 ## See Also
 
 * `smcutil` - In progress [this repo](https://github.com/rickmark/smcutil).  Tooling for extracting and examining the Apple SMC image.
-* `/usr/libexec/firmwarecheckers/eficheck/` - High Sierra utility to extract and redact your firmware image.
+* `/usr/libexec/firmwarecheckers/eficheck/eficheck` - High Sierra utility to extract and redact your firmware image.
 
 ## Detection (direct)
 
-* Boot into recovery
-* Look for any output from `ioreg | grep MojoKDP`
+* Boot into recovery, look for any output from `ioreg | grep MojoKDP`
+* macOS 10.13 `sudo /usr/libexec/firmwarecheckers/eficheck/eficheck --integrity-check`
 
 ## In the press
 
