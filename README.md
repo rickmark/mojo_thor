@@ -4,8 +4,8 @@ Mojo / Thor / Loki are a triad of malware that infects the SMC, EFI and macOS of
 
 ## Contents
 
+* [Firmware/INFO.md](https://github.com/rickmark/mojo_thor/blob/master/Firmware/INFO.md) - information about Thor's firmware and comparison against a "known good".  Four SMC encrypted payloads differ: `5CE0F1`, `5CECE9`, `5CFAB5`, `5D1751` and a few submodules.
 * [Firmware/bad.fd](https://github.com/rickmark/mojo_thor/blob/master/Firmware/bad.fd) - The "Thor / Loki" firmware from a known bad laptop
-* [Firmware/INFO.md](https://github.com/rickmark/mojo_thor/blob/master/Firmware/INFO.md) - information about Thor's firmware and comparison against a "known good"
 * [notes.md](https://github.com/rickmark/mojo_thor/blob/master/notes.md) - Notes and rants about various components, not fully finalized or proven.
 * [MojoKDP/mojo.kext](https://github.com/rickmark/mojo_thor/blob/master/MojoKDP/mojo.kext) - The MojoKDP kernel module pulled from a virtual machine kernel memory.  Injected by DMA / uDMA
 * [MojoKDP/mojo.kext.S](https://github.com/rickmark/mojo_thor/blob/master/MojoKDP/mojo.kext.S) - Annotated disassembly
@@ -25,6 +25,7 @@ Mojo / Thor / Loki are a triad of malware that infects the SMC, EFI and macOS of
 
 ## In the press
 
+* [REcon 2014: Apple SMC, the place to be (for an implant)](https://www.youtube.com/watch?v=nSqpinjjgmg)
 * Duo security recently published a paper on rampant EFI on MacBooks not updating.  I believe these machines may well have this malware or a close variant and are simply observing the persistence mechanism at work.  [https://duo.com/blog/the-apple-of-your-efi-mac-firmware-security-research]
 * Apple includes EFI verification (eficheck) to High Sierra final build [https://www.macrumors.com/2017/09/25/macos-high-sierra-weekly-efi-security-check/]
 

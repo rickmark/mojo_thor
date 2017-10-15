@@ -25,6 +25,13 @@ This region is the BIOS / EFI early boot region.  This is raw code that is execu
 
 I'd like to draw attention to the following files which are LZMA comprepssed but do not decompress in either image (likely excrypted by a key in the SMC.  The MojoKDP module makes reference to a MOJO key and STDK key which are likely the decryption keys).  The reason this area is encrypted is likely due to it including code to protect Apple's OS and `DSMOS.kext`
 
+Encrypted Payloads (By the SMC)
+
+* `5CE0F1`
+* `5CECE9`
+* `5CFAB5`
+* `5D1751`
+
 ## `[good|bad]_regions\flashregion_2_intel_me.bin`
 
 This is a compressed image of the Intel ME (this is used in Apple products to provide internet recovery).  This differs greatly.  More analysis is needed.
