@@ -1,6 +1,6 @@
 # About
 
-Mojo / Thor / Loki are a triad of malware that infects the SMC, EFI and macOS of Apple MacBooks.
+Loki / Thor / Mojo are a triad of Apple internal tools and malware that infects the SMC, EFI and macOS of Apple MacBooks.
 
 ## Contents
 
@@ -15,6 +15,7 @@ Mojo / Thor / Loki are a triad of malware that infects the SMC, EFI and macOS of
 
 ## See Also
 
+* MacBooks now force internet recovery to High Sierra.  An effort to patch older EFI and implement `eficheck`
 * `smcutil` - In progress [this repo](https://github.com/rickmark/smcutil).  Tooling for extracting and examining the Apple SMC image.
 * `/usr/libexec/firmwarecheckers/eficheck/eficheck` - High Sierra utility to extract and redact your firmware image.
 
