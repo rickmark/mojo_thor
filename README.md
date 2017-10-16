@@ -27,11 +27,11 @@ Loki / Thor / Mojo are a triad of Apple internal tools and malware that infects 
 ## In the press
 
 * [REcon 2014: Apple SMC, the place to be (for an implant)](https://www.youtube.com/watch?v=nSqpinjjgmg)
-* Duo security recently published a paper on rampant EFI on MacBooks not updating.  I believe these machines may well have this malware or a close variant and are simply observing the persistence mechanism at work.  [https://duo.com/blog/the-apple-of-your-efi-mac-firmware-security-research]
-* Apple includes EFI verification (eficheck) to High Sierra final build [https://www.macrumors.com/2017/09/25/macos-high-sierra-weekly-efi-security-check/]
+* Duo security recently published a paper on rampant EFI on MacBooks not updating.  I believe these machines may well have this malware or a close variant and are simply observing the persistence mechanism at work.  [The Apple of Your EFI](https://duo.com/blog/the-apple-of-your-efi-mac-firmware-security-research)
+* Apple includes EFI verification (eficheck) to High Sierra final build [macOS High Sierra Weekly EFI Security Check] (https://www.macrumors.com/2017/09/25/macos-high-sierra-weekly-efi-security-check/)
 
 ## People I've worked with
 
 * The San Francisco FBI was my original confirmation that this was in-fact malware.
 * I brought a sample of the malware to both the Union Square Apple store, and they declined to assist citing customer data.
-* I was unable to reach Apple's product security division (due to the malware likely), and did take the computer directly to their campus.  The irony of eficheck now offering to allow you to submit samples is not lost on me.  (The original submission number is 671195078)
+* I was unable to reach Apple's product security division (due to the malware likely), and did take the computer directly to their campus.  The irony of `eficheck` now offering to allow you to submit samples is not lost on me.  (The original submission number is 671195078)
