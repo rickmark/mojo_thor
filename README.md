@@ -22,8 +22,8 @@ Loki / Thor / Mojo are a triad of Apple internal tools and malware that infects 
 
 ## Detection (direct)
 
-* Boot into recovery, look for any output from `ioreg | grep MojoKDP`
-* macOS 10.13 `sudo /usr/libexec/firmwarecheckers/eficheck/eficheck --integrity-check`
+* macOS 10.12 and earlier: Boot into recovery, look for any output from `ioreg | grep MojoKDP`
+* macOS 10.13 and later: `sudo /usr/libexec/firmwarecheckers/eficheck/eficheck --integrity-check`
 
 ## In the press
 
