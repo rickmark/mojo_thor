@@ -18,6 +18,7 @@ Loki / Thor / Mojo are a triad of Apple internal tools and malware that infects 
 * MacBooks now force internet recovery to High Sierra.  An effort to patch older EFI and implement `eficheck`
 * `smcutil` - In progress [this repo](https://github.com/rickmark/smcutil).  Tooling for extracting and examining the Apple SMC image.
 * `/usr/libexec/firmwarecheckers/eficheck/eficheck` - High Sierra utility to extract and redact your firmware image.
+* macOS defaults to latest firmware and patches, thereby including `eficheck` [Reinstalling macOS changed with 10.12.4](https://eclecticlight.co/2017/05/16/reinstalling-macos-changed-with-10-12-4/)
 
 ## Detection (direct)
 
@@ -32,6 +33,5 @@ Loki / Thor / Mojo are a triad of Apple internal tools and malware that infects 
 
 ## People I've worked with
 
-* The San Francisco FBI was my original confirmation that this was in-fact malware.
 * I brought a sample of the malware to both the Union Square Apple store, and they declined to assist citing customer data.
 * I was unable to reach Apple's product security division (due to the malware likely), and did take the computer directly to their campus.  The irony of `eficheck` now offering to allow you to submit samples is not lost on me.  (The original submission number is 671195078)
