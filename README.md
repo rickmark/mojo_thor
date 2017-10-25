@@ -19,6 +19,8 @@ Loki / Thor / Mojo are a triad of Apple internal tools and malware that infects 
 * `smcutil` - In progress [this repo](https://github.com/rickmark/smcutil).  Tooling for extracting and examining the Apple SMC image.
 * `/usr/libexec/firmwarecheckers/eficheck/eficheck` - High Sierra utility to extract and redact your firmware image.
 * macOS defaults to latest firmware and patches, thereby including `eficheck` [Reinstalling macOS changed with 10.12.4](https://eclecticlight.co/2017/05/16/reinstalling-macos-changed-with-10-12-4/)
+* [CoreBoot](https://www.coreboot.org) for the `ifdtool` utility [code and tools](https://www.coreboot.org/developers.html)
+* `unhuffme` tool for decoding the Intel ME regions of the flash.  [unhuffme](https://io.netgarage.org/me/)
 
 ## Detection (direct)
 
