@@ -16,6 +16,7 @@ Loki / Thor / Mojo are a triad of Apple internal tools and malware that infects 
 ## See Also
 
 * MacBooks now force internet recovery to High Sierra.  An effort to patch older EFI and implement `eficheck`
+* Duo Labs can check your EFI pre 10.13 with [EFIgy](https://github.com/duo-labs/EFIgy)
 * `smcutil` - In progress [this repo](https://github.com/rickmark/smcutil).  Tooling for extracting and examining the Apple SMC image.
 * `/usr/libexec/firmwarecheckers/eficheck/eficheck` - High Sierra utility to extract and redact your firmware image.
 * macOS defaults to latest firmware and patches, thereby including `eficheck` [Reinstalling macOS changed with 10.12.4](https://eclecticlight.co/2017/05/16/reinstalling-macos-changed-with-10-12-4/)
