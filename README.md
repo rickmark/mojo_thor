@@ -2,6 +2,8 @@
 
 Loki / Thor / Mojo are a triad of Apple internal tools and malware that infects the SMC, EFI and macOS of Apple MacBooks.
 
+It is believed that direct access to the hardware is gained by re-flashing the Thunderbolt controller (via ThorUtil)
+
 ## Contents
 
 * [Firmware/INFO.md](https://github.com/rickmark/mojo_thor/blob/master/Firmware/INFO.md) - information about Thor's firmware and comparison against a "known good".  Four SMC encrypted payloads differ: `5CE0F1`, `5CECE9`, `5CFAB5`, `5D1751` and a few submodules.
