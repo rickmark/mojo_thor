@@ -15,9 +15,14 @@ Loki / Thor / Mojo are a triad of Apple internal tools and malware that infects 
 
 ## See Also
 
+* IN PROGRESS:
+  * EALF (EFI anti-loki file?) utility: [`efivalidate`](https://github.com/rickmark/efivalidate)  Open source version of `eficheck`
+  * PEI/TE/VZ to PE tool: [`peiutil`](https://github.com/rickmark/peiutil)  Tool to convert this to something Hopper understands: http://wiki.phoenix.com/wiki/index.php/Terse_Executable_Format
+  * SMC tool: [`smcutil`](https://github.com/rickmark/smcutil) Tooling for extracting and examining the Apple SMC image.
+  * EARLY: HuffDiff (Intel ME difference util): [`huffdiff`](https://github.com/rickmark/huffdiff)
+  * EARLY: Loki Removal Tool: [`lokiremove`](https://github.com/rickmark/loki_remove)
 * MacBooks now force internet recovery to High Sierra.  An effort to patch older EFI and implement `eficheck`
 * Duo Labs can check your EFI pre 10.13 with [EFIgy](https://github.com/duo-labs/EFIgy)
-* `smcutil` - In progress [this repo](https://github.com/rickmark/smcutil).  Tooling for extracting and examining the Apple SMC image.
 * `/usr/libexec/firmwarecheckers/eficheck/eficheck` - High Sierra utility to extract and redact your firmware image.
 * macOS defaults to latest firmware and patches, thereby including `eficheck` [Reinstalling macOS changed with 10.12.4](https://eclecticlight.co/2017/05/16/reinstalling-macos-changed-with-10-12-4/)
 * [CoreBoot](https://www.coreboot.org) for the `ifdtool` utility [code and tools](https://www.coreboot.org/developers.html)
