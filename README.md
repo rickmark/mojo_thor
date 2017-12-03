@@ -34,7 +34,9 @@ It is believed that direct access to the hardware is gained by re-flashing the T
 ## Detection (direct)
 
 * macOS 10.12 and earlier: Boot into recovery, look for any output from `ioreg | grep MojoKDP`
-* macOS 10.13 and later: `sudo /usr/libexec/firmwarecheckers/eficheck/eficheck --integrity-check`
+* macOS 10.13 and later (from external / AirGap): `sudo /usr/libexec/firmwarecheckers/eficheck/eficheck --integrity-check`
+  * Alternate, Use reFINd and BootRomFlash to extract the fimrware and check with `eficheck` or `efivalidate` on another machine
+  * SUSPECT: Presence of `/dev/tty.MALS` and `/dev/tty.SOC` as the serial connection to MojoKDP (previous versions of macOS showed this as two LPSS Serial Adapter connections).  SOC is likely a connection to the SMC.
 
 ## In the press
 
@@ -46,3 +48,4 @@ It is believed that direct access to the hardware is gained by re-flashing the T
 
 * I brought a sample of the malware to both the Union Square Apple store, and they declined to assist citing customer data.
 * I was unable to reach Apple's product security division (due to the malware likely), and did take the computer directly to their campus.  The irony of `eficheck` now offering to allow you to submit samples is not lost on me.  (The original submission number is 671195078)
+  * REVISION: I've received acknowledgement after publication of this repo stating that the issue is under investigation
