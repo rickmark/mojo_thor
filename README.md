@@ -6,6 +6,7 @@ It is believed that direct access to the hardware is gained by re-flashing the T
 
 ## Contents
 
+* [T2/T2.md](https://github.com/rickmark/mojo_thor/blob/master/T2/T2.md)
 * [Firmware/INFO.md](https://github.com/rickmark/mojo_thor/blob/master/Firmware/INFO.md) - information about Thor's firmware and comparison against a "known good".  Four SMC encrypted payloads differ: `5CE0F1`, `5CECE9`, `5CFAB5`, `5D1751` and a few submodules.
 * [Firmware/INDEX.md](https://github.com/rickmark/mojo_thor/blob/master/Firmware/INFO.md) - Index of modules and descriptions in the EFI volume.
 * [Firmware/bad.fd](https://github.com/rickmark/mojo_thor/blob/master/Firmware/bad.fd) - The "Thor / Loki" firmware from a known bad laptop
