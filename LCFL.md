@@ -5,7 +5,7 @@
 * Version 1
 * Header size in bytes = 24
 * Flags?
-* Offset / Size
+* Size (divisible by 400), 91 rows, remainder of file is mapped into memory as is
 
 # 400 byte rows (91) - offset (32bit), instruction stream
 # Still determining if ARM or THUMB, they may be interleaved since mode is set by the addresses lowest order bit
