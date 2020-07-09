@@ -1,0 +1,574 @@
+{"app_name":"grindrx","timestamp":"2020-07-05 19:35:30.00 -0700","app_version":"6.15.0","slice_uuid":"","adam_id":319881193,"build_version":"16944.22944","bundleID":"com.grindrguy.grindrx","duration_ms":"1010","bug_subtype":"light","share_with_app_devs":1,"is_first_party":0,"os_version":"iPhone OS 14.0 (18A5301v)","incident_id":"8AE293DF-1658-4A60-8AAC-345556FDBF3B","name":"grindrx","bug_type":"228"}
+Date/Time:        2020-07-05 19:35:22.920 -0700
+End time:         2020-07-05 19:35:23.870 -0700
+OS Version:       iPhone OS 14.0 (Build 18A5301v)
+Architecture:     arm64e
+Report Version:   31
+
+Data Source:      KPerf Lightweight PET
+Shared Cache:     92537455-A74B-3198-96CD-F2D2D2778315 slid base address 0x196ea8000, slide 0x16ea8000
+Reason:           Fence-hang-grindrx: 1009ms handling fence, blown-fence (fence duration=~1009ms)
+
+Command:          grindrx
+Path:             /private/var/containers/Bundle/Application/1F233B70-CBA0-4C9A-8C4B-ABD2A5682040/grindrx.app/grindrx
+Identifier:       com.grindrguy.grindrx
+Version:          6.15.0 (16944.22944)
+Adam ID:          319881193
+Is First Party:   No
+Parent:           launchd [1]
+PID:              10086
+Time Since Fork:  1979s
+
+Event:            Blown CA Fence Hang
+Duration:         1.00s
+Steps:            20 (50ms sampling interval)
+Report threshold: 0.5s
+
+Hardware model:   D431AP
+Active cpus:      6
+
+Time Awake Since Boot: 259243s
+
+
+Heaviest stack for the main thread of the target process:
+  20  ??? (libdyld.dylib + 5004) [0x19712438c]
+  20  ??? (grindrx + 1766368) [0x10303f3e0]
+  20  ??? (UIKitCore + 11807016) [0x19ba2b928]
+  20  ??? (UIKitCore + 11782712) [0x19ba25a38]
+  20  ??? (GraphicsServices + 14360) [0x1a3072818]
+  20  ??? (CoreFoundation + 620080) [0x197298630]
+  20  ??? (CoreFoundation + 621948) [0x197298d7c]
+  20  ??? (CoreFoundation + 644748) [0x19729e68c]
+  20  ??? (CoreFoundation + 647272) [0x19729f068]
+  20  ??? (CoreFoundation + 647460) [0x19729f124]
+  20  ??? (FrontBoardServices + 380476) [0x19cdf6e3c]
+  20  ??? (FrontBoardServices + 379160) [0x19cdf6918]
+  20  ??? (FrontBoardServices + 380016) [0x19cdf6c70]
+  20  ??? (libdispatch.dylib + 31340) [0x196fc1a6c]
+  20  ??? (libdispatch.dylib + 17300) [0x196fbe394]
+  20  ??? (FrontBoardServices + 222484) [0x19cdd0514]
+  20  ??? (FrontBoardServices + 103212) [0x19cdb332c]
+  20  ??? (FrontBoardServices + 222696) [0x19cdd05e8]
+  20  ??? (FrontBoardServices + 46028) [0x19cda53cc]
+  20  ??? (UIKitCore + 6792092) [0x19b56339c]
+  20  ??? (UIKitCore + 324224) [0x19af38280]
+  20  ??? (UIKitCore + 319504) [0x19af37010]
+  20  ??? (UIKitCore + 325200) [0x19af38650]
+  20  ??? (UIKitCore + 2177796) [0x19b0fcb04]
+  20  ??? (UIKitCore + 7680632) [0x19b63c278]
+  20  ??? (UIKitCore + 6628044) [0x19b53b2cc]
+  20  ??? (UIKitCore + 2178444) [0x19b0fcd8c]
+  20  ??? (UIKitCore + 2148500) [0x19b0f5894]
+  20  ??? (UIKitCore + 2150424) [0x19b0f6018]
+  20  ??? (UIKitCore + 2149408) [0x19b0f5c20]
+  20  ??? (UIKitCore + 2150920) [0x19b0f6208]
+  20  ??? (UIKitCore + 7581560) [0x19b623f78]
+  20  ??? (UIKitCore + 2152892) [0x19b0f69bc]
+  20  ??? (UIKitCore + 11898732) [0x19ba41f6c]
+  20  ??? (Foundation + 26236) [0x19762a67c]
+  20  ??? (CoreFoundation + 522624) [0x197280980]
+  20  ??? (CoreFoundation + 524208) [0x197280fb0]
+  20  ??? (CoreFoundation + 526836) [0x1972819f4]
+  20  ??? (CoreFoundation + 526912) [0x197281a40]
+  8   ??? (grindrx + 31648648) [0x104cbeb88]
+  8   ??? (grindrx + 31648548) [0x104cbeb24]
+  8   ??? (grindrx + 31649820) [0x104cbf01c]
+  4   ??? (grindrx + 31649564) [0x104cbef1c]
+  4   ??? (CoreLocation + 63752) [0x19a882908]
+  4   ??? (CoreLocation + 17080) [0x19a8772b8]
+  4   ??? (CoreLocation + 315772) [0x19a8c017c]
+  4   ??? (Foundation + 2296932) [0x197854c64]
+  4   ??? (Foundation + 77656) [0x197636f58]
+  4   ??? (Foundation + 80664) [0x197637b18]
+  4   ??? (Foundation + 2246996) [0x197848954]
+  4   ??? (libxpc.dylib + 52788) [0x196f10e34]
+  4   ??? (libdispatch.dylib + 115532) [0x196fd634c]
+  4   ??? (libdispatch.dylib + 114608) [0x196fd5fb0]
+  4   ??? (libsystem_kernel.dylib + 16048) [0x1970f5eb0]
+ *4   ??? (<C0833A28-9195-36E2-B54F-CFC53E3D0D3D> + 10499000) [0xfffffff007a073b8]
+
+
+Process:          grindrx (Grindr) [10086]
+UUID:             62CAA164-090F-3750-BDAC-DEADFA4CD3AF
+Adam ID:          319881193
+Is First Party:   No
+App Version:      6.15.0
+Build Version:    16944.22944
+Path:             /private/var/containers/Bundle/Application/1F233B70-CBA0-4C9A-8C4B-ABD2A5682040/grindrx.app/grindrx
+Architecture:     arm64
+Parent:           launchd [1]
+UID:              501
+Footprint:        102.39 MB
+Pageins:          1 pages
+Time Since Fork:  1979s
+Num samples:      20 (65-84)
+CPU Time:         0.057s (131.7M cycles, 150.1M instructions, 0.88c/i)
+
+  Thread 0x3065b3    DispatchQueue "com.apple.main-thread"(1)    20 samples (65-84)    priority 47 (base 47)    cpu time 0.004s (7.6M cycles, 3.4M instructions, 2.25c/i)
+  20  ??? (libdyld.dylib + 5004) [0x19712438c]
+    20  ??? (grindrx + 1766368) [0x10303f3e0]
+      20  ??? (UIKitCore + 11807016) [0x19ba2b928]
+        20  ??? (UIKitCore + 11782712) [0x19ba25a38]
+          20  ??? (GraphicsServices + 14360) [0x1a3072818]
+            20  ??? (CoreFoundation + 620080) [0x197298630]
+              20  ??? (CoreFoundation + 621948) [0x197298d7c]
+                20  ??? (CoreFoundation + 644748) [0x19729e68c]
+                  20  ??? (CoreFoundation + 647272) [0x19729f068]
+                    20  ??? (CoreFoundation + 647460) [0x19729f124]
+                      20  ??? (FrontBoardServices + 380476) [0x19cdf6e3c]
+                        20  ??? (FrontBoardServices + 379160) [0x19cdf6918]
+                          20  ??? (FrontBoardServices + 380016) [0x19cdf6c70]
+                            20  ??? (libdispatch.dylib + 31340) [0x196fc1a6c]
+                              20  ??? (libdispatch.dylib + 17300) [0x196fbe394]
+                                20  ??? (FrontBoardServices + 222484) [0x19cdd0514]
+                                  20  ??? (FrontBoardServices + 103212) [0x19cdb332c]
+                                    20  ??? (FrontBoardServices + 222696) [0x19cdd05e8]
+                                      20  ??? (FrontBoardServices + 46028) [0x19cda53cc]
+                                        20  ??? (UIKitCore + 6792092) [0x19b56339c]
+                                          20  ??? (UIKitCore + 324224) [0x19af38280]
+                                            20  ??? (UIKitCore + 319504) [0x19af37010]
+                                              20  ??? (UIKitCore + 325200) [0x19af38650]
+                                                20  ??? (UIKitCore + 2177796) [0x19b0fcb04]
+                                                  20  ??? (UIKitCore + 7680632) [0x19b63c278]
+                                                    20  ??? (UIKitCore + 6628044) [0x19b53b2cc]
+                                                      20  ??? (UIKitCore + 2178444) [0x19b0fcd8c]
+                                                        20  ??? (UIKitCore + 2148500) [0x19b0f5894]
+                                                          20  ??? (UIKitCore + 2150424) [0x19b0f6018]
+                                                            20  ??? (UIKitCore + 2149408) [0x19b0f5c20]
+                                                              20  ??? (UIKitCore + 2150920) [0x19b0f6208]
+                                                                20  ??? (UIKitCore + 7581560) [0x19b623f78]
+                                                                  20  ??? (UIKitCore + 2152892) [0x19b0f69bc]
+                                                                    20  ??? (UIKitCore + 11898732) [0x19ba41f6c]
+                                                                      20  ??? (Foundation + 26236) [0x19762a67c]
+                                                                        20  ??? (CoreFoundation + 522624) [0x197280980]
+                                                                          20  ??? (CoreFoundation + 524208) [0x197280fb0]
+                                                                            20  ??? (CoreFoundation + 526836) [0x1972819f4]
+                                                                              20  ??? (CoreFoundation + 526912) [0x197281a40]
+                                                                                8   ??? (grindrx + 31648648) [0x104cbeb88]
+                                                                                  8   ??? (grindrx + 31648548) [0x104cbeb24]
+                                                                                    8   ??? (grindrx + 31649820) [0x104cbf01c]
+                                                                                      4   ??? (grindrx + 31649564) [0x104cbef1c]
+                                                                                        4   ??? (CoreLocation + 63752) [0x19a882908]
+                                                                                          4   ??? (CoreLocation + 17080) [0x19a8772b8]
+                                                                                            4   ??? (CoreLocation + 315772) [0x19a8c017c]
+                                                                                              4   ??? (Foundation + 2296932) [0x197854c64]
+                                                                                                4   ??? (Foundation + 77656) [0x197636f58]
+                                                                                                  4   ??? (Foundation + 80664) [0x197637b18]
+                                                                                                    4   ??? (Foundation + 2246996) [0x197848954]
+                                                                                                      4   ??? (libxpc.dylib + 52788) [0x196f10e34]
+                                                                                                        4   ??? (libdispatch.dylib + 115532) [0x196fd634c]
+                                                                                                          4   ??? (libdispatch.dylib + 114608) [0x196fd5fb0]
+                                                                                                            4   ??? (libsystem_kernel.dylib + 16048) [0x1970f5eb0]
+                                                                                                             *4   ??? (<C0833A28-9195-36E2-B54F-CFC53E3D0D3D> + 10499000) [0xfffffff007a073b8]
+                                                                                      2   ??? (grindrx + 31649588) [0x104cbef34]
+                                                                                        2   ??? (CoreLocation + 141964) [0x19a895a8c]
+                                                                                          2   ??? (CoreLocation + 343056) [0x19a8c6c10]
+                                                                                            2   ??? (CoreLocation + 319532) [0x19a8c102c]
+                                                                                              2   ??? (Foundation + 2297048) [0x197854cd8]
+                                                                                                2   ??? (Foundation + 239932) [0x19765e93c]
+                                                                                                  2   ??? (Foundation + 80664) [0x197637b18]
+                                                                                                    2   ??? (Foundation + 2246996) [0x197848954]
+                                                                                                      2   ??? (libxpc.dylib + 52788) [0x196f10e34]
+                                                                                                        2   ??? (libdispatch.dylib + 115532) [0x196fd634c]
+                                                                                                          2   ??? (libdispatch.dylib + 114608) [0x196fd5fb0]
+                                                                                                            2   ??? (libsystem_kernel.dylib + 16048) [0x1970f5eb0]
+                                                                                                             *2   ??? (<C0833A28-9195-36E2-B54F-CFC53E3D0D3D> + 10499000) [0xfffffff007a073b8]
+                                                                                      1   ??? (grindrx + 31649676) [0x104cbef8c]
+                                                                                        1   ??? (CoreLocation + 141964) [0x19a895a8c]
+                                                                                          1   ??? (CoreLocation + 343056) [0x19a8c6c10]
+                                                                                            1   ??? (CoreLocation + 319532) [0x19a8c102c]
+                                                                                              1   ??? (Foundation + 2297048) [0x197854cd8]
+                                                                                                1   ??? (Foundation + 239932) [0x19765e93c]
+                                                                                                  1   ??? (Foundation + 80664) [0x197637b18]
+                                                                                                    1   ??? (Foundation + 2246996) [0x197848954]
+                                                                                                      1   ??? (libxpc.dylib + 52788) [0x196f10e34]
+                                                                                                        1   ??? (libdispatch.dylib + 115532) [0x196fd634c]
+                                                                                                          1   ??? (libdispatch.dylib + 114608) [0x196fd5fb0]
+                                                                                                            1   ??? (libsystem_kernel.dylib + 16048) [0x1970f5eb0]
+                                                                                                             *1   ??? (<C0833A28-9195-36E2-B54F-CFC53E3D0D3D> + 10499000) [0xfffffff007a073b8]
+                                                                                      1   ??? (grindrx + 31649604) [0x104cbef44]
+                                                                                        1   ??? (CoreLocation + 141964) [0x19a895a8c]
+                                                                                          1   ??? (CoreLocation + 343056) [0x19a8c6c10]
+                                                                                            1   ??? (CoreLocation + 319532) [0x19a8c102c]
+                                                                                              1   ??? (Foundation + 2297048) [0x197854cd8]
+                                                                                                1   ??? (Foundation + 239932) [0x19765e93c]
+                                                                                                  1   ??? (Foundation + 80664) [0x197637b18]
+                                                                                                    1   ??? (Foundation + 2246996) [0x197848954]
+                                                                                                      1   ??? (libxpc.dylib + 52788) [0x196f10e34]
+                                                                                                        1   ??? (libdispatch.dylib + 115532) [0x196fd634c]
+                                                                                                          1   ??? (libdispatch.dylib + 114608) [0x196fd5fb0]
+                                                                                                            1   ??? (libsystem_kernel.dylib + 16048) [0x1970f5eb0]
+                                                                                                             *1   ??? (<C0833A28-9195-36E2-B54F-CFC53E3D0D3D> + 10499000) [0xfffffff007a073b8]
+                                                                                6   ??? (grindrx + 31648280) [0x104cbea18]
+                                                                                  6   ??? (grindrx + 31650876) [0x104cbf43c]
+                                                                                    3   ??? (grindrx + 31649932) [0x104cbf08c]
+                                                                                      3   ??? (grindrx + 31649820) [0x104cbf01c]
+                                                                                        1   ??? (grindrx + 31649676) [0x104cbef8c]
+                                                                                          1   ??? (CoreLocation + 141964) [0x19a895a8c]
+                                                                                            1   ??? (CoreLocation + 343056) [0x19a8c6c10]
+                                                                                              1   ??? (CoreLocation + 319532) [0x19a8c102c]
+                                                                                                1   ??? (Foundation + 2297048) [0x197854cd8]
+                                                                                                  1   ??? (Foundation + 239932) [0x19765e93c]
+                                                                                                    1   ??? (Foundation + 80664) [0x197637b18]
+                                                                                                      1   ??? (Foundation + 2246996) [0x197848954]
+                                                                                                        1   ??? (libxpc.dylib + 52788) [0x196f10e34]
+                                                                                                          1   ??? (libdispatch.dylib + 115532) [0x196fd634c]
+                                                                                                            1   ??? (libdispatch.dylib + 114608) [0x196fd5fb0]
+                                                                                                              1   ??? (libsystem_kernel.dylib + 16048) [0x1970f5eb0]
+                                                                                                               *1   ??? (<C0833A28-9195-36E2-B54F-CFC53E3D0D3D> + 10499000) [0xfffffff007a073b8]
+                                                                                        1   ??? (grindrx + 31649604) [0x104cbef44]
+                                                                                          1   ??? (CoreLocation + 141964) [0x19a895a8c]
+                                                                                            1   ??? (CoreLocation + 343056) [0x19a8c6c10]
+                                                                                              1   ??? (CoreLocation + 319532) [0x19a8c102c]
+                                                                                                1   ??? (Foundation + 2297048) [0x197854cd8]
+                                                                                                  1   ??? (Foundation + 239932) [0x19765e93c]
+                                                                                                    1   ??? (Foundation + 80664) [0x197637b18]
+                                                                                                      1   ??? (Foundation + 2246996) [0x197848954]
+                                                                                                        1   ??? (libxpc.dylib + 52788) [0x196f10e34]
+                                                                                                          1   ??? (libdispatch.dylib + 115532) [0x196fd634c]
+                                                                                                            1   ??? (libdispatch.dylib + 114608) [0x196fd5fb0]
+                                                                                                              1   ??? (libsystem_kernel.dylib + 16048) [0x1970f5eb0]
+                                                                                                               *1   ??? (<C0833A28-9195-36E2-B54F-CFC53E3D0D3D> + 10499000) [0xfffffff007a073b8]
+                                                                                        1   ??? (grindrx + 31649588) [0x104cbef34]
+                                                                                          1   ??? (CoreLocation + 141964) [0x19a895a8c]
+                                                                                            1   ??? (CoreLocation + 343056) [0x19a8c6c10]
+                                                                                              1   ??? (CoreLocation + 319532) [0x19a8c102c]
+                                                                                                1   ??? (Foundation + 2297048) [0x197854cd8]
+                                                                                                  1   ??? (Foundation + 239932) [0x19765e93c]
+                                                                                                    1   ??? (Foundation + 80664) [0x197637b18]
+                                                                                                      1   ??? (Foundation + 2246996) [0x197848954]
+                                                                                                        1   ??? (libxpc.dylib + 52788) [0x196f10e34]
+                                                                                                          1   ??? (libdispatch.dylib + 115532) [0x196fd634c]
+                                                                                                            1   ??? (libdispatch.dylib + 114608) [0x196fd5fb0]
+                                                                                                              1   ??? (libsystem_kernel.dylib + 16048) [0x1970f5eb0]
+                                                                                                               *1   ??? (<C0833A28-9195-36E2-B54F-CFC53E3D0D3D> + 10499000) [0xfffffff007a073b8]
+                                                                                    3   ??? (grindrx + 31649912) [0x104cbf078]
+                                                                                      1   ??? (grindrx + 31649676) [0x104cbef8c]
+                                                                                        1   ??? (CoreLocation + 141964) [0x19a895a8c]
+                                                                                          1   ??? (CoreLocation + 343056) [0x19a8c6c10]
+                                                                                            1   ??? (CoreLocation + 319532) [0x19a8c102c]
+                                                                                              1   ??? (Foundation + 2297048) [0x197854cd8]
+                                                                                                1   ??? (Foundation + 239932) [0x19765e93c]
+                                                                                                  1   ??? (Foundation + 80664) [0x197637b18]
+                                                                                                    1   ??? (Foundation + 2246996) [0x197848954]
+                                                                                                      1   ??? (libxpc.dylib + 52788) [0x196f10e34]
+                                                                                                        1   ??? (libdispatch.dylib + 115532) [0x196fd634c]
+                                                                                                          1   ??? (libdispatch.dylib + 114608) [0x196fd5fb0]
+                                                                                                            1   ??? (libsystem_kernel.dylib + 16048) [0x1970f5eb0]
+                                                                                                             *1   ??? (<C0833A28-9195-36E2-B54F-CFC53E3D0D3D> + 10499000) [0xfffffff007a073b8]
+                                                                                      1   ??? (grindrx + 31649648) [0x104cbef70]
+                                                                                        1   ??? (CoreLocation + 141964) [0x19a895a8c]
+                                                                                          1   ??? (CoreLocation + 343056) [0x19a8c6c10]
+                                                                                            1   ??? (CoreLocation + 319532) [0x19a8c102c]
+                                                                                              1   ??? (Foundation + 2297048) [0x197854cd8]
+                                                                                                1   ??? (Foundation + 239932) [0x19765e93c]
+                                                                                                  1   ??? (Foundation + 80664) [0x197637b18]
+                                                                                                    1   ??? (Foundation + 2246996) [0x197848954]
+                                                                                                      1   ??? (libxpc.dylib + 52788) [0x196f10e34]
+                                                                                                        1   ??? (libdispatch.dylib + 115532) [0x196fd634c]
+                                                                                                          1   ??? (libdispatch.dylib + 114608) [0x196fd5fb0]
+                                                                                                            1   ??? (libsystem_kernel.dylib + 16048) [0x1970f5eb0]
+                                                                                                             *1   ??? (<C0833A28-9195-36E2-B54F-CFC53E3D0D3D> + 10499000) [0xfffffff007a073b8]
+                                                                                      1   ??? (grindrx + 31649604) [0x104cbef44]
+                                                                                        1   ??? (CoreLocation + 141964) [0x19a895a8c]
+                                                                                          1   ??? (CoreLocation + 343056) [0x19a8c6c10]
+                                                                                            1   ??? (CoreLocation + 319532) [0x19a8c102c]
+                                                                                              1   ??? (Foundation + 2297048) [0x197854cd8]
+                                                                                                1   ??? (Foundation + 239932) [0x19765e93c]
+                                                                                                  1   ??? (Foundation + 80664) [0x197637b18]
+                                                                                                    1   ??? (Foundation + 2246996) [0x197848954]
+                                                                                                      1   ??? (libxpc.dylib + 52788) [0x196f10e34]
+                                                                                                        1   ??? (libdispatch.dylib + 115532) [0x196fd634c]
+                                                                                                          1   ??? (libdispatch.dylib + 114608) [0x196fd5fb0]
+                                                                                                            1   ??? (libsystem_kernel.dylib + 16048) [0x1970f5eb0]
+                                                                                                             *1   ??? (<C0833A28-9195-36E2-B54F-CFC53E3D0D3D> + 10499000) [0xfffffff007a073b8]
+                                                                                4   ??? (grindrx + 31648672) [0x104cbeba0]
+                                                                                  4   ??? (grindrx + 31650876) [0x104cbf43c]
+                                                                                    2   ??? (grindrx + 31649932) [0x104cbf08c]
+                                                                                      2   ??? (grindrx + 31649820) [0x104cbf01c]
+                                                                                        1   ??? (grindrx + 31649676) [0x104cbef8c]
+                                                                                          1   ??? (CoreLocation + 141964) [0x19a895a8c]
+                                                                                            1   ??? (CoreLocation + 343056) [0x19a8c6c10]
+                                                                                              1   ??? (CoreLocation + 319532) [0x19a8c102c]
+                                                                                                1   ??? (Foundation + 2297048) [0x197854cd8]
+                                                                                                  1   ??? (Foundation + 239932) [0x19765e93c]
+                                                                                                    1   ??? (Foundation + 80664) [0x197637b18]
+                                                                                                      1   ??? (Foundation + 2246996) [0x197848954]
+                                                                                                        1   ??? (libxpc.dylib + 52788) [0x196f10e34]
+                                                                                                          1   ??? (libdispatch.dylib + 115532) [0x196fd634c]
+                                                                                                            1   ??? (libdispatch.dylib + 114608) [0x196fd5fb0]
+                                                                                                              1   ??? (libsystem_kernel.dylib + 16048) [0x1970f5eb0]
+                                                                                                               *1   ??? (<C0833A28-9195-36E2-B54F-CFC53E3D0D3D> + 10499000) [0xfffffff007a073b8]
+                                                                                        1   ??? (grindrx + 31649648) [0x104cbef70]
+                                                                                          1   ??? (CoreLocation + 141964) [0x19a895a8c]
+                                                                                            1   ??? (CoreLocation + 343056) [0x19a8c6c10]
+                                                                                              1   ??? (CoreLocation + 319532) [0x19a8c102c]
+                                                                                                1   ??? (Foundation + 2297048) [0x197854cd8]
+                                                                                                  1   ??? (Foundation + 239932) [0x19765e93c]
+                                                                                                    1   ??? (Foundation + 80664) [0x197637b18]
+                                                                                                      1   ??? (Foundation + 2246996) [0x197848954]
+                                                                                                        1   ??? (libxpc.dylib + 52788) [0x196f10e34]
+                                                                                                          1   ??? (libdispatch.dylib + 115532) [0x196fd634c]
+                                                                                                            1   ??? (libdispatch.dylib + 114608) [0x196fd5fb0]
+                                                                                                              1   ??? (libsystem_kernel.dylib + 16048) [0x1970f5eb0]
+                                                                                                               *1   ??? (<C0833A28-9195-36E2-B54F-CFC53E3D0D3D> + 10499000) [0xfffffff007a073b8]
+                                                                                    2   ??? (grindrx + 31649912) [0x104cbf078]
+                                                                                      1   ??? (grindrx + 31649676) [0x104cbef8c]
+                                                                                        1   ??? (CoreLocation + 141964) [0x19a895a8c]
+                                                                                          1   ??? (CoreLocation + 343056) [0x19a8c6c10]
+                                                                                            1   ??? (CoreLocation + 319532) [0x19a8c102c]
+                                                                                              1   ??? (Foundation + 2297048) [0x197854cd8]
+                                                                                                1   ??? (Foundation + 239932) [0x19765e93c]
+                                                                                                  1   ??? (Foundation + 80664) [0x197637b18]
+                                                                                                    1   ??? (Foundation + 2246996) [0x197848954]
+                                                                                                      1   ??? (libxpc.dylib + 52788) [0x196f10e34]
+                                                                                                        1   ??? (libdispatch.dylib + 115532) [0x196fd634c]
+                                                                                                          1   ??? (libdispatch.dylib + 114608) [0x196fd5fb0]
+                                                                                                            1   ??? (libsystem_kernel.dylib + 16048) [0x1970f5eb0]
+                                                                                                             *1   ??? (<C0833A28-9195-36E2-B54F-CFC53E3D0D3D> + 10499000) [0xfffffff007a073b8]
+                                                                                      1   ??? (grindrx + 31649588) [0x104cbef34]
+                                                                                        1   ??? (CoreLocation + 141964) [0x19a895a8c]
+                                                                                          1   ??? (CoreLocation + 343056) [0x19a8c6c10]
+                                                                                            1   ??? (CoreLocation + 319532) [0x19a8c102c]
+                                                                                              1   ??? (Foundation + 2297048) [0x197854cd8]
+                                                                                                1   ??? (Foundation + 239932) [0x19765e93c]
+                                                                                                  1   ??? (Foundation + 80664) [0x197637b18]
+                                                                                                    1   ??? (Foundation + 2246996) [0x197848954]
+                                                                                                      1   ??? (libxpc.dylib + 52788) [0x196f10e34]
+                                                                                                        1   ??? (libdispatch.dylib + 115532) [0x196fd634c]
+                                                                                                          1   ??? (libdispatch.dylib + 114608) [0x196fd5fb0]
+                                                                                                            1   ??? (libsystem_kernel.dylib + 16048) [0x1970f5eb0]
+                                                                                                             *1   ??? (<C0833A28-9195-36E2-B54F-CFC53E3D0D3D> + 10499000) [0xfffffff007a073b8]
+                                                                                2   ??? (grindrx + 31648316) [0x104cbea3c]
+                                                                                  2   ??? (grindrx + 31650876) [0x104cbf43c]
+                                                                                    2   ??? (grindrx + 31649912) [0x104cbf078]
+                                                                                      1   ??? (grindrx + 31649676) [0x104cbef8c]
+                                                                                        1   ??? (CoreLocation + 141964) [0x19a895a8c]
+                                                                                          1   ??? (CoreLocation + 343056) [0x19a8c6c10]
+                                                                                            1   ??? (CoreLocation + 319532) [0x19a8c102c]
+                                                                                              1   ??? (Foundation + 2297048) [0x197854cd8]
+                                                                                                1   ??? (Foundation + 239932) [0x19765e93c]
+                                                                                                  1   ??? (Foundation + 80664) [0x197637b18]
+                                                                                                    1   ??? (Foundation + 2246996) [0x197848954]
+                                                                                                      1   ??? (libxpc.dylib + 52788) [0x196f10e34]
+                                                                                                        1   ??? (libdispatch.dylib + 115532) [0x196fd634c]
+                                                                                                          1   ??? (libdispatch.dylib + 114608) [0x196fd5fb0]
+                                                                                                            1   ??? (libsystem_kernel.dylib + 16048) [0x1970f5eb0]
+                                                                                                             *1   ??? (<C0833A28-9195-36E2-B54F-CFC53E3D0D3D> + 10499000) [0xfffffff007a073b8]
+                                                                                      1   ??? (grindrx + 31649604) [0x104cbef44]
+                                                                                        1   ??? (CoreLocation + 141964) [0x19a895a8c]
+                                                                                          1   ??? (CoreLocation + 343056) [0x19a8c6c10]
+                                                                                            1   ??? (CoreLocation + 319532) [0x19a8c102c]
+                                                                                              1   ??? (Foundation + 2297048) [0x197854cd8]
+                                                                                                1   ??? (Foundation + 239932) [0x19765e93c]
+                                                                                                  1   ??? (Foundation + 80664) [0x197637b18]
+                                                                                                    1   ??? (Foundation + 2246996) [0x197848954]
+                                                                                                      1   ??? (libxpc.dylib + 52788) [0x196f10e34]
+                                                                                                        1   ??? (libdispatch.dylib + 115532) [0x196fd634c]
+                                                                                                          1   ??? (libdispatch.dylib + 114608) [0x196fd5fb0]
+                                                                                                            1   ??? (libsystem_kernel.dylib + 16048) [0x1970f5eb0]
+                                                                                                             *1   ??? (<C0833A28-9195-36E2-B54F-CFC53E3D0D3D> + 10499000) [0xfffffff007a073b8]
+
+  Binary Images:
+           0x102e90000 -        0x106a5ffff  com.grindrguy.grindrx 6.15.0 (16944.22944) <62CAA164-090F-3750-BDAC-DEADFA4CD3AF>  /private/var/containers/Bundle/Application/1F233B70-CBA0-4C9A-8C4B-ABD2A5682040/grindrx.app/grindrx
+           0x196f04000 -        0x196f38fff  libxpc.dylib                               <40C6299E-31BD-3971-AF3E-B845E86A5209>  /usr/lib/system/libxpc.dylib
+           0x196fba000 -        0x196ffbfff  libdispatch.dylib                          <28A090F9-05C2-3563-845F-4FE958EBDC4D>  /usr/lib/system/libdispatch.dylib
+           0x1970f2000 -        0x197122fff  libsystem_kernel.dylib                     <3EF668B5-8D98-3DAF-A94C-CC8F2A657ABD>  /usr/lib/system/libsystem_kernel.dylib
+           0x197123000 -        0x19715cfff  libdyld.dylib                              <496AD165-6976-3479-8511-BF5BED814142>  /usr/lib/system/libdyld.dylib
+           0x197201000 -        0x1975aafff  CoreFoundation                             <334FCE90-3729-30B1-8F52-182B5ACEB454>  /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+           0x197624000 -        0x1978d1fff  Foundation                                 <E4DEEB39-F560-3043-B1A5-62242DEE0F18>  /System/Library/Frameworks/Foundation.framework/Foundation
+           0x19a873000 -        0x19a8f6fff  CoreLocation                               <3974EB1E-7C1A-3E20-A03B-3000C8BAA038>  /System/Library/Frameworks/CoreLocation.framework/CoreLocation
+           0x19aee9000 -        0x19c299fff  UIKitCore                                  <8B922C39-CE14-3B3F-B9C1-A5414EBE342C>  /System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore
+           0x19cd9a000 -        0x19ce1bfff  FrontBoardServices                         <89848EF4-3F02-3AF0-915E-C55F984C3410>  /System/Library/PrivateFrameworks/FrontBoardServices.framework/FrontBoardServices
+           0x1a306f000 -        0x1a3077fff  GraphicsServices                           <A6CDA35F-0936-3EB7-981F-BF50EDB5B06E>  /System/Library/PrivateFrameworks/GraphicsServices.framework/GraphicsServices
+   *0xfffffff007004000 -                ???  ???                                        <C0833A28-9195-36E2-B54F-CFC53E3D0D3D>
+
+
+Process:          locationd [10175]
+UUID:             BEDCB160-B644-32EA-9A44-215F5BF93D28
+Path:             /usr/libexec/locationd
+Architecture:     arm64
+UID:              0
+Sudden Term:      Tracked
+Footprint:        9120 KB -> 12.50 MB (+3680 KB)
+Pageins:          113 pages
+Time Since Fork:  2s
+Num samples:      20 (65-84)
+CPU Time:         1.223s (2.1G cycles, 2.7G instructions, 0.78c/i)
+
+  Thread 0x30bb83    DispatchQueue "CLInternalServiceSilo"(530)    10 samples (65-74)    priority 47 (base 47)    cpu time 0.011s (20.9M cycles, 22.5M instructions, 0.93c/i)
+  10  ??? (libsystem_pthread.dylib + 14600) [0x19702a908]
+    10  ??? (libdispatch.dylib + 88940) [0x196fcfb6c]
+      10  ??? (libdispatch.dylib + 48788) [0x196fc5e94]
+        10  ??? (libdispatch.dylib + 45568) [0x196fc5200]
+          10  ??? (libdispatch.dylib + 123132) [0x196fd80fc]
+            10  ??? (libdispatch.dylib + 45568) [0x196fc5200]
+              10  ??? (libdispatch.dylib + 119848) [0x196fd7428]
+                10  ??? (libdispatch.dylib + 17504) [0x196fbe460]
+                  10  ??? (libxpc.dylib + 58144) [0x196f12320]
+                    10  ??? (libxpc.dylib + 57236) [0x196f11f94]
+                      10  ??? (Foundation + 2242724) [0x1978478a4]
+                        10  ??? (Foundation + 317228) [0x19767172c]
+                          10  ??? (Foundation + 2242456) [0x197847798]
+                            9   ??? (locationd + 14515724) [0x10353fe0c]
+                              9   ??? (CoreFoundation + 1202912) [0x197326ae0]
+                                9   ??? (CoreFoundation + 1193256) [0x197324528]
+                                  9   ??? (LocationSupport + 89972) [0x19f7a2f74]
+                                    9   ??? (locationd + 3292364) [0x102a8bccc]
+                                      9   ??? (LocationSupport + 83924) [0x19f7a17d4]
+                                        9   ??? (libdispatch.dylib + 74196) [0x196fcc1d4]
+                                          9   ??? (libdispatch.dylib + 75244) [0x196fcc5ec]
+                                            9   ??? (libdispatch.dylib + 147940) [0x196fde1e4]
+                                              9   ??? (libsystem_kernel.dylib + 169292) [0x19711b54c]
+                                               *9   ??? (<C0833A28-9195-36E2-B54F-CFC53E3D0D3D> + 14960056) [0xfffffff007e485b8]
+                            1   ??? (locationd + 14515844) [0x10353fe84]
+                              1   ??? (CoreFoundation + 1202912) [0x197326ae0]
+                                1   ??? (CoreFoundation + 1193256) [0x197324528]
+                                  1   ??? (LocationSupport + 89972) [0x19f7a2f74]
+                                    1   ??? (locationd + 3292364) [0x102a8bccc]
+                                      1   ??? (LocationSupport + 83924) [0x19f7a17d4]
+                                        1   ??? (libdispatch.dylib + 74196) [0x196fcc1d4]
+                                          1   ??? (libdispatch.dylib + 75244) [0x196fcc5ec]
+                                            1   ??? (libdispatch.dylib + 147940) [0x196fde1e4]
+                                              1   ??? (libsystem_kernel.dylib + 169292) [0x19711b54c]
+                                               *1   ??? (<C0833A28-9195-36E2-B54F-CFC53E3D0D3D> + 14960056) [0xfffffff007e485b8]
+
+  Thread 0x30bb83    7 samples (75-82)    priority 20-31 (base 20-31)    cpu time 0.007s (12.4M cycles, 10.3M instructions, 1.21c/i)
+  7  ??? (libsystem_pthread.dylib + 42868) [0x197031774]
+   *7  ??? (<C0833A28-9195-36E2-B54F-CFC53E3D0D3D> + 14819172) [0xfffffff007e25f64]
+
+  Thread 0x30bb83    DispatchQueue 107    3 samples (77-84)    priority 47 (base 47)    cpu time 0.064s (112.0M cycles, 130.4M instructions, 0.86c/i)
+  3  ??? (libsystem_pthread.dylib + 14600) [0x19702a908]
+    3  ??? (libdispatch.dylib + 88940) [0x196fcfb6c]
+      3  ??? (libdispatch.dylib + 53140) [0x196fc6f94]
+        3  ??? (libdispatch.dylib + 48788) [0x196fc5e94]
+          3  ??? (libdispatch.dylib + 45568) [0x196fc5200]
+            3  ??? (libdispatch.dylib + 123132) [0x196fd80fc]
+              3  ??? (libdispatch.dylib + 45568) [0x196fc5200]
+                3  ??? (libdispatch.dylib + 119848) [0x196fd7428]
+                  3  ??? (libdispatch.dylib + 17504) [0x196fbe460]
+                    3  ??? (libxpc.dylib + 58144) [0x196f12320]
+                      3  ??? (libxpc.dylib + 57236) [0x196f11f94]
+                        3  ??? (LocationSupport + 50484) [0x19f799534]
+                          3  ??? (LocationSupport + 41548) [0x19f79724c]
+                            3  ??? (LocationSupport + 41776) [0x19f797330]
+                              2  ??? (LocationSupport + 9436) [0x19f78f4dc]
+                                2  ??? (LocationSupport + 9196) [0x19f78f3ec]
+                                  2  ??? (locationd + 3354592) [0x102a9afe0]
+                                    2  ??? (locationd + 3216328) [0x102a793c8]
+                                      2  ??? (locationd + 3217848) [0x102a799b8]
+                                        2  ??? (locationd + 6408548) [0x102d84964]
+                                          2  ??? (locationd + 6409364) [0x102d84c94]
+                                            2  ??? (locationd + 6563924) [0x102daa854]
+                                              1  ??? (locationd + 6445552) [0x102d8d9f0]
+                                                1  ??? (locationd + 3312620) [0x102a90bec]
+                                                  1  ??? (locationd + 3368048) [0x102a9e470]
+                                                    1  ??? (locationd + 1517988) [0x1028da9a4]
+                                                      1  ??? (locationd + 1285596) [0x1028a1ddc]
+                                                        1  ??? (locationd + 1284668) [0x1028a1a3c]
+                                                          1  ??? (libsystem_kernel.dylib + 167812) [0x19711af84]
+                                                           *1  ??? (<C0833A28-9195-36E2-B54F-CFC53E3D0D3D> + 17897024) [0xfffffff008115640]
+                                                             *1  ??? (<C0833A28-9195-36E2-B54F-CFC53E3D0D3D> + 11868216) [0xfffffff007b55838]
+                                                               *1  ??? (<C0833A28-9195-36E2-B54F-CFC53E3D0D3D> + 16213988) [0xfffffff007f7a7e4]
+                                                                 *1  ??? (<C0833A28-9195-36E2-B54F-CFC53E3D0D3D> + 12554720) [0xfffffff007bfd1e0]
+                                                                   *1  ??? (<C0833A28-9195-36E2-B54F-CFC53E3D0D3D> + 33147140) [0xfffffff008fa0904]
+                                                                     *1  ??? (<C0833A28-9195-36E2-B54F-CFC53E3D0D3D> + 33145448) [0xfffffff008fa0268]
+                                                                       *1  ??? (<C0833A28-9195-36E2-B54F-CFC53E3D0D3D> + 12414744) [0xfffffff007bdaf18]
+                                                                         *1  ??? (<C0833A28-9195-36E2-B54F-CFC53E3D0D3D> + 12444824) [0xfffffff007be2498]
+                                                                           *1  ??? (<C0833A28-9195-36E2-B54F-CFC53E3D0D3D> + 15199800) [0xfffffff007e82e38]
+                                                                             *1  ??? (<C0833A28-9195-36E2-B54F-CFC53E3D0D3D> + 10733988) [0xfffffff007a409a4]
+                                                                               *1  ??? (<C0833A28-9195-36E2-B54F-CFC53E3D0D3D> + 10803940) [0xfffffff007a51ae4]
+                                              1  ??? (locationd + 6445440) [0x102d8d980]
+                                                1  ??? (locationd + 6433240) [0x102d8a9d8]
+                                                  1  ??? (locationd + 6438512) [0x102d8be70]
+                                                    1  ??? (locationd + 8342428) [0x102f5cb9c]
+                                                      1  ??? (locationd + 8342524) [0x102f5cbfc]
+                                                        1  ??? (locationd + 8342620) [0x102f5cc5c]
+                                                          1  ??? (LocationSupport + 48096) [0x19f798be0]
+                                                            1  ??? (LocationSupport + 48208) [0x19f798c50]
+                                                              1  ??? (Foundation + 109620) [0x19763ec34]
+                                                                1  ??? (Foundation + 109084) [0x19763ea1c] (running, on cpu 3)
+                              1  ??? (locationd + 6425180) [0x102d88a5c]
+                                1  ??? (locationd + 6408548) [0x102d84964]
+                                  1  ??? (locationd + 6409364) [0x102d84c94]
+                                    1  ??? (locationd + 6518576) [0x102d9f730]
+                                      1  ??? (locationd + 6519012) [0x102d9f8e4]
+                                        1  ??? (locationd + 6519456) [0x102d9faa0]
+                                          1  ??? (locationd + 6437536) [0x102d8baa0]
+                                            1  ??? (locationd + 10466108) [0x10316333c]
+                                              1  ??? (locationd + 2980504) [0x102a3fa98] (running, on cpu 0)
+
+  Binary Images:
+           0x102768000 -        0x103f1ffff  locationd               <BEDCB160-B644-32EA-9A44-215F5BF93D28>  /usr/libexec/locationd
+           0x196f04000 -        0x196f38fff  libxpc.dylib            <40C6299E-31BD-3971-AF3E-B845E86A5209>  /usr/lib/system/libxpc.dylib
+           0x196fba000 -        0x196ffbfff  libdispatch.dylib       <28A090F9-05C2-3563-845F-4FE958EBDC4D>  /usr/lib/system/libdispatch.dylib
+           0x197027000 -        0x197032fff  libsystem_pthread.dylib <BFDBEB73-E71E-321D-8589-2FF410DCA347>  /usr/lib/system/libsystem_pthread.dylib
+           0x1970f2000 -        0x197122fff  libsystem_kernel.dylib  <3EF668B5-8D98-3DAF-A94C-CC8F2A657ABD>  /usr/lib/system/libsystem_kernel.dylib
+           0x197201000 -        0x1975aafff  CoreFoundation          <334FCE90-3729-30B1-8F52-182B5ACEB454>  /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+           0x197624000 -        0x1978d1fff  Foundation              <E4DEEB39-F560-3043-B1A5-62242DEE0F18>  /System/Library/Frameworks/Foundation.framework/Foundation
+           0x19f78d000 -        0x19f7b2fff  LocationSupport         <F5117106-A5AA-34EB-BFA5-CB2CD43F82A0>  /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport
+   *0xfffffff007004000 -                ???  ???                     <C0833A28-9195-36E2-B54F-CFC53E3D0D3D>
+
+{
+  "INDPool" : {
+    "INDPoolSize" : 33533952,
+    "INDPoolFree" : 31526680,
+    "INDPoolFull" : 0.05985790491104126
+  },
+  "blockingThreadInfo" : {
+    "topBlockingThreadId" : 3193731,
+    "otherBlockingThreads" : [
+      {
+        "threadId" : 3193725,
+        "blockingTimeMS" : 170.79488808310634
+      },
+      {
+        "threadId" : 3193716,
+        "blockingTimeMS" : 53.617420773829508
+      }
+    ],
+    "topBlockingPid" : 10175,
+    "topBlockingTimeMS" : 327.87690011578889
+  },
+  "AppleAPFSVolume" : {
+    "xART_disk0s1s3" : {
+      "BSD Name" : "disk0s1s3",
+      "FormattedBy" : "newfs_apfs (1640.0.0.112.1)"
+    },
+    "Preboot_disk0s1s6" : {
+      "BSD Name" : "disk0s1s6",
+      "FormattedBy" : "newfs_apfs (1640.0.0.112.1)"
+    },
+    "Baseband Data_disk0s1s4" : {
+      "BSD Name" : "disk0s1s4",
+      "FormattedBy" : "newfs_apfs (1640.0.0.112.1)"
+    },
+    "Update_disk0s1s7" : {
+      "BSD Name" : "disk0s1s7",
+      "FormattedBy" : "newfs_apfs (1640.0.0.112.1)"
+    },
+    "System_disk0s1s1" : {
+      "BSD Name" : "disk0s1s1",
+      "FormattedBy" : "newfs_apfs (945.200.129.100.8)"
+    },
+    "Data_disk0s1s2" : {
+      "BSD Name" : "disk0s1s2",
+      "FormattedBy" : "newfs_apfs (1640.0.0.112.1)"
+    },
+    "Hardware_disk0s1s5" : {
+      "BSD Name" : "disk0s1s5",
+      "FormattedBy" : "newfs_apfs (1640.0.0.112.1)"
+    }
+  },
+  "NANDSnapshot" : "- ASP Snapshot - \nT : Timestamp\nP : Percent Cmd_DoPreempt\nWL:\n Ops p 0\/1\/2\/3\n SumLatency p 0\/1\/2\/3\n MaxLatency p0\/1\/2\/3\nRL:\n Ops p 0\/1\/2\/3\n SumLatency p 0\/1\/2\/3\n MaxLatency p0\/1\/2\/3\nE: Band Erases\nF: Host Flushes\nHR: Host Reads\nHW: Host Writes\nNR: Nand Reads\nNW: Nand Writes\nCW: Clog Writes\nIW: Ind Writes\nGC: GC Writes\nAW: Writes that were handled by autowrite HW\nGLT: GC L-only us\nW : Wear Level Bands\nBI: Bands(SLC)\nBU: Bands(MLC\/TLC)\nTH: Time in Hysteresis (ms)\nS : Free Segs\nV : IndMem Free\nML: IndMem Lvl (C)hoke (E)extreme (A)low (0)good\nBF: Buffer Frags\/MaxFrags\nX : Expedite Ok\/Fail\nU : Host unmaps\nC : Host tags(Min\/Max)\nUT: Update Time(us)\nNU: Updates\nST: Search Time(us)\nNS: Searches\nMB: Cache\/Ind MBUs\nCE: WCache FS Evicts\nCU: WCache FS Utilization(sec\/lines)\nIMM: Time Spent in Immediate Cmd (us)\nTi: IndMem #free tilesDT: delta for +freeTile\/-freeTileDL: delta for GC #L iterationsDM: delta for GC L LBAs moved\/frags movedDU: delta for GC L LBAs updated\/frags updatedPUM: L moves\/updates% LBAs\/fragsMTH: IndMem total used mix\nT=517552437 P= 0  WO=   2\/   0\/   0\/   0 WL=    207\/      0\/      0\/      0 WM=  110\/    0\/    0\/    0 RO=   9\/   0\/   1\/   0 RL=   2611\/      0\/   1394\/      0 RM=  452\/    0\/ 1394\/    0E= 0 F= 0 HR=  104 HW=    8 NR=  104 NW=    0 CW=    0 IW=    0 GC=    0 AW=  0 GLT=       0 W= 0 BI= 52 BU= 999 TH=    1392.00 S=3813 QOS=  0 V=31527248 ML=0 BF= 1\/160 X= 0\/ 0 U=       0 C= 0\/16 UT=     0 NU=    0 ST=      11 NS=   10 MB=1804\/276CE=   0 CU=  0 IMM=     0 Ti=37 DT= 0\/ 0 DL= 0 DM=     0\/   0 DU=     0\/   0 PUM= 0\/ 0 MTH= 6\/60  GCS= 0\/ 0\/ 0\/  0GCD=0\/0\/0\/0\/0\/0GM=   0 UE=    0 GB= 119 RH=     0 RI=     0 RR=    0 GCN=    0 OBC=    0 SAJ=       0 MAJ=       0 LAJ=       0 STI=      1914 MTI=      1037 LTI=      4000 TAJ=         0TBJ=2147483647GAJ=         0, GBJ=2147483647 GUI=         1 ABM= 0RHW=    16 RHM=     8 REW=     0 RFR=    16 \nT=517553187 P= 0  WO=   0\/   1\/   0\/   0 WL=      0\/   1949\/      0\/      0 WM=    0\/ 1949\/    0\/    0 RO=   7\/   0\/   1\/   0 RL=   1408\/      0\/    263\/      0 RM=  427\/    0\/  263\/    0E= 0 F= 0 HR=   30 HW=    1 NR=   30 NW=    0 CW=    0 IW=    0 GC=    0 AW=  0 GLT=       0 W= 0 BI= 52 BU= 999 TH=    1944.00 S=3812 QOS=  0 V=31527248 ML=0 BF= 1\/160 X= 0\/ 0 U=       0 C= 0\/ 1 UT=     0 NU=    0 ST=      25 NS=    8 MB=1804\/276CE=   0 CU=  0 IMM=     0 Ti=37 DT= 0\/ 0 DL= 0 DM=     0\/   0 DU=     0\/   0 PUM= 0\/ 0 MTH= 6\/60  GCS= 0\/ 0\/ 0\/  0GCD=0\/0\/0\/0\/0\/0GM=   0 UE=    0 GB= 119 RH=     0 RI=     0 RR=    0 GCN=    0 OBC=    0 SAJ=       0 MAJ=       0 LAJ=       0 STI=      1914 MTI=      1037 LTI=      4000 TAJ=         0TBJ=2147483647GAJ=         0, GBJ=2147483647 GUI=         1 ABM= 0RHW=     0 RHM=     0 REW=     0 RFR=     0 \nT=517553472 P= 0  WO=   9\/   0\/   0\/   0 WL=    322\/      0\/      0\/      0 WM=   71\/    0\/    0\/    0 RO= 129\/   2\/   4\/   0 RL=  34368\/  45728\/  91018\/      0 RM=  608\/22873\/22959\/    0E= 0 F= 0 HR= 2099 HW=   44 NR= 2159 NW=    0 CW=    0 IW=    0 GC=    0 AW=  0 GLT=       0 W= 0 BI= 52 BU= 999 TH=   32477.00 S=3796 QOS=  0 V=31527248 ML=0 BF= 1\/160 X= 0\/ 0 U=       0 C= 0\/12 UT=     0 NU=    0 ST=     172 NS=  143 MB=1804\/276CE=   0 CU=  0 IMM=     0 Ti=37 DT= 0\/ 0 DL= 0 DM=     0\/   0 DU=     0\/   0 PUM= 0\/ 0 MTH= 6\/60  GCS= 0\/ 0\/ 0\/  0GCD=0\/0\/0\/0\/0\/0GM=   0 UE=    0 GB= 119 RH=     0 RI=     0 RR=    0 GCN=    0 OBC=    0 SAJ=       0 MAJ=       0 LAJ=       0 STI=      1914 MTI=      1037 LTI=      4000 TAJ=         0TBJ=2147483647GAJ=         0, GBJ=2147483647 GUI=         1 ABM= 2RHW=     0 RHM=     0 REW=     0 RFR=     0 \nT=517553571 P= 2  WO=   1\/   0\/   0\/   0 WL=     18\/      0\/      0\/      0 WM=   18\/    0\/    0\/    0 RO=  93\/   1\/  35\/   0 RL=  30997\/  20162\/ 429948\/      0 RM= 1660\/20162\/53485\/    0E= 0 F= 0 HR= 1424 HW=    1 NR= 1496 NW=    0 CW=    0 IW=    0 GC=    0 AW=  0 GLT=       0 W= 0 BI= 52 BU= 999 TH=   71825.00 S=3780 QOS=  0 V=31527248 ML=0 BF= 1\/160 X= 0\/ 0 U=       0 C= 0\/12 UT=     0 NU=    0 ST=     295 NS=  137 MB=1804\/276CE=   0 CU=  0 IMM=     0 Ti=37 DT= 0\/ 0 DL= 0 DM=     0\/   0 DU=     0\/   0 PUM= 0\/ 0 MTH= 6\/60  GCS= 0\/ 0\/ 0\/  0GCD=0\/0\/0\/0\/0\/0GM=   0 UE=    0 GB= 119 RH=     0 RI=     0 RR=    0 GCN=    0 OBC=    0 SAJ=       0 MAJ=       0 LAJ=       0 STI=      1914 MTI=      1037 LTI=      4000 TAJ=         0TBJ=2147483647GAJ=         0, GBJ=2147483647 GUI=         1 ABM= 2RHW=     0 RHM=     0 REW=     0 RFR=     0 \nT=517553670 P= 0  WO=   2\/   0\/   0\/   0 WL=     55\/      0\/      0\/      0 WM=   35\/    0\/    0\/    0 RO= 179\/   3\/   3\/   0 RL=  36962\/  66613\/  90694\/      0 RM= 1224\/23294\/49075\/    0E= 0 F= 0 HR= 1881 HW=    4 NR= 1749 NW=    0 CW=    0 IW=    0 GC=    0 AW=  0 GLT=       0 W= 0 BI= 52 BU= 999 TH=   64617.00 S=3800 QOS=  0 V=31527248 ML=0 BF= 2\/160 X= 0\/ 0 U=       0 C= 0\/12 UT=     0 NU=    0 ST=     263 NS=  189 MB=1804\/276CE=   0 CU=  0 IMM=     0 Ti=37 DT= 0\/ 0 DL= 0 DM=     0\/   0 DU=     0\/   0 PUM= 0\/ 0 MTH= 6\/60  GCS= 0\/ 0\/ 0\/  0GCD=0\/0\/0\/0\/0\/0GM=   0 UE=    0 GB= 119 RH=     0 RI=     0 RR=    0 GCN=    0 OBC=    0 SAJ=       0 MAJ=       0 LAJ=       0 STI=      1914 MTI=      1037 LTI=      4000 TAJ=         0TBJ=2147483647GAJ=         0, GBJ=2147483647 GUI=         1 ABM= 2RHW=     0 RHM=     0 REW=     0 RFR=     0 \nT=517553770 P= 0  WO=   2\/   0\/   0\/   0 WL=     50\/      0\/      0\/      0 WM=   31\/    0\/    0\/    0 RO= 256\/   0\/   0\/   0 RL=  47226\/      0\/      0\/      0 RM=  931\/    0\/    0\/    0E= 0 F= 0 HR= 1980 HW=    2 NR= 1980 NW=    0 CW=    0 IW=    0 GC=    0 AW=  0 GLT=       0 W= 0 BI= 52 BU= 999 TH=       0.00 S=3799 QOS=  0 V=31527248 ML=0 BF= 3\/160 X= 0\/ 0 U=       0 C= 0\/12 UT=     0 NU=    0 ST=     356 NS=  263 MB=1804\/276CE=   0 CU=  0 IMM=     0 Ti=37 DT= 0\/ 0 DL= 0 DM=     0\/   0 DU=     0\/   0 PUM= 0\/ 0 MTH= 6\/60  GCS= 0\/ 0\/ 0\/  0GCD=0\/0\/0\/0\/0\/0GM=   0 UE=    0 GB= 119 RH=     0 RI=     0 RR=    0 GCN=    0 OBC=    0 SAJ=       0 MAJ=       0 LAJ=       0 STI=      1914 MTI=      1037 LTI=      4000 TAJ=         0TBJ=2147483647GAJ=         0, GBJ=2147483647 GUI=         1 ABM= 2RHW=     0 RHM=     0 REW=     0 RFR=     0 \nT=517553869 P= 0  WO=  10\/   0\/   0\/   0 WL=    242\/      0\/      0\/      0 WM=   37\/    0\/    0\/    0 RO= 156\/   0\/   0\/   0 RL=  36095\/      0\/      0\/      0 RM= 1126\/    0\/    0\/    0E= 0 F= 0 HR= 1735 HW=   22 NR= 1735 NW=    0 CW=    0 IW=    0 GC=    0 AW=  0 GLT=       0 W= 0 BI= 52 BU= 999 TH=       0.00 S=3795 QOS=  0 V=31527248 ML=0 BF= 5\/160 X= 0\/ 0 U=       0 C= 0\/12 UT=     0 NU=    0 ST=     305 NS=  158 MB=1804\/276CE=   0 CU=  0 IMM=     0 Ti=37 DT= 0\/ 0 DL= 0 DM=     0\/   0 DU=     0\/   0 PUM= 0\/ 0 MTH= 6\/60  GCS= 0\/ 0\/ 0\/  0GCD=0\/0\/0\/0\/0\/0GM=   0 UE=    0 GB= 119 RH=     0 RI=     0 RR=    0 GCN=    0 OBC=    0 SAJ=       0 MAJ=       0 LAJ=       0 STI=      1914 MTI=      1037 LTI=      4000 TAJ=         0TBJ=2147483647GAJ=         0, GBJ=2147483647 GUI=         1 ABM= 2RHW=     0 RHM=     0 REW=     0 RFR=     0 \nT=517553969 P= 0  WO=  46\/   0\/   0\/   0 WL=    624\/      0\/      0\/      0 WM=   28\/    0\/    0\/    0 RO= 152\/   0\/   0\/   0 RL=  66055\/      0\/      0\/      0 RM= 1177\/    0\/    0\/    0E= 0 F= 0 HR= 5424 HW=   61 NR= 5424 NW=    0 CW=    0 IW=    0 GC=    0 AW=  0 GLT=       0 W= 0 BI= 52 BU= 999 TH=       0.00 S=3785 QOS=  0 V=31527184 ML=0 BF= 6\/160 X= 0\/ 0 U=    1280 C= 0\/12 UT=   129 NU=   20 ST=     627 NS=  171 MB=1804\/276CE=   0 CU=  0 IMM=     0 Ti=37 DT= 0\/ 0 DL= 0 DM=     0\/   0 DU=     0\/   0 PUM= 0\/ 0 MTH= 6\/60  GCS= 0\/ 0\/ 0\/  0GCD=0\/0\/0\/0\/0\/0GM=   0 UE=    0 GB= 119 RH=     0 RI=     0 RR=    0 GCN=    0 OBC=    0 SAJ=       0 MAJ=       0 LAJ=       0 STI=      1914 MTI=      1037 LTI=      4000 TAJ=         0TBJ=2147483647GAJ=         0, GBJ=2147483647 GUI=         1 ABM= 2RHW=     0 RHM=     0 REW=     0 RFR=     0 \nT=517554068 P= 0  WO=  23\/   0\/   2\/   0 WL=    510\/      0\/  19751\/      0 WM=   50\/    0\/18106\/    0 RO= 216\/   3\/   6\/   0 RL=  29077\/  28683\/  49725\/      0 RM=  429\/21786\/19341\/    0E= 0 F= 0 HR= 1126 HW=   99 NR= 1126 NW=    0 CW=    0 IW=    0 GC=    0 AW=  0 GLT=       0 W= 0 BI= 52 BU= 999 TH=   37022.00 S=3775 QOS=  0 V=31527184 ML=0 BF=10\/160 X= 0\/ 0 U=     256 C= 0\/12 UT=    31 NU=    4 ST=     409 NS=  228 MB=1804\/276CE=   0 CU=  0 IMM=     0 Ti=37 DT= 0\/ 0 DL= 0 DM=     0\/   0 DU=     0\/   0 PUM= 0\/ 0 MTH= 6\/60  GCS= 0\/ 0\/ 0\/  0GCD=0\/0\/0\/0\/0\/0GM=   0 UE=    0 GB= 119 RH=     0 RI=     0 RR=    0 GCN=    0 OBC=    0 SAJ=       0 MAJ=       0 LAJ=       0 STI=      1914 MTI=      1037 LTI=      4000 TAJ=         0TBJ=2147483647GAJ=         0, GBJ=2147483647 GUI=         1 ABM= 2RHW=     0 RHM=     0 REW=     0 RFR=     0 \nT=517554168 P= 0  WO=   8\/   0\/   2\/   0 WL=    176\/      0\/     28\/      0 WM=   27\/    0\/   16\/    0 RO= 144\/   0\/  37\/   0 RL=  22822\/      0\/  71553\/      0 RM=  242\/    0\/52148\/    0E= 0 F= 0 HR=  666 HW=   34 NR=  666 NW=    0 CW=    0 IW=    0 GC=    0 AW=  0 GLT=       0 W= 0 BI= 52 BU= 999 TH=   49488.00 S=3772 QOS=  0 V=31527184 ML=0 BF=13\/160 X= 0\/ 0 U=       0 C= 0\/12 UT=     0 NU=    0 ST=     315 NS=  182 MB=1804\/276CE=   0 CU=  0 IMM=     0 Ti=37 DT= 0\/ 0 DL= 0 DM=     0\/   0 DU=     0\/   0 PUM= 0\/ 0 MTH= 6\/60  GCS= 0\/ 0\/ 0\/  0GCD=0\/0\/0\/0\/0\/0GM=   0 UE=    0 GB= 119 RH=     0 RI=     0 RR=    0 GCN=    0 OBC=    0 SAJ=       0 MAJ=       0 LAJ=       0 STI=      1914 MTI=      1037 LTI=      4000 TAJ=         0TBJ=2147483647GAJ=         0, GBJ=2147483647 GUI=         1 ABM= 2RHW=     0 RHM=     0 REW=     0 RFR=     0 \nT=517554267 P= 0  WO=   0\/   0\/   0\/   0 WL=      0\/      0\/      0\/      0 WM=    0\/    0\/    0\/    0 RO= 202\/   0\/   2\/   0 RL=  33516\/      0\/ 105356\/      0 RM=  284\/    0\/53037\/    0E= 0 F= 0 HR=  490 HW=    0 NR=  490 NW=    0 CW=    0 IW=    0 GC=    0 AW=  0 GLT=       0 W= 0 BI= 52 BU= 999 TH=   49453.00 S=3772 QOS= 17 V=31527184 ML=0 BF=13\/160 X= 0\/ 0 U=       0 C= 0\/ 2 UT=     0 NU=    0 ST=     288 NS=  207 MB=1804\/276CE=   0 CU=  0 IMM=     0 Ti=37 DT= 0\/ 0 DL= 0 DM=     0\/   0 DU=     0\/   0 PUM= 0\/ 0 MTH= 6\/60  GCS= 0\/ 0\/ 0\/  0GCD=0\/0\/0\/0\/0\/0GM=   0 UE=    0 GB= 119 RH=     0 RI=     0 RR=    0 GCN=    0 OBC=    0 SAJ=       0 MAJ=       0 LAJ=       0 STI=      1914 MTI=      1037 LTI=      4000 TAJ=         0TBJ=2147483647GAJ=         0, GBJ=2147483647 GUI=         1 ABM= 2RHW=     0 RHM=     0 REW=     0 RFR=     0 \nT=517554367 P= 0  WO=   2\/   0\/   0\/   0 WL=     49\/      0\/      0\/      0 WM=   28\/    0\/    0\/    0 RO= 141\/   0\/   2\/   0 RL=  23641\/      0\/ 104143\/      0 RM=  224\/    0\/52366\/    0E= 0 F= 0 HR=  316 HW=    8 NR=  317 NW=    0 CW=    0 IW=    0 GC=    0 AW=  0 GLT=       0 W= 0 BI= 52 BU= 999 TH=   54883.00 S=3771 QOS= 17 V=31527184 ML=0 BF=13\/160 X= 0\/ 0 U=       0 C= 0\/ 3 UT=     0 NU=    0 ST=     262 NS=  144 MB=1804\/276CE=   0 CU=  0 IMM=     0 Ti=37 DT= 0\/ 0 DL= 0 DM=     0\/   0 DU=     0\/   0 PUM= 0\/ 0 MTH= 6\/60  GCS= 0\/ 0\/ 0\/  0GCD=0\/0\/0\/0\/0\/0GM=   0 UE=    0 GB= 119 RH=     0 RI=     0 RR=    0 GCN=    0 OBC=    0 SAJ=       0 MAJ=       0 LAJ=       0 STI=      1914 MTI=      1037 LTI=      4000 TAJ=         0TBJ=2147483647GAJ=         0, GBJ=2147483647 GUI=         1 ABM= 2RHW=     0 RHM=     0 REW=     0 RFR=     0 \nT=517554466 P= 0  WO=   8\/   0\/   0\/   0 WL=    170\/      0\/      0\/      0 WM=   28\/    0\/    0\/    0 RO= 140\/   2\/   1\/   0 RL=  21624\/  43512\/  52544\/      0 RM=  343\/22595\/52544\/    0E= 0 F= 0 HR=  530 HW=   26 NR=  529 NW=    0 CW=    0 IW=    0 GC=    0 AW=  0 GLT=       0 W= 0 BI= 52 BU= 999 TH=   64539.00 S=3770 QOS= 17 V=31527184 ML=0 BF=13\/160 X= 0\/ 0 U=       0 C= 0\/ 4 UT=     0 NU=    0 ST=     260 NS=  144 MB=1804\/276CE=   0 CU=  0 IMM=     0 Ti=37 DT= 0\/ 0 DL= 0 DM=     0\/   0 DU=     0\/   0 PUM= 0\/ 0 MTH= 6\/60  GCS= 0\/ 0\/ 0\/  0GCD=0\/0\/0\/0\/0\/0GM=   0 UE=    0 GB= 119 RH=     0 RI=     0 RR=    0 GCN=    0 OBC=    0 SAJ=       0 MAJ=       0 LAJ=       0 STI=      1914 MTI=      1037 LTI=      4000 TAJ=         0TBJ=2147483647GAJ=         0, GBJ=2147483647 GUI=         1 ABM= 2RHW=     0 RHM=     0 REW=     0 RFR=     0 \nT=517554566 P= 0  WO=  11\/   0\/   0\/   0 WL=    356\/      0\/      0\/      0 WM=   34\/    0\/    0\/    0 RO= 141\/   0\/  64\/   0 RL=  23715\/      0\/ 182963\/      0 RM=  486\/    0\/51962\/    0E= 0 F= 0 HR= 1320 HW=   88 NR= 1324 NW=    0 CW=    0 IW=    0 GC=    0 AW=  0 GLT=       0 W= 0 BI= 52 BU= 999 TH=   54301.00 S=3769 QOS= 17 V=31527184 ML=0 BF=13\/160 X= 0\/ 0 U=       0 C= 0\/ 6 UT=     0 NU=    0 ST=     300 NS=  210 MB=1804\/276CE=   0 CU=  0 IMM=     0 Ti=37 DT= 0\/ 0 DL= 0 DM=     0\/   0 DU=     0\/   0 PUM= 0\/ 0 MTH= 6\/60  GCS= 0\/ 0\/ 0\/  0GCD=0\/0\/0\/0\/0\/0GM=   0 UE=    0 GB= 119 RH=     0 RI=     0 RR=    0 GCN=    0 OBC=    0 SAJ=       0 MAJ=       0 LAJ=       0 STI=      1914 MTI=      1037 LTI=      4000 TAJ=         0TBJ=2147483647GAJ=         0, GBJ=2147483647 GUI=         1 ABM= 0RHW=     0 RHM=     0 REW=     0 RFR=     0 \nT=517554665 P= 0  WO=   3\/   0\/   0\/   0 WL=     86\/      0\/      0\/      0 WM=   34\/    0\/    0\/    0 RO=  17\/   2\/  43\/   0 RL=   3139\/   1443\/   7791\/      0 RM=  409\/ 1251\/  520\/    0E= 0 F= 0 HR=  454 HW=   19 NR=  450 NW=    0 CW=    0 IW=    0 GC=    0 AW=  0 GLT=       0 W= 0 BI= 52 BU= 999 TH=    1249.00 S=3770 QOS= 17 V=31527184 ML=0 BF=13\/160 X= 0\/ 0 U=       0 C= 0\/ 6 UT=     0 NU=    0 ST=     117 NS=   62 MB=1804\/276CE=   0 CU=  0 IMM=     0 Ti=37 DT= 0\/ 0 DL= 0 DM=     0\/   0 DU=     0\/   0 PUM= 0\/ 0 MTH= 6\/60  GCS= 0\/ 0\/ 0\/  0GCD=0\/0\/0\/0\/0\/0GM=   0 UE=    0 GB= 119 RH=     0 RI=     0 RR=    0 GCN=    0 OBC=    0 SAJ=       0 MAJ=       0 LAJ=       0 STI=      1914 MTI=      1037 LTI=      4000 TAJ=         0TBJ=2147483647GAJ=         0, GBJ=2147483647 GUI=         1 ABM= 2RHW=     0 RHM=     0 REW=     0 RFR=     0 \nT=517554765 P= 0  WO=  13\/   0\/   8\/   0 WL=    292\/      0\/ 109354\/      0 WM=   34\/    0\/27332\/    0 RO=  61\/  19\/   5\/   0 RL=  10693\/  52896\/  54614\/      0 RM=  501\/22380\/27093\/    0E= 0 F= 0 HR=  574 HW=   75 NR=  574 NW=   92 CW=    0 IW=    0 GC=    0 AW=  0 GLT=       0 W= 0 BI= 52 BU= 999 TH=   62955.00 S=3775 QOS= 17 V=31527168 ML=0 BF=15\/160 X= 0\/ 0 U=       0 C= 0\/ 8 UT=   100 NU=   13 ST=     103 NS=   87 MB=1804\/276CE=   0 CU=  0 IMM=     0 Ti=37 DT= 0\/ 0 DL= 0 DM=     0\/   0 DU=     0\/   0 PUM= 0\/ 0 MTH= 6\/60  GCS= 0\/ 0\/ 0\/  0GCD=0\/0\/0\/0\/0\/0GM=   0 UE=    0 GB= 119 RH=     0 RI=     0 RR=    0 GCN=    0 OBC=    0 SAJ=       0 MAJ=       0 LAJ=       0 STI=      1914 MTI=      1037 LTI=      4000 TAJ=         0TBJ=2147483647GAJ=         0, GBJ=2147483647 GUI=         1 ABM= 2RHW=     0 RHM=     0 REW=     0 RFR=     0 \nT=517554865 P= 1  WO=  14\/   0\/   9\/   0 WL=    415\/      0\/ 399550\/      0 WM=   40\/    0\/62237\/    0 RO=  55\/  16\/   0\/   0 RL=  11742\/  55695\/      0\/      0 RM=  399\/21201\/    0\/    0E= 0 F= 0 HR=  655 HW=  106 NR=  656 NW=  220 CW=    0 IW=    0 GC=    0 AW=  0 GLT=       0 W= 0 BI= 52 BU= 999 TH=   76869.00 S=3792 QOS= 17 V=31527136 ML=0 BF= 5\/160 X= 0\/ 0 U=       0 C= 0\/ 8 UT=   160 NU=   22 ST=      61 NS=   72 MB=1804\/276CE=   0 CU=  0 IMM=     0 Ti=37 DT= 0\/ 0 DL= 0 DM=     0\/   0 DU=     0\/   0 PUM= 0\/ 0 MTH= 6\/60  GCS= 0\/ 0\/ 0\/  0GCD=0\/0\/0\/0\/0\/0GM=   0 UE=    0 GB= 119 RH=     0 RI=     0 RR=    0 GCN=    0 OBC=    0 SAJ=       0 MAJ=       0 LAJ=       0 STI=      1914 MTI=      1037 LTI=      4000 TAJ=         0TBJ=2147483647GAJ=         0, GBJ=2147483647 GUI=         1 ABM= 0RHW=    92 RHM=     7 REW=     0 RFR=    16 \nT=517554964 P= 1  WO=  11\/   0\/  10\/   0 WL=    454\/      0\/ 201389\/      0 WM=   46\/    0\/62881\/    0 RO=   0\/  55\/   1\/   0 RL=      0\/  70860\/  12929\/      0 RM=    0\/22996\/12929\/    0E= 0 F= 0 HR=   66 HW=  100 NR=   65 NW=    0 CW=    0 IW=    0 GC=    0 AW=  0 GLT=       0 W= 0 BI= 52 BU= 999 TH=   39939.00 S=3793 QOS= 17 V=31527136 ML=0 BF= 9\/160 X= 0\/ 0 U=       0 C= 0\/ 8 UT=     0 NU=    0 ST=     147 NS=   55 MB=1804\/276CE=   0 CU=  0 IMM=     0 Ti=37 DT= 0\/ 0 DL= 0 DM=     0\/   0 DU=     0\/   0 PUM= 0\/ 0 MTH= 6\/60  GCS= 0\/ 0\/ 0\/  0GCD=0\/0\/0\/0\/0\/0GM=   0 UE=    0 GB= 119 RH=     0 RI=     0 RR=    0 GCN=    0 OBC=    0 SAJ=       0 MAJ=       0 LAJ=       0 STI=      1914 MTI=      1037 LTI=      4000 TAJ=         0TBJ=2147483647GAJ=         0, GBJ=2147483647 GUI=         1 ABM= 0RHW=   344 RHM=    37 REW=    80 RFR=   112 \nT=517555064 P= 0  WO=   9\/   0\/   0\/   0 WL=    397\/      0\/      0\/      0 WM=   49\/    0\/    0\/    0 RO=  16\/   1\/   0\/   2 RL=   2042\/    180\/      0\/   6810 RM=  189\/  180\/    0\/ 6606E= 0 F= 0 HR=   31 HW=   72 NR=   31 NW=    0 CW=    0 IW=    0 GC=    0 AW=  0 GLT=       0 W= 0 BI= 52 BU= 999 TH=    5690.00 S=3792 QOS= 17 V=31527136 ML=0 BF= 9\/160 X= 0\/ 0 U=       0 C= 0\/ 8 UT=     0 NU=    0 ST=      48 NS=   19 MB=1804\/276CE=   0 CU=  0 IMM=     0 Ti=37 DT= 0\/ 0 DL= 0 DM=     0\/   0 DU=     0\/   0 PUM= 0\/ 0 MTH= 6\/60  GCS= 0\/ 0\/ 0\/  0GCD=0\/0\/0\/0\/0\/0GM=   0 UE=    0 GB= 119 RH=     0 RI=     0 RR=    0 GCN=    0 OBC=    0 SAJ=       0 MAJ=       0 LAJ=       0 STI=      1914 MTI=      1037 LTI=      4000 TAJ=         0TBJ=2147483647GAJ=         0, GBJ=2147483647 GUI=         1 ABM= 0RHW=   344 RHM=    37 REW=    80 RFR=   112 \nT=517555164 P= 0  WO=   7\/   0\/   0\/   0 WL=    309\/      0\/      0\/      0 WM=   49\/    0\/    0\/    0 RO=   9\/   0\/   0\/   0 RL=   1339\/      0\/      0\/      0 RM=  201\/    0\/    0\/    0E= 0 F= 0 HR=    9 HW=   56 NR=    9 NW=  188 CW=    0 IW=    0 GC=    0 AW=  0 GLT=       0 W= 0 BI= 52 BU= 999 TH=       0.00 S=3807 QOS= 17 V=31527120 ML=0 BF= 5\/160 X= 0\/ 0 U=       0 C= 0\/ 8 UT=   170 NU=   12 ST=      27 NS=    9 MB=1804\/276CE=   0 CU=  0 IMM=     0 Ti=37 DT= 0\/ 0 DL= 0 DM=     0\/   0 DU=     0\/   0 PUM= 0\/ 0 MTH= 6\/60  GCS= 0\/ 0\/ 0\/  0GCD=0\/0\/0\/0\/0\/0GM=   0 UE=    0 GB= 119 RH=     0 RI=     0 RR=    0 GCN=    0 OBC=    0 SAJ=       0 MAJ=       0 LAJ=       0 STI=      1914 MTI=      1037 LTI=      4000 TAJ=         0TBJ=2147483647GAJ=         0, GBJ=2147483647 GUI=         1 ABM= 0RHW=   344 RHM=    37 REW=    80 RFR=   112 \nT=517555263 P= 0  WO=  12\/   2\/   4\/   0 WL=   1182\/  10083\/  21491\/      0 WM=  721\/ 5140\/ 9899\/    0 RO=   1\/   2\/   1\/   0 RL=    208\/   8405\/   9302\/      0 RM=  208\/ 4672\/ 9302\/    0E= 0 F= 0 HR=    7 HW=  377 NR=    7 NW=  344 CW=    0 IW=    0 GC=    0 AW=  0 GLT=       0 W= 0 BI= 52 BU= 999 TH=   25411.00 S=3812 QOS=  0 V=31527120 ML=0 BF= 2\/160 X= 0\/ 0 U=       0 C= 0\/ 4 UT=   135 NU=   12 ST=      29 NS=    5 MB=1804\/276CE=   0 CU=  0 IMM=     0 Ti=37 DT= 0\/ 0 DL= 0 DM=     0\/   0 DU=     0\/   0 PUM= 0\/ 0 MTH= 6\/60  GCS= 0\/ 0\/ 0\/  0GCD=0\/0\/0\/0\/0\/0GM=   0 UE=    0 GB= 119 RH=     0 RI=     0 RR=    0 GCN=    0 OBC=    0 SAJ=       0 MAJ=       0 LAJ=       0 STI=      1914 MTI=      1037 LTI=      4000 TAJ=         0TBJ=2147483647GAJ=         0, GBJ=2147483647 GUI=         1 ABM= 0RHW=   564 RHM=    63 REW=   158 RFR=   196 \nT=517555363 P= 0  WO=  13\/   0\/   0\/   0 WL=    526\/      0\/      0\/      0 WM=   49\/    0\/    0\/    0 RO=  22\/   0\/   0\/   0 RL=   4665\/      0\/      0\/      0 RM=  384\/    0\/    0\/    0E= 0 F= 0 HR=  165 HW=   94 NR=  166 NW=    0 CW=    0 IW=    0 GC=    0 AW=  0 GLT=       0 W= 0 BI= 52 BU= 999 TH=       0.00 S=3810 QOS=  0 V=31527120 ML=0 BF= 2\/160 X= 0\/ 0 U=       0 C= 0\/ 4 UT=     0 NU=    0 ST=      47 NS=   23 MB=1804\/276CE=   0 CU=  0 IMM=     0 Ti=37 DT= 0\/ 0 DL= 0 DM=     0\/   0 DU=     0\/   0 PUM= 0\/ 0 MTH= 6\/60  GCS= 0\/ 0\/ 0\/  0GCD=0\/0\/0\/0\/0\/0GM=   0 UE=    0 GB= 119 RH=     0 RI=     0 RR=    0 GCN=    0 OBC=    0 SAJ=       0 MAJ=       0 LAJ=       0 STI=      1914 MTI=      1037 LTI=      4000 TAJ=         0TBJ=2147483647GAJ=         0, GBJ=2147483647 GUI=         1 ABM= 2RHW=   940 RHM=    91 REW=   269 RFR=   281 \nT=517555462 P= 0  WO=   9\/   0\/   0\/   0 WL=    300\/      0\/      0\/      0 WM=   45\/    0\/    0\/    0 RO=  30\/   0\/   4\/   0 RL=   5457\/      0\/  16391\/      0 RM=  243\/    0\/15803\/    0E= 0 F= 0 HR=  185 HW=   58 NR=  184 NW=  248 CW=    0 IW=    0 GC=    0 AW=  0 GLT=       0 W= 0 BI= 52 BU= 999 TH=   12981.00 S=3811 QOS=  0 V=31527088 ML=0 BF= 2\/160 X= 0\/ 0 U=       0 C= 0\/ 4 UT=    42 NU=    6 ST=      46 NS=   33 MB=1804\/276CE=   0 CU=  0 IMM=     0 Ti=37 DT= 0\/ 0 DL= 0 DM=     0\/   0 DU=     0\/   0 PUM= 0\/ 0 MTH= 6\/60  GCS= 0\/ 0\/ 0\/  0GCD=0\/0\/0\/0\/0\/0GM=   0 UE=    0 GB= 119 RH=     0 RI=     0 RR=    0 GCN=    0 OBC=    0 SAJ=       0 MAJ=       0 LAJ=       0 STI=      1914 MTI=      1037 LTI=      4000 TAJ=         0TBJ=2147483647GAJ=         0, GBJ=2147483647 GUI=         1 ABM= 0RHW=   940 RHM=    91 REW=   269 RFR=   281 \nT=517555561 P= 0  WO=  36\/   0\/   0\/   0 WL=    641\/      0\/      0\/      0 WM=   34\/    0\/    0\/    0 RO=  55\/   2\/   0\/   2 RL=  21973\/  31415\/      0\/   8198 RM=  950\/16841\/    0\/ 7882E= 0 F= 0 HR= 1945 HW=   85 NR= 1945 NW=    0 CW=    0 IW=    0 GC=    0 AW=  0 GLT=       0 W= 0 BI= 52 BU= 999 TH=   22749.00 S=3796 QOS=  0 V=31527088 ML=0 BF= 9\/160 X= 0\/ 0 U=       0 C= 0\/ 4 UT=     0 NU=    0 ST=     304 NS=   68 MB=1804\/276CE=   0 CU=  0 IMM=     0 Ti=37 DT= 0\/ 0 DL= 0 DM=     0\/   0 DU=     0\/   0 PUM= 0\/ 0 MTH= 6\/60  GCS= 0\/ 0\/ 0\/  0GCD=0\/0\/0\/0\/0\/0GM=   0 UE=    0 GB= 119 RH=     0 RI=     0 RR=    0 GCN=    0 OBC=    0 SAJ=       0 MAJ=       0 LAJ=       0 STI=      1914 MTI=      1037 LTI=      4000 TAJ=         0TBJ=2147483647GAJ=         0, GBJ=2147483647 GUI=         1 ABM= 2RHW=  1220 RHM=   123 REW=   357 RFR=   375 \nT=517555661 P= 0  WO=  16\/   0\/  58\/   0 WL=    340\/      0\/  14343\/      0 WM=   28\/    0\/ 5703\/    0 RO=   4\/   0\/   8\/   0 RL=    996\/      0\/   1841\/      0 RM=  398\/    0\/  503\/    0E= 0 F= 0 HR=  183 HW=  151 NR=  183 NW=    0 CW=    0 IW=    0 GC=    0 AW=  0 GLT=       0 W= 0 BI= 52 BU= 999 TH=    5666.00 S=3770 QOS=  0 V=31527088 ML=0 BF=19\/160 X= 0\/ 0 U=       0 C= 0\/ 5 UT=     0 NU=    0 ST=      18 NS=   12 MB=1804\/276CE=   0 CU=  0 IMM=     0 Ti=37 DT= 0\/ 0 DL= 0 DM=     0\/   0 DU=     0\/   0 PUM= 0\/ 0 MTH= 6\/60  GCS= 0\/ 0\/ 0\/  0GCD=0\/0\/0\/0\/0\/0GM=   0 UE=    0 GB= 119 RH=     0 RI=     0 RR=    0 GCN=    0 OBC=    0 SAJ=       0 MAJ=       0 LAJ=       0 STI=      1914 MTI=      1037 LTI=      4000 TAJ=         0TBJ=2147483647GAJ=         0, GBJ=2147483647 GUI=         1 ABM= 0RHW=  1220 RHM=   123 REW=   357 RFR=   375 \nT=517555761 P= 0  WO=  56\/   1\/  68\/   0 WL=   1717\/   8494\/ 279151\/      0 WM=  671\/ 8494\/45881\/    0 RO=  75\/   0\/   2\/   0 RL=  18791\/      0\/  37661\/      0 RM=  476\/    0\/37510\/    0E= 0 F= 0 HR= 1463 HW=  564 NR= 1463 NW=  344 CW=    0 IW=    0 GC=    0 AW=  0 GLT=       0 W= 0 BI= 52 BU= 999 TH=   38667.00 S=3773 QOS=  0 V=31527080 ML=0 BF=11\/160 X= 0\/ 0 U=       0 C= 0\/10 UT=   206 NU=   23 ST=      72 NS=   81 MB=1804\/276CE=   0 CU=  0 IMM=     0 Ti=37 DT= 0\/ 0 DL= 0 DM=     0\/   0 DU=     0\/   0 PUM= 0\/ 0 MTH= 6\/60  GCS= 0\/ 0\/ 0\/  0GCD=0\/0\/0\/0\/0\/0GM=   0 UE=    0 GB= 119 RH=     0 RI=     0 RR=    0 GCN=    0 OBC=    0 SAJ=       0 MAJ=       0 LAJ=       0 STI=      1914 MTI=      1037 LTI=      4000 TAJ=         0TBJ=2147483647GAJ=         0, GBJ=2147483647 GUI=         1 ABM= 0RHW=  1220 RHM=   123 REW=   357 RFR=   375 \nT=517555861 P= 0  WO=   8\/   0\/  55\/   0 WL=   2276\/      0\/  10993\/      0 WM=  831\/    0\/ 5076\/    0 RO= 189\/   0\/   0\/   0 RL=  31578\/      0\/      0\/      0 RM= 2235\/    0\/    0\/    0E= 0 F= 0 HR= 1351 HW=  886 NR= 1351 NW=  940 CW=    0 IW=    0 GC=    0 AW=  0 GLT=       0 W= 0 BI= 52 BU= 999 TH=   18071.00 S=3813 QOS=  0 V=31526976 ML=0 BF= 2\/160 X= 0\/ 0 U=    1024 C= 0\/10 UT=   404 NU=   67 ST=     400 NS=  193 MB=1804\/276CE=   0 CU=  0 IMM=     0 Ti=37 DT= 0\/ 0 DL= 0 DM=     0\/   0 DU=     0\/   0 PUM= 0\/ 0 MTH= 6\/60  GCS= 0\/ 0\/ 0\/  0GCD=0\/0\/0\/0\/0\/0GM=   0 UE=    0 GB= 119 RH=     0 RI=     0 RR=    0 GCN=    0 OBC=    0 SAJ=       0 MAJ=       0 LAJ=       0 STI=      1914 MTI=      1037 LTI=      4000 TAJ=         0TBJ=2147483647GAJ=         0, GBJ=2147483647 GUI=         1 ABM= 2RHW=  1596 RHM=   152 REW=   477 RFR=   471 \nT=517555960 P= 0  WO=   0\/   0\/   0\/   0 WL=      0\/      0\/      0\/      0 WM=    0\/    0\/    0\/    0 RO= 545\/   1\/   1\/   0 RL=  71365\/  22176\/  51096\/      0 RM=  314\/22176\/51096\/    0E= 0 F= 0 HR= 1260 HW=    0 NR= 1267 NW=    0 CW=    0 IW=    0 GC=    0 AW=  0 GLT=       0 W= 0 BI= 52 BU= 999 TH=   58315.00 S=3811 QOS=  0 V=31526976 ML=0 BF= 2\/160 X= 0\/ 0 U=       0 C= 0\/10 UT=     0 NU=    0 ST=     900 NS=  551 MB=1804\/276CE=   0 CU=  0 IMM=     0 Ti=37 DT= 0\/ 0 DL= 0 DM=     0\/   0 DU=     0\/   0 PUM= 0\/ 0 MTH= 6\/60  GCS= 0\/ 0\/ 0\/  0GCD=0\/0\/0\/0\/0\/0GM=   0 UE=    0 GB= 119 RH=     0 RI=     0 RR=    0 GCN=    0 OBC=    0 SAJ=       0 MAJ=       0 LAJ=       0 STI=      1914 MTI=      1037 LTI=      4000 TAJ=         0TBJ=2147483647GAJ=         0, GBJ=2147483647 GUI=         1 ABM= 2RHW=  2664 RHM=   259 REW=   883 RFR=   873 \nT=517556059 P= 0  WO=   0\/   0\/   0\/   0 WL=      0\/      0\/      0\/      0 WM=    0\/    0\/    0\/    0 RO= 624\/   1\/   3\/   0 RL=  84388\/  21652\/ 133508\/      0 RM=  291\/21652\/52651\/    0E= 0 F= 0 HR= 1713 HW=    0 NR= 1710 NW=    0 CW=    0 IW=    0 GC=    0 AW=  0 GLT=       0 W= 0 BI= 52 BU= 999 TH=   63156.00 S=3811 QOS=  0 V=31526976 ML=0 BF= 2\/160 X= 0\/ 0 U=       0 C= 0\/10 UT=     0 NU=    0 ST=     793 NS=  630 MB=1804\/276CE=   0 CU=  0 IMM=     0 Ti=37 DT= 0\/ 0 DL= 0 DM=     0\/   0 DU=     0\/   0 PUM= 0\/ 0 MTH= 6\/60  GCS= 0\/ 0\/ 0\/  0GCD=0\/0\/0\/0\/0\/0GM=   0 UE=    0 GB= 119 RH=     0 RI=     0 RR=    0 GCN=    0 OBC=    0 SAJ=       0 MAJ=       0 LAJ=       0 STI=      1914 MTI=      1037 LTI=      4000 TAJ=         0TBJ=2147483647GAJ=         0, GBJ=2147483647 GUI=         1 ABM= 2RHW=  2664 RHM=   259 REW=   883 RFR=   873 \nT=517556159 P= 0  WO=   0\/   0\/   0\/   0 WL=      0\/      0\/      0\/      0 WM=    0\/    0\/    0\/    0 RO= 451\/   1\/  27\/   0 RL= 105056\/    148\/  34315\/      0 RM=44321\/  148\/23908\/    0E= 0 F= 0 HR= 1394 HW=  121 NR= 1390 NW=    0 CW=    0 IW=    0 GC=    0 AW=  0 GLT=       0 W= 0 BI= 52 BU= 999 TH=   54152.00 S=3812 QOS=  0 V=31526976 ML=0 BF= 2\/160 X= 1\/ 0 U=       0 C= 0\/10 UT=     0 NU=    0 ST=     609 NS=  482 MB=1804\/276CE=   0 CU=  0 IMM=     0 Ti=37 DT= 0\/ 0 DL= 0 DM=     0\/   0 DU=     0\/   0 PUM= 0\/ 0 MTH= 6\/60  GCS= 0\/ 0\/ 0\/  0GCD=0\/0\/0\/0\/0\/0GM=   0 UE=    0 GB= 119 RH=     0 RI=     0 RR=    0 GCN=    0 OBC=    0 SAJ=       0 MAJ=       0 LAJ=       0 STI=      1914 MTI=      1037 LTI=      4000 TAJ=         0TBJ=2147483647GAJ=         0, GBJ=2147483647 GUI=         1 ABM= 2RHW=  2664 RHM=   259 REW=   883 RFR=   873 \nT=517556259 P= 0  WO=   2\/   0\/  12\/   5 WL=     37\/      0\/    404\/  57587 WM=   24\/    0\/  136\/27280 RO=   0\/   0\/  85\/   0 RL=      0\/      0\/  26555\/      0 RM=    0\/    0\/ 4442\/    0E= 0 F= 0 HR=  663 HW=  687 NR=  663 NW=  804 CW=    8 IW=    0 GC=    0 AW=  0 GLT=       0 W= 0 BI= 51 BU= 999 TH=   14613.00 S=3811 QOS= 19 V=31526960 ML=0 BF= 2\/160 X= 0\/ 0 U=       0 C= 0\/ 3 UT=   169 NU=   17 ST=     227 NS=   87 MB=1804\/276CE=   0 CU=  0 IMM=     0 Ti=37 DT= 0\/ 0 DL= 0 DM=     0\/   0 DU=     0\/   0 PUM= 0\/ 0 MTH= 6\/60  GCS= 0\/ 0\/ 0\/  0GCD=0\/0\/0\/0\/0\/0GM=   0 UE=    0 GB= 119 RH=     0 RI=     0 RR=    0 GCN=    0 OBC=    0 SAJ=       0 MAJ=       0 LAJ=       0 STI=      1914 MTI=      1037 LTI=      4000 TAJ=         0TBJ=2147483647GAJ=         0, GBJ=2147483647 GUI=         1 ABM= 0RHW=  2664 RHM=   259 REW=   883 RFR=   873 \nT=517556358 P= 0  WO=   0\/   0\/   0\/   0 WL=      0\/      0\/      0\/      0 WM=    0\/    0\/    0\/    0 RO=   0\/  12\/  87\/   0 RL=      0\/   1657\/  14768\/      0 RM=    0\/  200\/  427\/    0E= 0 F= 0 HR=  500 HW=    0 NR=  500 NW=    0 CW=    0 IW=    0 GC=    0 AW=  0 GLT=       0 W= 0 BI= 51 BU= 999 TH=       0.00 S=3811 QOS= 19 V=31526960 ML=0 BF= 2\/160 X= 0\/ 0 U=       0 C= 0\/ 3 UT=     0 NU=    0 ST=     254 NS=  100 MB=1804\/276CE=   0 CU=  0 IMM=     0 Ti=37 DT= 0\/ 0 DL= 0 DM=     0\/   0 DU=     0\/   0 PUM= 0\/ 0 MTH= 6\/60  GCS= 0\/ 0\/ 0\/  0GCD=0\/0\/0\/0\/0\/0GM=   0 UE=    0 GB= 119 RH=     0 RI=     0 RR=    0 GCN=    0 OBC=    0 SAJ=       0 MAJ=       0 LAJ=       0 STI=      1914 MTI=      1037 LTI=      4000 TAJ=         0TBJ=2147483647GAJ=         0, GBJ=2147483647 GUI=         1 ABM= 2RHW=  3524 RHM=   326 REW=  1282 RFR=  1254 \nT=517556457 P= 0  WO=   0\/   0\/   2\/   0 WL=      0\/      0\/   2003\/      0 WM=    0\/    0\/ 1956\/    0 RO=   2\/   5\/   1\/   8 RL=    356\/   3854\/    162\/   7233 RM=  203\/ 3279\/  162\/ 5740E= 0 F= 0 HR=   82 HW=   22 NR=   82 NW=    0 CW=    0 IW=    0 GC=    0 AW=  0 GLT=       0 W= 0 BI= 51 BU= 999 TH=    8880.00 S=3810 QOS= 19 V=31526960 ML=0 BF= 2\/160 X= 0\/ 0 U=       0 C= 0\/ 3 UT=     0 NU=    0 ST=      32 NS=   17 MB=1804\/276CE=   0 CU=  0 IMM=     0 Ti=37 DT= 0\/ 0 DL= 0 DM=     0\/   0 DU=     0\/   0 PUM= 0\/ 0 MTH= 6\/60  GCS= 0\/ 0\/ 0\/  0GCD=0\/0\/0\/0\/0\/0GM=   0 UE=    0 GB= 119 RH=     0 RI=     0 RR=    0 GCN=    0 OBC=    0 SAJ=       0 MAJ=       0 LAJ=       0 STI=      1914 MTI=      1037 LTI=      4000 TAJ=         0TBJ=2147483647GAJ=         0, GBJ=2147483647 GUI=         1 ABM= 0RHW=  3524 RHM=   326 REW=  1282 RFR=  1254 \nT=517556573 P= 0  WO=   0\/   0\/   1\/   0 WL=      0\/      0\/     71\/      0 WM=    0\/    0\/   71\/    0 RO=   0\/   3\/   3\/   6 RL=      0\/    413\/    517\/   4797 RM=    0\/  205\/  207\/ 3234E= 0 F= 0 HR=  171 HW=    6 NR=  171 NW=    0 CW=    0 IW=    0 GC=    0 AW=  0 GLT=       0 W= 0 BI= 51 BU= 999 TH=    3232.00 S=3810 QOS= 19 V=31526960 ML=0 BF= 2\/160 X= 0\/ 0 U=       0 C= 0\/ 3 UT=     0 NU=    0 ST=      51 NS=   12 MB=1804\/276CE=   0 CU=  0 IMM=     0 Ti=37 DT= 0\/ 0 DL= 0 DM=     0\/   0 DU=     0\/   0 PUM= 0\/ 0 MTH= 6\/60  GCS= 0\/ 0\/ 0\/  0GCD=0\/0\/0\/0\/0\/0GM=   0 UE=    0 GB= 119 RH=     0 RI=     0 RR=    0 GCN=    0 OBC=    0 SAJ=       0 MAJ=       0 LAJ=       0 STI=      1914 MTI=      1037 LTI=      4000 TAJ=         0TBJ=2147483647GAJ=         0, GBJ=2147483647 GUI=         1 ABM= 0RHW=  3524 RHM=   326 REW=  1282 RFR=  1254 \nT=517557186 P= 0  WO=   4\/   0\/  21\/   0 WL=    231\/      0\/    441\/      0 WM=   69\/    0\/   52\/    0 RO=   5\/   6\/   7\/   0 RL=   1114\/    844\/   1957\/      0 RM=  264\/  208\/  505\/    0E= 0 F= 0 HR=   90 HW=   41 NR=   90 NW=    0 CW=    0 IW=    0 GC=    0 AW=  0 GLT=       0 W= 0 BI= 51 BU= 999 TH=       0.00 S=3803 QOS= 19 V=31526960 ML=0 BF= 4\/160 X= 0\/ 0 U=       0 C= 0\/ 3 UT=     0 NU=    0 ST=      66 NS=   18 MB=1804\/276CE=   0 CU=  0 IMM=     0 Ti=37 DT= 0\/ 0 DL= 0 DM=     0\/   0 DU=     0\/   0 PUM= 0\/ 0 MTH= 6\/60  GCS= 0\/ 0\/ 0\/  0GCD=0\/0\/0\/0\/0\/0GM=   0 UE=    0 GB= 119 RH=     0 RI=     0 RR=    0 GCN=    0 OBC=    0 SAJ=       0 MAJ=       0 LAJ=       0 STI=      1914 MTI=      1037 LTI=      4000 TAJ=         0TBJ=2147483647GAJ=         0, GBJ=2147483647 GUI=         1 ABM= 0RHW=     0 RHM=     0 REW=     0 RFR=     0 \nT=517557359 P= 0  WO=   0\/   0\/   0\/   0 WL=      0\/      0\/      0\/      0 WM=    0\/    0\/    0\/    0 RO=   2\/   0\/   0\/   0 RL=    708\/      0\/      0\/      0 RM=  474\/    0\/    0\/    0E= 0 F= 0 HR=   16 HW=    0 NR=   16 NW=    0 CW=    0 IW=    0 GC=    0 AW=  0 GLT=       0 W= 0 BI= 51 BU= 999 TH=       0.00 S=3803 QOS= 19 V=31526960 ML=0 BF= 4\/160 X= 0\/ 0 U=       0 C= 0\/ 3 UT=     0 NU=    0 ST=      10 NS=    2 MB=1804\/276CE=   0 CU=  0 IMM=     0 Ti=37 DT= 0\/ 0 DL= 0 DM=     0\/   0 DU=     0\/   0 PUM= 0\/ 0 MTH= 6\/60  GCS= 0\/ 0\/ 0\/  0GCD=0\/0\/0\/0\/0\/0GM=   0 UE=    0 GB= 119 RH=     0 RI=     0 RR=    0 GCN=    0 OBC=    0 SAJ=       0 MAJ=       0 LAJ=       0 STI=      1914 MTI=      1037 LTI=      4000 TAJ=         0TBJ=2147483647GAJ=         0, GBJ=2147483647 GUI=         1 ABM= 0RHW=     0 RHM=     0 REW=     0 RFR=     0 \nT=517557679 P= 0  WO=   0\/   0\/   1\/   0 WL=      0\/      0\/     61\/      0 WM=    0\/    0\/   61\/    0 RO=   1\/   2\/   0\/   0 RL=    748\/   1666\/      0\/      0 RM=  748\/ 1266\/    0\/    0E= 0 F= 0 HR=   66 HW=    1 NR=   66 NW=    0 CW=    0 IW=    0 GC=    0 AW=  0 GLT=       0 W= 0 BI= 51 BU= 999 TH=    1264.00 S=3802 QOS= 19 V=31526960 ML=0 BF= 4\/160 X= 0\/ 0 U=       0 C= 0\/ 3 UT=     0 NU=    0 ST=      27 NS=    4 MB=1804\/276CE=   0 CU=  0 IMM=     0 Ti=37 DT= 0\/ 0 DL= 0 DM=     0\/   0 DU=     0\/   0 PUM= 0\/ 0 MTH= 6\/60  GCS= 0\/ 0\/ 0\/  0GCD=0\/0\/0\/0\/0\/0GM=   0 UE=    0 GB= 119 RH=     0 RI=     0 RR=    0 GCN=    0 OBC=    0 SAJ=       0 MAJ=       0 LAJ=       0 STI=      1914 MTI=      1037 LTI=      4000 TAJ=         0TBJ=2147483647GAJ=         0, GBJ=2147483647 GUI=         1 ABM= 0RHW=     0 RHM=     0 REW=     0 RFR=     0 \nT=517558040 P= 0  WO=   0\/   0\/   0\/   0 WL=      0\/      0\/      0\/      0 WM=    0\/    0\/    0\/    0 RO=   0\/   2\/   0\/   0 RL=      0\/    453\/      0\/      0 RM=    0\/  398\/    0\/    0E= 0 F= 0 HR=    2 HW=    0 NR=    2 NW=    0 CW=    0 IW=    0 GC=    0 AW=  0 GLT=       0 W= 0 BI= 51 BU= 999 TH=       0.00 S=3802 QOS= 19 V=31526960 ML=0 BF= 4\/160 X= 0\/ 0 U=       0 C= 0\/ 3 UT=     0 NU=    0 ST=      12 NS=    2 MB=1804\/276CE=   0 CU=  0 IMM=     0 Ti=37 DT= 0\/ 0 DL= 0 DM=     0\/   0 DU=     0\/   0 PUM= 0\/ 0 MTH= 6\/60  GCS= 0\/ 0\/ 0\/  0GCD=0\/0\/0\/0\/0\/0GM=   0 UE=    0 GB= 119 RH=     0 RI=     0 RR=    0 GCN=    0 OBC=    0 SAJ=       0 MAJ=       0 LAJ=       0 STI=      1914 MTI=      1037 LTI=      4000 TAJ=         0TBJ=2147483647GAJ=         0, GBJ=2147483647 GUI=         1 ABM= 0RHW=     0 RHM=     0 REW=     0 RFR=     0 \nT=517558696 P= 0  WO=  11\/   0\/  20\/   0 WL=    312\/      0\/  31478\/      0 WM=   77\/    0\/15575\/    0 RO=   0\/   0\/   0\/   0 RL=      0\/      0\/      0\/      0 RM=    0\/    0\/    0\/    0E= 0 F= 0 HR=    0 HW=   43 NR=    0 NW=    0 CW=    0 IW=    0 GC=    0 AW=  0 GLT=       0 W= 0 BI= 51 BU= 999 TH=   14837.00 S=3784 QOS= 19 V=31526960 ML=0 BF= 9\/160 X= 0\/ 0 U=       0 C= 0\/ 5 UT=     0 NU=    0 ST=       0 NS=    0 MB=1804\/276CE=   0 CU=  0 IMM=     0 Ti=37 DT= 0\/ 0 DL= 0 DM=     0\/   0 DU=     0\/   0 PUM= 0\/ 0 MTH= 6\/60  GCS= 0\/ 0\/ 0\/  0GCD=0\/0\/0\/0\/0\/0GM=   0 UE=    0 GB= 119 RH=     0 RI=     0 RR=    0 GCN=    0 OBC=    0 SAJ=       0 MAJ=       0 LAJ=       0 STI=      1914 MTI=      1037 LTI=      4000 TAJ=         0TBJ=2147483647GAJ=         0, GBJ=2147483647 GUI=         1 ABM= 0RHW=     0 RHM=     0 REW=     0 RFR=     0 \nT=517559106 P= 0  WO=   5\/   0\/  18\/   0 WL=   2542\/      0\/  75513\/      0 WM=  793\/    0\/ 9083\/    0 RO=  12\/   0\/   0\/   0 RL=   5277\/      0\/      0\/      0 RM=  752\/    0\/    0\/    0E= 0 F= 0 HR=  320 HW=  345 NR=  256 NW=  344 CW=    0 IW=    0 GC=    0 AW=  0 GLT=       0 W= 0 BI= 51 BU= 999 TH=   22858.00 S=3808 QOS=  0 V=31526952 ML=0 BF= 3\/160 X= 0\/ 0 U=       0 C= 0\/ 7 UT=   279 NU=   24 ST=      34 NS=   12 MB=1804\/276CE=   0 CU=  0 IMM=     0 Ti=37 DT= 0\/ 0 DL= 0 DM=     0\/   0 DU=     0\/   0 PUM= 0\/ 0 MTH= 6\/60  GCS= 0\/ 0\/ 0\/  0GCD=0\/0\/0\/0\/0\/0GM=   0 UE=    0 GB= 119 RH=     0 RI=     0 RR=    0 GCN=    0 OBC=    0 SAJ=       0 MAJ=       0 LAJ=       0 STI=      1914 MTI=      1037 LTI=      4000 TAJ=         0TBJ=2147483647GAJ=         0, GBJ=2147483647 GUI=         1 ABM= 2RHW=     0 RHM=     0 REW=     0 RFR=     0 \nT=517559205 P= 0  WO=  14\/   0\/   3\/   0 WL=    182\/      0\/  23306\/      0 WM=   18\/    0\/ 7773\/    0 RO=  17\/   0\/   0\/   0 RL=   4572\/      0\/      0\/      0 RM=  802\/    0\/    0\/    0E= 0 F= 0 HR=  289 HW=   14 NR=  289 NW=   40 CW=    0 IW=    0 GC=    0 AW=  0 GLT=       0 W= 0 BI= 51 BU= 999 TH=    5042.00 S=3805 QOS=  0 V=31526952 ML=0 BF= 4\/160 X= 0\/ 0 U=       0 C= 0\/ 7 UT=    14 NU=    1 ST=      26 NS=   18 MB=1804\/276CE=   0 CU=  0 IMM=     0 Ti=37 DT= 0\/ 0 DL= 0 DM=     0\/   0 DU=     0\/   0 PUM= 0\/ 0 MTH= 6\/60  GCS= 0\/ 0\/ 0\/  0GCD=0\/0\/0\/0\/0\/0GM=   0 UE=    0 GB= 119 RH=     0 RI=     0 RR=    0 GCN=    0 OBC=    0 SAJ=       0 MAJ=       0 LAJ=       0 STI=      1914 MTI=      1037 LTI=      4000 TAJ=         0TBJ=2147483647GAJ=         0, GBJ=2147483647 GUI=         1 ABM= 0RHW=   376 RHM=    33 REW=    24 RFR=    64 \nT=517559387 P= 0  WO=  30\/ 329\/   0\/ 101 WL=   1602\/  55205\/      0\/  25322 WM=  242\/ 1400\/    0\/  891 RO=   7\/   1\/   3\/   0 RL=   3985\/   2381\/   1559\/      0 RM= 2491\/ 2381\/  688\/    0E= 0 F= 1 HR=  192 HW= 1797 NR=  192 NW= 1872 CW=    8 IW=    0 GC=    0 AW=  0 GLT=       0 W= 0 BI= 51 BU= 999 TH=    5160.00 S=3786 QOS=  0 V=31526752 ML=0 BF= 2\/160 X= 0\/ 0 U=     323 C= 0\/33 UT=  3495 NU=  472 ST=      34 NS=   11 MB=1804\/276CE=   0 CU=  0 IMM=     0 Ti=36 DT= 0\/ 1 DL= 0 DM=     0\/   0 DU=     0\/   0 PUM= 0\/ 0 MTH= 6\/60  GCS= 0\/ 0\/ 0\/  0GCD=0\/0\/0\/0\/0\/0GM=   0 UE=    0 GB= 119 RH=     0 RI=     0 RR=    0 GCN=    0 OBC=    0 SAJ=       0 MAJ=       0 LAJ=       0 STI=      1914 MTI=      1037 LTI=      4000 TAJ=         0TBJ=2147483647GAJ=         0, GBJ=2147483647 GUI=         1 ABM= 0RHW=   416 RHM=    35 REW=    32 RFR=    64 \nT=517559486 P= 0  WO=   0\/   1\/   0\/   0 WL=      0\/     36\/      0\/      0 WM=    0\/   36\/    0\/    0 RO=   0\/   2\/   0\/   0 RL=      0\/    561\/      0\/      0 RM=    0\/  283\/    0\/    0E= 0 F= 0 HR=   36 HW=    6 NR=   36 NW=    0 CW=    0 IW=    0 GC=    0 AW=  0 GLT=       0 W= 0 BI= 51 BU= 999 TH=       0.00 S=3785 QOS=  0 V=31526752 ML=0 BF= 2\/160 X= 0\/ 0 U=       0 C= 0\/33 UT=     0 NU=    0 ST=       4 NS=    2 MB=1804\/276CE=   0 CU=  0 IMM=     0 Ti=36 DT= 0\/ 0 DL= 0 DM=     0\/   0 DU=     0\/   0 PUM= 0\/ 0 MTH= 6\/60  GCS= 0\/ 0\/ 0\/  0GCD=0\/0\/0\/0\/0\/0GM=   0 UE=    0 GB= 119 RH=     0 RI=     0 RR=    0 GCN=    0 OBC=    0 SAJ=       0 MAJ=       0 LAJ=       0 STI=      1914 MTI=      1037 LTI=      4000 TAJ=         0TBJ=2147483647GAJ=         0, GBJ=2147483647 GUI=         1 ABM= 0RHW=     0 RHM=     0 REW=     0 RFR=     0 \nT=517559748 P= 0  WO=   2\/   0\/  36\/   0 WL=     58\/      0\/    746\/      0 WM=   41\/    0\/   96\/    0 RO=   9\/   3\/   3\/   0 RL=   1252\/    399\/    536\/      0 RM=  216\/  193\/  219\/    0E= 0 F= 0 HR=   40 HW=   80 NR=   40 NW=    0 CW=    0 IW=    0 GC=    0 AW=  0 GLT=       0 W= 0 BI= 51 BU= 999 TH=       0.00 S=3767 QOS=  0 V=31526752 ML=0 BF= 8\/160 X= 0\/ 0 U=       0 C= 0\/33 UT=     0 NU=    0 ST=      51 NS=   15 MB=1804\/276CE=   0 CU=  0 IMM=     0 Ti=36 DT= 0\/ 0 DL= 0 DM=     0\/   0 DU=     0\/   0 PUM= 0\/ 0 MTH= 6\/60  GCS= 0\/ 0\/ 0\/  0GCD=0\/0\/0\/0\/0\/0GM=   0 UE=    0 GB= 119 RH=     0 RI=     0 RR=    0 GCN=    0 OBC=    0 SAJ=       0 MAJ=       0 LAJ=       0 STI=      1914 MTI=      1037 LTI=      4000 TAJ=         0TBJ=2147483647GAJ=         0, GBJ=2147483647 GUI=         1 ABM= 0RHW=     0 RHM=     0 REW=     0 RFR=     0 \nT=517559854 P= 0  WO=  35\/   0\/   0\/   0 WL=   1008\/      0\/      0\/      0 WM=   89\/    0\/    0\/    0 RO=  26\/   0\/   0\/   0 RL=   4232\/      0\/      0\/      0 RM=  383\/    0\/    0\/    0E= 0 F= 0 HR=   30 HW=  143 NR=   30 NW=    0 CW=    0 IW=    0 GC=    0 AW=  0 GLT=       0 W= 0 BI= 51 BU= 999 TH=       0.00 S=3745 QOS=  0 V=31526752 ML=0 BF=13\/160 X= 0\/ 0 U=       0 C= 0\/33 UT=     0 NU=    0 ST=     106 NS=   26 MB=1804\/276CE=   0 CU=  0 IMM=     0 Ti=36 DT= 0\/ 0 DL= 0 DM=     0\/   0 DU=     0\/   0 PUM= 0\/ 0 MTH= 6\/60  GCS= 0\/ 0\/ 0\/  0GCD=0\/0\/0\/0\/0\/0GM=   0 UE=    0 GB= 119 RH=     0 RI=     0 RR=    0 GCN=    0 OBC=    0 SAJ=       0 MAJ=       0 LAJ=       0 STI=      1914 MTI=      1037 LTI=      4000 TAJ=         0TBJ=2147483647GAJ=         0, GBJ=2147483647 GUI=         1 ABM= 0RHW=     0 RHM=     0 REW=     0 RFR=     0 \nT=517559953 P= 0  WO=  57\/   0\/   0\/   0 WL=   1169\/      0\/      0\/      0 WM=   53\/    0\/    0\/    0 RO=  25\/   0\/   0\/   0 RL=   3996\/      0\/      0\/      0 RM=  288\/    0\/    0\/    0E= 0 F= 0 HR=   66 HW=  216 NR=   66 NW=  144 CW=    0 IW=    0 GC=    0 AW=  0 GLT=       0 W= 0 BI= 51 BU= 999 TH=       0.00 S=3733 QOS=  0 V=31526712 ML=0 BF=20\/160 X= 0\/ 0 U=       0 C= 0\/33 UT=   199 NU=   28 ST=      39 NS=   25 MB=1804\/276CE=   0 CU=  0 IMM=     0 Ti=36 DT= 0\/ 0 DL= 0 DM=     0\/   0 DU=     0\/   0 PUM= 0\/ 0 MTH= 6\/60  GCS= 0\/ 0\/ 0\/  0GCD=0\/0\/0\/0\/0\/0GM=   0 UE=    0 GB= 119 RH=     0 RI=     0 RR=    0 GCN=    0 OBC=    0 SAJ=       0 MAJ=       0 LAJ=       0 STI=      1914 MTI=      1037 LTI=      4000 TAJ=         0TBJ=2147483647GAJ=         0, GBJ=2147483647 GUI=         1 ABM= 2RHW=     0 RHM=     0 REW=     0 RFR=     0 \nT=517560053 P= 0  WO=  33\/   0\/   0\/   0 WL=    690\/      0\/      0\/      0 WM=   54\/    0\/    0\/    0 RO= 111\/   0\/   0\/   0 RL=  14461\/      0\/      0\/      0 RM=  397\/    0\/    0\/    0E= 0 F= 0 HR=  115 HW=  125 NR=  115 NW=  128 CW=    0 IW=    0 GC=    0 AW=  0 GLT=       0 W= 0 BI= 51 BU= 999 TH=       0.00 S=3751 QOS=  0 V=31526768 ML=0 BF=14\/160 X= 0\/ 0 U=       0 C= 0\/33 UT=   260 NU=   31 ST=     132 NS=  111 MB=1804\/276CE=   0 CU=  0 IMM=     0 Ti=36 DT= 0\/ 0 DL= 0 DM=     0\/   0 DU=     0\/   0 PUM= 0\/ 0 MTH= 6\/60  GCS= 0\/ 0\/ 0\/  0GCD=0\/0\/0\/0\/0\/0GM=   0 UE=    0 GB= 119 RH=     0 RI=     0 RR=    0 GCN=    0 OBC=    0 SAJ=       0 MAJ=       0 LAJ=       0 STI=      1914 MTI=      1037 LTI=      4000 TAJ=         0TBJ=2147483647GAJ=         0, GBJ=2147483647 GUI=         1 ABM= 0RHW=   144 RHM=     9 REW=     0 RFR=    16 \nT=517560152 P= 0  WO=  53\/   0\/   0\/   0 WL=   1229\/      0\/      0\/      0 WM=   58\/    0\/    0\/    0 RO=  13\/   0\/   0\/   0 RL=   1651\/      0\/      0\/      0 RM=  193\/    0\/    0\/    0E= 0 F= 0 HR=   13 HW=  236 NR=   13 NW=  156 CW=    0 IW=    0 GC=    0 AW=  0 GLT=       0 W= 0 BI= 51 BU= 999 TH=       0.00 S=3765 QOS=  0 V=31526784 ML=0 BF=12\/160 X= 0\/ 0 U=       0 C= 0\/33 UT=   261 NU=   34 ST=      12 NS=   13 MB=1804\/276CE=   0 CU=  0 IMM=     0 Ti=36 DT= 0\/ 0 DL= 0 DM=     0\/   0 DU=     0\/   0 PUM= 0\/ 0 MTH= 6\/60  GCS= 0\/ 0\/ 0\/  0GCD=0\/0\/0\/0\/0\/0GM=   0 UE=    0 GB= 119 RH=     0 RI=     0 RR=    0 GCN=    0 OBC=    0 SAJ=       0 MAJ=       0 LAJ=       0 STI=      1914 MTI=      1037 LTI=      4000 TAJ=         0TBJ=2147483647GAJ=         0, GBJ=2147483647 GUI=         1 ABM= 0RHW=   304 RHM=    27 REW=     8 RFR=    48 \nT=517560252 P= 0  WO=  68\/   0\/   6\/   0 WL=   1298\/      0\/     88\/      0 WM=   76\/    0\/   20\/    0 RO=  25\/   0\/   0\/   0 RL=   4430\/      0\/      0\/      0 RM=  273\/    0\/    0\/    0E= 0 F= 0 HR=   62 HW=  227 NR=   62 NW=  168 CW=    0 IW=    0 GC=    0 AW=  0 GLT=       0 W= 0 BI= 51 BU= 999 TH=       0.00 S=3767 QOS=  0 V=31526760 ML=0 BF=15\/160 X= 0\/ 0 U=       0 C= 0\/33 UT=   395 NU=   39 ST=      37 NS=   25 MB=1804\/276CE=   0 CU=  0 IMM=     0 Ti=36 DT= 0\/ 0 DL= 0 DM=     0\/   0 DU=     0\/   0 PUM= 0\/ 0 MTH= 6\/60  GCS= 0\/ 0\/ 0\/  0GCD=0\/0\/0\/0\/0\/0GM=   0 UE=    0 GB= 119 RH=     0 RI=     0 RR=    0 GCN=    0 OBC=    0 SAJ=       0 MAJ=       0 LAJ=       0 STI=      1914 MTI=      1037 LTI=      4000 TAJ=         0TBJ=2147483647GAJ=         0, GBJ=2147483647 GUI=         1 ABM= 2RHW=   460 RHM=    31 REW=    32 RFR=    48 \nT=517560352 P= 0  WO=  54\/   1\/   0\/   0 WL=   1098\/  31903\/      0\/      0 WM=   33\/31903\/    0\/    0 RO= 274\/   0\/   0\/   0 RL=  43719\/      0\/      0\/      0 RM=  476\/    0\/    0\/    0E= 0 F= 0 HR=  638 HW=  213 NR=  638 NW=   28 CW=    0 IW=    0 GC=    0 AW=  0 GLT=       0 W= 0 BI= 51 BU= 999 TH=   16347.00 S=3747 QOS=  0 V=31526736 ML=0 BF=21\/160 X= 0\/ 0 U=       0 C= 0\/ 3 UT=   179 NU=   12 ST=     396 NS=  276 MB=1804\/276CE=   0 CU=  0 IMM=     0 Ti=36 DT= 0\/ 0 DL= 0 DM=     0\/   0 DU=     0\/   0 PUM= 0\/ 0 MTH= 6\/60  GCS= 0\/ 0\/ 0\/  0GCD=0\/0\/0\/0\/0\/0GM=   0 UE=    0 GB= 119 RH=     0 RI=     0 RR=    0 GCN=    0 OBC=    0 SAJ=       0 MAJ=       0 LAJ=       0 STI=      1914 MTI=      1037 LTI=      4000 TAJ=         0TBJ=2147483647GAJ=         0, GBJ=2147483647 GUI=         1 ABM= 2RHW=   660 RHM=    58 REW=   106 RFR=   122 \nT=517560452 P= 0  WO=   9\/   0\/   0\/   0 WL=    131\/      0\/      0\/      0 WM=   19\/    0\/    0\/    0 RO= 203\/   3\/   0\/   0 RL=  33859\/  20541\/      0\/      0 RM=  524\/20371\/    0\/    0E= 0 F= 0 HR=  427 HW=    9 NR=  427 NW=   24 CW=    0 IW=    0 GC=    0 AW=  0 GLT=       0 W= 0 BI= 51 BU= 999 TH=    8075.00 S=3749 QOS=  0 V=31526736 ML=0 BF=19\/160 X= 0\/ 0 U=       0 C= 0\/ 3 UT=    49 NU=    4 ST=     383 NS=  206 MB=1804\/276CE=   0 CU=  0 IMM=     0 Ti=36 DT= 0\/ 0 DL= 0 DM=     0\/   0 DU=     0\/   0 PUM= 0\/ 0 MTH= 6\/60  GCS= 0\/ 0\/ 0\/  0GCD=0\/0\/0\/0\/0\/0GM=   0 UE=    0 GB= 119 RH=     0 RI=     0 RR=    0 GCN=    0 OBC=    0 SAJ=       0 MAJ=       0 LAJ=       0 STI=      1914 MTI=      1037 LTI=      4000 TAJ=         0TBJ=2147483647GAJ=         0, GBJ=2147483647 GUI=         1 ABM= 0RHW=   688 RHM=    58 REW=   106 RFR=   122 \nT=517560551 P= 0  WO=  11\/   1\/   0\/   0 WL=    429\/   6743\/      0\/      0 WM=   43\/ 6743\/    0\/    0 RO=   3\/  26\/   0\/   5 RL=    317\/   3841\/      0\/  43811 RM=  148\/  195\/    0\/43121E= 0 F= 0 HR=   39 HW=   99 NR=   39 NW=  140 CW=    0 IW=    0 GC=    0 AW=  0 GLT=       0 W= 0 BI= 51 BU= 999 TH=   57974.00 S=3778 QOS=  0 V=31526680 ML=0 BF= 8\/160 X= 0\/ 0 U=       0 C= 0\/ 3 UT=   362 NU=   33 ST=      58 NS=   34 MB=1804\/276CE=   0 CU=  0 IMM=     0 Ti=36 DT= 0\/ 0 DL= 0 DM=     0\/   0 DU=     0\/   0 PUM= 0\/ 0 MTH= 6\/60  GCS= 0\/ 0\/ 0\/  0GCD=0\/0\/0\/0\/0\/0GM=   0 UE=    0 GB= 119 RH=     0 RI=     0 RR=    0 GCN=    0 OBC=    0 SAJ=       0 MAJ=       0 LAJ=       0 STI=      1914 MTI=      1037 LTI=      4000 TAJ=         0TBJ=2147483647GAJ=         0, GBJ=2147483647 GUI=         1 ABM= 0RHW=   712 RHM=    58 REW=   106 RFR=   122 \nT=517560650 P= 0  WO=   3\/   0\/   0\/   0 WL=    127\/      0\/      0\/      0 WM=   52\/    0\/    0\/    0 RO=   3\/  26\/   0\/   2 RL=    412\/   8573\/      0\/    385 RM=  157\/ 4862\/    0\/  200E= 0 F= 0 HR=   31 HW=   24 NR=   31 NW=    0 CW=    0 IW=    0 GC=    0 AW=  0 GLT=       0 W= 0 BI= 51 BU= 999 TH=   23172.00 S=3777 QOS=  0 V=31526680 ML=0 BF= 8\/160 X= 0\/ 0 U=       0 C= 0\/ 3 UT=     0 NU=    0 ST=      45 NS=   31 MB=1804\/276CE=   0 CU=  0 IMM=     0 Ti=36 DT= 0\/ 0 DL= 0 DM=     0\/   0 DU=     0\/   0 PUM= 0\/ 0 MTH= 6\/60  GCS= 0\/ 0\/ 0\/  0GCD=0\/0\/0\/0\/0\/0GM=   0 UE=    0 GB= 119 RH=     0 RI=     0 RR=    0 GCN=    0 OBC=    0 SAJ=       0 MAJ=       0 LAJ=       0 STI=      1914 MTI=      1037 LTI=      4000 TAJ=         0TBJ=2147483647GAJ=         0, GBJ=2147483647 GUI=         1 ABM= 0RHW=   884 RHM=    89 REW=   196 RFR=   206 \nT=517560750 P= 0  WO=  11\/   0\/   4\/   0 WL=    376\/      0\/     57\/      0 WM=   43\/    0\/   20\/    0 RO=  19\/   3\/   2\/   1 RL=   3328\/   6590\/   9479\/   5205 RM=  282\/ 6302\/ 4741\/ 5205E= 0 F= 0 HR=   73 HW=   70 NR=   73 NW=  124 CW=    0 IW=    0 GC=    0 AW=  0 GLT=       0 W= 0 BI= 51 BU= 999 TH=   10793.00 S=3801 QOS=  0 V=31526664 ML=0 BF= 4\/160 X= 0\/ 0 U=       0 C= 0\/ 3 UT=   289 NU=   28 ST=      48 NS=   25 MB=1804\/276CE=   0 CU=  0 IMM=     0 Ti=36 DT= 0\/ 0 DL= 0 DM=     0\/   0 DU=     0\/   0 PUM= 0\/ 0 MTH= 6\/60  GCS= 0\/ 0\/ 0\/  0GCD=0\/0\/0\/0\/0\/0GM=   0 UE=    0 GB= 119 RH=     0 RI=     0 RR=    0 GCN=    0 OBC=    0 SAJ=       0 MAJ=       0 LAJ=       0 STI=      1914 MTI=      1037 LTI=      4000 TAJ=         0TBJ=2147483647GAJ=         0, GBJ=2147483647 GUI=         1 ABM= 0RHW=   884 RHM=    89 REW=   196 RFR=   206 \nT=517560849 P= 0  WO=  11\/   1\/  10\/   0 WL=    330\/    106\/  40495\/      0 WM=   44\/  106\/20171\/    0 RO=   3\/  22\/   0\/   1 RL=    508\/  40559\/      0\/   7906 RM=  190\/ 8505\/    0\/ 7906E= 0 F= 0 HR=   35 HW=   81 NR=   35 NW=    4 CW=    0 IW=    0 GC=    0 AW=  0 GLT=       0 W= 0 BI= 51 BU= 999 TH=   40191.00 S=3801 QOS=  0 V=31526672 ML=0 BF= 5\/160 X= 0\/ 0 U=       0 C= 0\/ 4 UT=    42 NU=    2 ST=      55 NS=   26 MB=1804\/276CE=   0 CU=  0 IMM=     0 Ti=36 DT= 0\/ 0 DL= 0 DM=     0\/   0 DU=     0\/   0 PUM= 0\/ 0 MTH= 6\/60  GCS= 0\/ 0\/ 0\/  0GCD=0\/0\/0\/0\/0\/0GM=   0 UE=    0 GB= 119 RH=     0 RI=     0 RR=    0 GCN=    0 OBC=    0 SAJ=       0 MAJ=       0 LAJ=       0 STI=      1914 MTI=      1037 LTI=      4000 TAJ=         0TBJ=2147483647GAJ=         0, GBJ=2147483647 GUI=         1 ABM= 0RHW=  1008 RHM=    91 REW=   202 RFR=   206 \nT=517560949 P= 0  WO=   9\/   0\/   0\/   0 WL=    425\/      0\/      0\/      0 WM=   61\/    0\/    0\/    0 RO=   0\/  18\/   0\/   0 RL=      0\/  14914\/      0\/      0 RM=    0\/ 5255\/    0\/    0E= 0 F= 0 HR=   18 HW=   72 NR=   18 NW=   68 CW=    0 IW=    0 GC=    0 AW=  0 GLT=       0 W= 0 BI= 51 BU= 999 TH=   26749.00 S=3805 QOS=  0 V=31526680 ML=0 BF= 4\/160 X= 0\/ 0 U=       0 C= 0\/ 4 UT=    81 NU=    7 ST=      30 NS=   18 MB=1804\/276CE=   0 CU=  0 IMM=     0 Ti=36 DT= 0\/ 0 DL= 0 DM=     0\/   0 DU=     0\/   0 PUM= 0\/ 0 MTH= 6\/60  GCS= 0\/ 0\/ 0\/  0GCD=0\/0\/0\/0\/0\/0GM=   0 UE=    0 GB= 119 RH=     0 RI=     0 RR=    0 GCN=    0 OBC=    0 SAJ=       0 MAJ=       0 LAJ=       0 STI=      1914 MTI=      1037 LTI=      4000 TAJ=         0TBJ=2147483647GAJ=         0, GBJ=2147483647 GUI=         1 ABM= 0RHW=  1012 RHM=    94 REW=   210 RFR=   206 \nT=517561048 P= 0  WO=  12\/   2\/   4\/   0 WL=   1227\/    437\/     79\/      0 WM=  725\/  349\/   27\/    0 RO=   0\/  41\/   0\/   3 RL=      0\/  25646\/      0\/    559 RM=    0\/ 6018\/    0\/  193E= 0 F= 0 HR=   44 HW=  384 NR=   44 NW=  512 CW=    0 IW=    0 GC=    0 AW=  0 GLT=       0 W= 0 BI= 51 BU= 999 TH=   46839.00 S=3810 QOS=  0 V=31526680 ML=0 BF= 3\/160 X= 0\/ 0 U=       0 C= 0\/ 4 UT=    88 NU=    8 ST=      88 NS=   44 MB=1804\/276CE=   0 CU=  0 IMM=     0 Ti=36 DT= 0\/ 0 DL= 0 DM=     0\/   0 DU=     0\/   0 PUM= 0\/ 0 MTH= 6\/60  GCS= 0\/ 0\/ 0\/  0GCD=0\/0\/0\/0\/0\/0GM=   0 UE=    0 GB= 119 RH=     0 RI=     0 RR=    0 GCN=    0 OBC=    0 SAJ=       0 MAJ=       0 LAJ=       0 STI=      1914 MTI=      1037 LTI=      4000 TAJ=         0TBJ=2147483647GAJ=         0, GBJ=2147483647 GUI=         1 ABM= 0RHW=  1112 RHM=   119 REW=   263 RFR=   263 \nT=517561147 P= 0  WO=  12\/   0\/   0\/   0 WL=    409\/      0\/      0\/      0 WM=   43\/    0\/    0\/    0 RO=   0\/  42\/   0\/   3 RL=      0\/  44995\/      0\/    554 RM=    0\/ 5614\/    0\/  205E= 0 F= 0 HR=   46 HW=   84 NR=   46 NW=    0 CW=    0 IW=    0 GC=    0 AW=  0 GLT=       0 W= 0 BI= 51 BU= 999 TH=   58680.00 S=3809 QOS=  0 V=31526680 ML=0 BF= 3\/160 X= 0\/ 0 U=       0 C= 0\/ 4 UT=     0 NU=    0 ST=      49 NS=   45 MB=1804\/276CE=   0 CU=  0 IMM=     0 Ti=36 DT= 0\/ 0 DL= 0 DM=     0\/   0 DU=     0\/   0 PUM= 0\/ 0 MTH= 6\/60  GCS= 0\/ 0\/ 0\/  0GCD=0\/0\/0\/0\/0\/0GM=   0 UE=    0 GB= 119 RH=     0 RI=     0 RR=    0 GCN=    0 OBC=    0 SAJ=       0 MAJ=       0 LAJ=       0 STI=      1914 MTI=      1037 LTI=      4000 TAJ=         0TBJ=2147483647GAJ=         0, GBJ=2147483647 GUI=         1 ABM= 0RHW=  1688 RHM=   185 REW=   455 RFR=   433 \nT=517561246 P= 0  WO=  11\/   0\/   0\/   0 WL=    414\/      0\/      0\/      0 WM=   44\/    0\/    0\/    0 RO=   2\/  30\/   0\/   3 RL=    370\/  33280\/      0\/   9232 RM=  196\/ 7447\/    0\/ 5936E= 0 F= 0 HR=   36 HW=   83 NR=   36 NW=    0 CW=    0 IW=    0 GC=    0 AW=  0 GLT=       0 W= 0 BI= 51 BU= 999 TH=   50434.00 S=3807 QOS=  0 V=31526680 ML=0 BF= 3\/160 X= 0\/ 0 U=       0 C= 0\/ 4 UT=     0 NU=    0 ST=      53 NS=   35 MB=1804\/276CE=   0 CU=  0 IMM=     0 Ti=36 DT= 0\/ 0 DL= 0 DM=     0\/   0 DU=     0\/   0 PUM= 0\/ 0 MTH= 6\/60  GCS= 0\/ 0\/ 0\/  0GCD=0\/0\/0\/0\/0\/0GM=   0 UE=    0 GB= 119 RH=     0 RI=     0 RR=    0 GCN=    0 OBC=    0 SAJ=       0 MAJ=       0 LAJ=       0 STI=      1914 MTI=      1037 LTI=      4000 TAJ=         0TBJ=2147483647GAJ=         0, GBJ=2147483647 GUI=         1 ABM= 0RHW=  1688 RHM=   185 REW=   455 RFR=   433 \nT=517561346 P= 0  WO=  11\/   0\/   1\/   0 WL=    442\/      0\/   1096\/      0 WM=   49\/    0\/ 1096\/    0 RO=   0\/  14\/  10\/   1 RL=      0\/  12471\/   2138\/    197 RM=    0\/ 5095\/  311\/  197E= 0 F= 0 HR=  108 HW=   92 NR=  108 NW=  248 CW=    0 IW=    0 GC=    0 AW=  0 GLT=       0 W= 0 BI= 51 BU= 999 TH=   33431.00 S=3807 QOS=  4 V=31526680 ML=0 BF= 3\/160 X= 0\/ 0 U=       0 C= 0\/ 3 UT=    51 NU=    5 ST=      42 NS=   25 MB=1804\/276CE=   0 CU=  0 IMM=     0 Ti=36 DT= 0\/ 0 DL= 0 DM=     0\/   0 DU=     0\/   0 PUM= 0\/ 0 MTH= 6\/60  GCS= 0\/ 0\/ 0\/  0GCD=0\/0\/0\/0\/0\/0GM=   0 UE=    0 GB= 119 RH=     0 RI=     0 RR=    0 GCN=    0 OBC=    0 SAJ=       0 MAJ=       0 LAJ=       0 STI=      1914 MTI=      1037 LTI=      4000 TAJ=         0TBJ=2147483647GAJ=         0, GBJ=2147483647 GUI=         1 ABM= 0RHW=  1688 RHM=   185 REW=   455 RFR=   433 \nT=517561445 P= 0  WO=   8\/   0\/   0\/   0 WL=    315\/      0\/      0\/      0 WM=   43\/    0\/    0\/    0 RO=   2\/   5\/  35\/   0 RL=    265\/  13240\/  55217\/      0 RM=  161\/ 5848\/ 5951\/    0E= 0 F= 0 HR=  972 HW=   64 NR=  972 NW=    0 CW=    0 IW=    0 GC=    0 AW=  0 GLT=       0 W= 0 BI= 51 BU= 999 TH=   45027.00 S=3809 QOS=  4 V=31526680 ML=0 BF= 3\/160 X= 0\/ 0 U=       0 C= 0\/ 3 UT=     0 NU=    0 ST=      52 NS=   46 MB=1804\/276CE=   0 CU=  0 IMM=     0 Ti=36 DT= 0\/ 0 DL= 0 DM=     0\/   0 DU=     0\/   0 PUM= 0\/ 0 MTH= 6\/60  GCS= 0\/ 0\/ 0\/  0GCD=0\/0\/0\/0\/0\/0GM=   0 UE=    0 GB= 119 RH=     0 RI=     0 RR=    0 GCN=    0 OBC=    0 SAJ=       0 MAJ=       0 LAJ=       0 STI=      1914 MTI=      1037 LTI=      4000 TAJ=         0TBJ=2147483647GAJ=         0, GBJ=2147483647 GUI=         1 ABM= 0RHW=  1968 RHM=   213 REW=   522 RFR=   489 \nT=517561604 P= 0  WO=   2\/   1\/   0\/   0 WL=     61\/    137\/      0\/      0 WM=   34\/  137\/    0\/    0 RO=   0\/   1\/   3\/   0 RL=      0\/    160\/    742\/      0 RM=    0\/  160\/  302\/    0E= 0 F= 0 HR=   49 HW=   40 NR=   49 NW=    0 CW=    0 IW=    0 GC=    0 AW=  0 GLT=       0 W= 0 BI= 51 BU= 999 TH=       0.00 S=3806 QOS=  4 V=31526680 ML=0 BF= 3\/160 X= 0\/ 0 U=       0 C= 0\/ 3 UT=     0 NU=    0 ST=      10 NS=    4 MB=1804\/276CE=   0 CU=  0 IMM=     0 Ti=36 DT= 0\/ 0 DL= 0 DM=     0\/   0 DU=     0\/   0 PUM= 0\/ 0 MTH= 6\/60  GCS= 0\/ 0\/ 0\/  0GCD=0\/0\/0\/0\/0\/0GM=   0 UE=    0 GB= 119 RH=     0 RI=     0 RR=    0 GCN=    0 OBC=    0 SAJ=       0 MAJ=       0 LAJ=       0 STI=      1914 MTI=      1037 LTI=      4000 TAJ=         0TBJ=2147483647GAJ=         0, GBJ=2147483647 GUI=         1 ABM= 0RHW=  1968 RHM=   213 REW=   522 RFR=   489 \nT=517561876 P= 0  WO=   0\/   0\/   0\/   0 WL=      0\/      0\/      0\/      0 WM=    0\/    0\/    0\/    0 RO=   0\/   0\/   0\/   4 RL=      0\/      0\/      0\/   1484 RM=    0\/    0\/    0\/  435E= 0 F= 0 HR=  108 HW=    0 NR=  108 NW=    0 CW=    0 IW=    0 GC=    0 AW=  0 GLT=       0 W= 0 BI= 51 BU= 999 TH=       0.00 S=3806 QOS=  4 V=31526680 ML=0 BF= 3\/160 X= 0\/ 0 U=       0 C= 0\/ 3 UT=     0 NU=    0 ST=       8 NS=    6 MB=1804\/276CE=   0 CU=  0 IMM=     0 Ti=36 DT= 0\/ 0 DL= 0 DM=     0\/   0 DU=     0\/   0 PUM= 0\/ 0 MTH= 6\/60  GCS= 0\/ 0\/ 0\/  0GCD=0\/0\/0\/0\/0\/0GM=   0 UE=    0 GB= 119 RH=     0 RI=     0 RR=    0 GCN=    0 OBC=    0 SAJ=       0 MAJ=       0 LAJ=       0 STI=      1914 MTI=      1037 LTI=      4000 TAJ=         0TBJ=2147483647GAJ=         0, GBJ=2147483647 GUI=         1 ABM= 0RHW=     0 RHM=     0 REW=     0 RFR=     0 \n",
+  "displayData" : {
+    "endState" : 1,
+    "displayOnPercent" : 1,
+    "startState" : 1,
+    "displayOnIntervals" : [
+      0,
+      1010
+    ]
+  },
+  "blockingThreadStatus" : "Search Found Blocking Thread"
+}

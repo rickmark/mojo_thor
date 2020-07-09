@@ -1,0 +1,195 @@
+{"app_name":"grindrx","timestamp":"2020-07-06 21:32:03.00 -0700","app_version":"6.16.1","slice_uuid":"4DFA465F-2AA0-3612-A712-F5D41FA0EBC6","adam_id":319881193,"build_version":"17042.23178","bundleID":"com.grindrguy.grindrx","share_with_app_devs":1,"is_first_party":0,"bug_type":"142","os_version":"iPhone OS 14.0 (18A5301v)","incident_id":"3DD23885-9FB7-4637-B714-59AD3DB094E9","name":"grindrx"}
+Date/Time:        2020-07-06 21:31:18.924 -0700
+End time:         2020-07-06 21:32:02.722 -0700
+OS Version:       iPhone OS 14.0 (Build 18A5301v)
+Architecture:     arm64e
+Report Version:   31
+Incident Identifier: 3DD23885-9FB7-4637-B714-59AD3DB094E9
+Share With Devs:  Yes
+
+Data Source:      Microstackshots
+Shared Cache:     92537455-A74B-3198-96CD-F2D2D2778315 slid base address 0x196ea8000, slide 0x16ea8000
+
+Command:          grindrx
+Path:             /private/var/containers/Bundle/Application/A76CFB97-A299-448C-B79E-DE0E4D1D28DC/grindrx.app/grindrx
+Identifier:       com.grindrguy.grindrx
+Version:          6.16.1 (17042.23178)
+Adam ID:          319881193
+Is First Party:   No
+Beta Identifier:  419641BD-FD0C-437E-8ECD-C735F6A68FB5
+Parent:           UNKNOWN [1]
+PID:              19351
+
+Event:            wakeups
+Action taken:     none
+Wakeups:          45001 wakeups over the last 44 seconds (1027 wakeups per second average), exceeding limit of 150 wakeups per second over 300 seconds
+Wakeups limit:    45000
+Limit duration:   300s
+Wakeups caused:   45001
+Wakeups duration: 44s
+Duration:         43.80s
+Duration Sampled: 41.34s
+Steps:            9
+
+Hardware model:   iPhone12,5
+Active cpus:      6
+
+
+Heaviest stack for the target process:
+  7  ??? (libdyld.dylib + 5004) [0x19712438c]
+  7  ??? (grindrx + 1193108) [0x104f57494]
+  7  ??? (UIKitCore + 11807016) [0x19ba2b928]
+  7  ??? (UIKitCore + 11782712) [0x19ba25a38]
+  7  ??? (GraphicsServices + 14360) [0x1a3072818]
+  7  ??? (CoreFoundation + 620080) [0x197298630]
+  3  ??? (CoreFoundation + 622336) [0x197298f00]
+  2  ??? (CoreFoundation + 645276) [0x19729e89c]
+  2  ??? (libsystem_kernel.dylib + 16048) [0x1970f5eb0]
+
+
+Powerstats for:   grindrx (Grindr) [19351]
+UUID:             4DFA465F-2AA0-3612-A712-F5D41FA0EBC6
+Adam ID:          319881193
+Is First Party:   No
+Beta Identifier:  419641BD-FD0C-437E-8ECD-C735F6A68FB5
+App Version:      6.16.1
+Build Version:    17042.23178
+Path:             /private/var/containers/Bundle/Application/A76CFB97-A299-448C-B79E-DE0E4D1D28DC/grindrx.app/grindrx
+Architecture:     arm64
+Parent:           UNKNOWN [1]
+UID:              501
+Footprint:        152.53 MB
+Pageins:          921 pages
+Start time:       2020-07-06 21:31:19.082 -0700
+End time:         2020-07-06 21:32:00.424 -0700
+Num samples:      9 (100%)
+Primary state:    4 samples Frontmost App, Non-Suppressed, User mode, Effective Thread QoS User Interactive, Requested Thread QoS User Interactive, Override Thread QoS Unspecified
+User Activity:    0 samples Idle, 9 samples Active
+Power Source:     9 samples on Battery, 0 samples on AC
+  7  ??? (libdyld.dylib + 5004) [0x19712438c]
+    7  ??? (grindrx + 1193108) [0x104f57494]
+      7  ??? (UIKitCore + 11807016) [0x19ba2b928]
+        7  ??? (UIKitCore + 11782712) [0x19ba25a38]
+          7  ??? (GraphicsServices + 14360) [0x1a3072818]
+            7  ??? (CoreFoundation + 620080) [0x197298630]
+              3  ??? (CoreFoundation + 622336) [0x197298f00]
+                2  ??? (CoreFoundation + 645276) [0x19729e89c]
+                  2  ??? (libsystem_kernel.dylib + 16048) [0x1970f5eb0]
+                    2  <Kernel mode>
+                1  ??? (libsystem_kernel.dylib + 158840) [0x197118c78]
+                  1  <Kernel mode>
+              2  ??? (CoreFoundation + 623284) [0x1972992b4]
+                2  ??? (CoreFoundation + 646680) [0x19729ee18]
+                  2  ??? (CoreFoundation + 649412) [0x19729f8c4]
+                    2  ??? (CoreFoundation + 503724) [0x19727bfac]
+                      2  ??? (QuartzCore + 946924) [0x19ee342ec]
+                        1  ??? (QuartzCore + 81468) [0x19ed60e3c]
+                          1  ??? (QuartzCore + 912912) [0x19ee2be10]
+                            1  ??? (QuartzCore + 736080) [0x19ee00b50]
+                              1  ??? (QuartzCore + 1483904) [0x19eeb7480]
+                                1  ??? (QuartzCore + 1401032) [0x19eea30c8]
+                                  1  ??? (QuartzCore + 1399820) [0x19eea2c0c]
+                                    1  ??? (UIKitCore + 17133928) [0x19bf40168]
+                                      1  ??? (UIKitCore + 2876784) [0x19b1a7570]
+                                        1  ??? (UIKitCore + 2858172) [0x19b1a2cbc]
+                                          1  ??? (UIKitCore + 2838256) [0x19b19def0]
+                                            1  ??? (grindrx + 501816) [0x104eae838]
+                                              1  ??? (UIKitCore + 2918828) [0x19b1b19ac]
+                                                1  ??? (UIKitCore + 2917912) [0x19b1b1618]
+                                                  1  ??? (UIKitCore + 17080688) [0x19bf33170]
+                                                    1  ??? (UIKitCore + 2918576) [0x19b1b18b0]
+                                                      1  ??? (UIKitCore + 2842376) [0x19b19ef08]
+                                                        1  ??? (UIKitCore + 3055204) [0x19b1d2e64]
+                                                          1  ??? (UIKitCore + 3044492) [0x19b1d048c]
+                                                            1  ??? (UIKitCore + 17027664) [0x19bf26250]
+                                                              1  ??? (UIKitCore + 17023024) [0x19bf25030]
+                                                                1  ??? (CoreFoundation + 8728) [0x197203218]
+                                                                  1  ??? (UIKitCore + 17025760) [0x19bf25ae0]
+                        1  ??? (QuartzCore + 81008) [0x19ed60c70]
+                          1  ??? (UIKitCore + 5774424) [0x19b46ac58]
+                            1  ??? (CoreFoundation + 8436) [0x1972030f4]
+                              1  ??? (CoreFoundation + 661428) [0x1972a27b4]
+                                1  ??? (UIKitCore + 5775000) [0x19b46ae98]
+                                  1  ??? (UIKitCore + 14887452) [0x19bd1ba1c]
+                                    1  ??? (UIKitCore + 14907836) [0x19bd209bc]
+                                      1  ??? (QuartzCore + 1442636) [0x19eead34c]
+                                        1  ??? (QuartzCore + 1443392) [0x19eead640]
+              1  ??? (CoreFoundation + 623056) [0x1972991d0]
+                1  ??? (CoreFoundation + 646128) [0x19729ebf0]
+                  1  ??? (libdispatch.dylib + 71404) [0x196fcb6ec]
+                    1  ??? (libdispatch.dylib + 17300) [0x196fbe394]
+                      1  ??? (QuartzCore + 1488200) [0x19eeb8548]
+                        1  ??? (QuartzCore + 1384360) [0x19ee9efa8]
+                          1  ??? (QuartzCore + 1676752) [0x19eee65d0]
+                            1  ??? (QuartzCore + 911448) [0x19ee2b858]
+                              1  ??? (libsystem_malloc.dylib + 112172) [0x19701762c]
+                                1  ??? (libsystem_malloc.dylib + 106648) [0x197016098]
+                                  1  ??? (libsystem_malloc.dylib + 103512) [0x197015458]
+              1  ??? (CoreFoundation + 622648) [0x197299038]
+                1  ??? (CoreFoundation + 620716) [0x1972988ac]
+                  1  ??? (libsystem_pthread.dylib + 30144) [0x19702e5c0]
+  2  ??? (libsystem_pthread.dylib + 14600) [0x19702a908]
+    2  ??? (libdispatch.dylib + 88940) [0x196fcfb6c]
+      2  ??? (libdispatch.dylib + 48736) [0x196fc5e60]
+        2  ??? (libdispatch.dylib + 45876) [0x196fc5334]
+          2  ??? (libdispatch.dylib + 17300) [0x196fbe394]
+            2  ??? (libdispatch.dylib + 10396) [0x196fbc89c]
+              1  ??? (grindrx + 45110968) [0x1079396b8]
+                1  ??? (grindrx + 45118216) [0x10793b308]
+                  1  ??? (Foundation + 323656) [0x197673048]
+                    1  ??? (Foundation + 67576) [0x1976347f8]
+                      1  ??? (Foundation + 71188) [0x197635614]
+                        1  ??? (Foundation + 745020) [0x1976d9e3c]
+                          1  ??? (Foundation + 71620) [0x1976357c4]
+                            1  ??? (Foundation + 72052) [0x197635974]
+                              1  ??? (Foundation + 1109184) [0x197732cc0]
+                                1  ??? (Foundation + 1113348) [0x197733d04]
+                                  1  ??? (grindrx + 45112304) [0x107939bf0]
+                                    1  ??? (Foundation + 71620) [0x1976357c4]
+                                      1  ??? (Foundation + 72052) [0x197635974]
+                                        1  ??? (Foundation + 1109184) [0x197732cc0]
+                                          1  ??? (Foundation + 1113348) [0x197733d04]
+                                            1  ??? (Foundation + 137900) [0x197645aac]
+                                              1  ??? (Foundation + 325204) [0x197673654]
+                                                1  ??? (Foundation + 1113348) [0x197733d04]
+                                                  1  ??? (grindrx + 45102872) [0x107937718]
+                                                    1  ??? (grindrx + 45101404) [0x10793715c]
+                                                      1  ??? (grindrx + 45100628) [0x107936e54]
+                                                        1  ??? (libdispatch.dylib + 74224) [0x196fcc1f0]
+                                                          1  ??? (libdispatch.dylib + 75584) [0x196fcc740]
+                                                            1  ??? (libdispatch.dylib + 17300) [0x196fbe394]
+                                                              1  ??? (grindrx + 45101240) [0x1079370b8]
+                                                                1  ??? (Foundation + 1462872) [0x197789258]
+                                                                  1  ??? (Foundation + 453240) [0x197692a78]
+                                                                    1  ??? (Foundation + 281360) [0x197668b10]
+                                                                      1  <Effective Thread QoS User Initiated, Requested Thread QoS User Initiated>
+              1  ??? (grindrx + 30969992) [0x106bbd088]
+                1  ??? (CoreFoundation + 9480) [0x197203508]
+                  1  ??? (CoreFoundation + 8004) [0x197202f44]
+                    1  ??? (CoreFoundation + 1203348) [0x197326c94]
+                      1  ??? (grindrx + 1268828) [0x104f69c5c]
+                        1  ??? (grindrx + 1278188) [0x104f6c0ec]
+                          1  ??? (grindrx + 29096040) [0x1069f3868]
+                            1  ??? (grindrx + 29136160) [0x1069fd520]
+                              1  ??? (grindrx + 29136672) [0x1069fd720]
+                                1  ??? (grindrx + 28822336) [0x1069b0b40]
+                                  1  ??? (grindrx + 12999056) [0x105a99990]
+                                    1  ??? (grindrx + 12999452) [0x105a99b1c]
+                                      1  ??? (grindrx + 13601952) [0x105b2cca0]
+                                        1  ??? (grindrx + 12999056) [0x105a99990]
+                                          1  ??? (grindrx + 12999452) [0x105a99b1c]
+                                            1  ??? (grindrx + 12963860) [0x105a91014]
+                                              1  <Effective Thread QoS Default, Requested Thread QoS Default>
+
+  Binary Images:
+           0x104e34000 -                ???  com.grindrguy.grindrx 6.16.1 (17042.23178) <4DFA465F-2AA0-3612-A712-F5D41FA0EBC6>  /private/var/containers/Bundle/Application/A76CFB97-A299-448C-B79E-DE0E4D1D28DC/grindrx.app/grindrx
+           0x196fba000 -        0x196ffbfff  libdispatch.dylib                          <28A090F9-05C2-3563-845F-4FE958EBDC4D>  /usr/lib/system/libdispatch.dylib
+           0x196ffc000 -        0x19701ffff  libsystem_malloc.dylib                     <6379B758-0A24-3DE6-8BF4-83EE8049E818>  /usr/lib/system/libsystem_malloc.dylib
+           0x197027000 -        0x197032fff  libsystem_pthread.dylib                    <BFDBEB73-E71E-321D-8589-2FF410DCA347>  /usr/lib/system/libsystem_pthread.dylib
+           0x1970f2000 -        0x197122fff  libsystem_kernel.dylib                     <3EF668B5-8D98-3DAF-A94C-CC8F2A657ABD>  /usr/lib/system/libsystem_kernel.dylib
+           0x197123000 -        0x19715cfff  libdyld.dylib                              <496AD165-6976-3479-8511-BF5BED814142>  /usr/lib/system/libdyld.dylib
+           0x197201000 -        0x1975aafff  CoreFoundation                             <334FCE90-3729-30B1-8F52-182B5ACEB454>  /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+           0x197624000 -        0x1978d1fff  Foundation                                 <E4DEEB39-F560-3043-B1A5-62242DEE0F18>  /System/Library/Frameworks/Foundation.framework/Foundation
+           0x19aee9000 -        0x19c299fff  UIKitCore                                  <8B922C39-CE14-3B3F-B9C1-A5414EBE342C>  /System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore
+           0x19ed4d000 -        0x19efc3fff  QuartzCore                                 <86980C93-CB78-39CE-B156-67264C92551F>  /System/Library/Frameworks/QuartzCore.framework/QuartzCore
+           0x1a306f000 -        0x1a3077fff  GraphicsServices                           <A6CDA35F-0936-3EB7-981F-BF50EDB5B06E>  /System/Library/PrivateFrameworks/GraphicsServices.framework/GraphicsServices

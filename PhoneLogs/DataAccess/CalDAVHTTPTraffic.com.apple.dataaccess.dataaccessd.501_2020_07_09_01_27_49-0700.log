@@ -1,0 +1,853 @@
+
+Task 176
+
+>>>>> 2020-07-09 01:27:49.435
+PROPFIND https://almightylinuxgod%40mac.com@p66-caldav.icloud.com/47120252/principal/
+Brief: t
+Cache-Control: no-transform
+Content-Encoding: gzip
+Content-Length: 328
+Content-Type: text/xml
+Depth: 0
+Prefer: return=minimal
+User-Agent: iOS/14.0 (18A5301v) dataaccessd/1.0
+X-Apple-Client-Info: <iPhone12,5> <iPhone OS;14.0;18A5301v> <com.apple.coredav/1.0.1 (com.apple.dataaccess.dataaccessd/1.0)>
+X-Apple-DAV-Pushtoken: 6164c8cfed88ba08b2947046800b15c5e8be154e8d7785d8eaf54b51b4652073
+X-Apple-I-Client-Time: 2020-07-09T08:27:49Z
+X-Apple-I-Locale: en_US
+X-Apple-I-MD: AAAABQAAABCOnOFHAJ50mkG2llwvJihAAAAAAw==
+X-Apple-I-MD-M: s/0ezDhy3jm5cFKeijPnXm91I2rnYJlw5k2ufGhHnXzmDrv4+fWPI/7doHhvjoxEQbOduN7ZeKejdNho
+X-Apple-I-MD-RINFO: 17106176
+X-Apple-I-TimeZone: PDT
+X-MMe-Client-Info: <iPhone12,5> <iPhone OS;14.0;18A5301v> <com.apple.AuthKit/1 (com.apple.dataaccess.dataaccessd/1.0)>
+
+[compression: gzip]
+<?xml version="1.0" encoding="UTF-8"?>
+<A:propfind xmlns:A="DAV:">
+  <A:prop>
+    <B:calendar-home-set xmlns:B="urn:ietf:params:xml:ns:caldav"/>
+    <B:calendar-user-address-set xmlns:B="urn:ietf:params:xml:ns:caldav"/>
+    <A:current-user-principal/>
+    <A:displayname/>
+    <C:dropbox-home-URL xmlns:C="http://calendarserver.org/ns/"/>
+    <C:email-address-set xmlns:C="http://calendarserver.org/ns/"/>
+    <B:max-attendees-per-instance xmlns:B="urn:ietf:params:xml:ns:caldav"/>
+    <C:notification-URL xmlns:C="http://calendarserver.org/ns/"/>
+    <A:principal-collection-set/>
+    <A:principal-URL/>
+    <A:resource-id/>
+    <B:schedule-inbox-URL xmlns:B="urn:ietf:params:xml:ns:caldav"/>
+    <B:schedule-outbox-URL xmlns:B="urn:ietf:params:xml:ns:caldav"/>
+    <A:supported-report-set/>
+  </A:prop>
+</A:propfind>
+
+>>>>>
+
+Task 176
+
+<<<<< 2020-07-09 01:27:49.903
+HTTP/1.1 207 (Multi-Status)
+
+access-control-expose-headers: X-Apple-Request-UUID,Via
+Apple-Originating-System: UnknownOriginatingSystem
+apple-seq: 0
+apple-tk: false
+Connection: keep-alive
+Content-Encoding: gzip
+Content-Type: application/xml; charset=UTF-8
+Date: Thu, 09 Jul 2020 08:27:49 GMT
+Server: AppleHttpServer/ac9d40131a4d
+Strict-Transport-Security: max-age=31536000; includeSubDomains;
+Transfer-Encoding: Identity
+Via: xrail:mr90p00ic-zteu08110801.me.com:8301:19C518:grp23,631194250daa17e24277dea86cf30319:53f1c5373f29c5db777893a322f6d0c3:San Jose
+X-Apple-API-Version: NONE
+X-Apple-Jingle-Correlation-Key: CTQ2T2V4CFAANLTBKHY6NBPSNY
+X-Apple-Request-UUID: 14e1a9ea-bc11-4006-ae61-51f1e685f26e
+X-Responding-Instance: caldavj:36600101:mr30p66ic-tyfb04010701:8501:2012B497:0a77e84795f0
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<multistatus xmlns="DAV:">
+
+<response xmlns="DAV:">
+    <href>/47120252/principal/</href>
+        <propstat>
+    		 <prop>
+                
+                    
+                        <calendar-home-set xmlns="urn:ietf:params:xml:ns:caldav"><href xmlns="DAV:">https://p66-caldav.icloud.com:443/47120252/calendars/</href></calendar-home-set>
+                    
+                
+                    
+                        <calendar-user-address-set xmlns="urn:ietf:params:xml:ns:caldav"><href xmlns="DAV:">/47120252/principal</href><href xmlns="DAV:">/aNDcxMjAyNTI0NzEyMDI1MvCNnOSRQl36ngp0KknHcXaEjX1n14ERlE_igtoJqO4b/principal/</href><href xmlns="DAV:">urn:uuid:47120252</href><href xmlns="DAV:" preferred="1">mailto:rickmark@outlook.com</href><href xmlns="DAV:">mailto:almightylinuxgod@me.com</href></calendar-user-address-set>
+                    
+                
+                    
+                        <current-user-principal xmlns="DAV:"><href xmlns="DAV:">/47120252/principal/</href></current-user-principal>
+                    
+                
+                    
+                        <displayname xmlns="DAV:">Rick Mark</displayname>
+                    
+                
+                    
+                    
+                
+                    
+                        <email-address-set xmlns="http://calendarserver.org/ns/"><href xmlns="DAV:">mailto:almightylinuxgod@me.com</href></email-address-set>
+                    
+                
+                    
+                    
+                
+                    
+                        <notification-URL xmlns="http://calendarserver.org/ns/"><href xmlns="DAV:">/47120252/calendars/notification/</href></notification-URL>
+                    
+                
+                    
+                        <principal-collection-set xmlns="DAV:"><href xmlns="DAV:">/users/</href></principal-collection-set>
+                    
+                
+                    
+                        <principal-URL xmlns="DAV:"><href xmlns="DAV:">/47120252/principal/</href></principal-URL>
+                    
+                
+                    
+                    
+                
+                    
+                        <schedule-inbox-URL xmlns="urn:ietf:params:xml:ns:caldav"><href xmlns="DAV:">/47120252/calendars/inbox/</href></schedule-inbox-URL>
+                    
+                
+                    
+                        <schedule-outbox-URL xmlns="urn:ietf:params:xml:ns:caldav"><href xmlns="DAV:">/47120252/calendars/outbox/</href></schedule-outbox-URL>
+                    
+                
+                    
+                        <supported-report-set xmlns="DAV:"><supported-report><report><acl-principal-prop-set></acl-principal-prop-set></report></supported-report><supported-report><report><principal-match></principal-match></report></supported-report><supported-report><report><principal-property-search></principal-property-search></report></supported-report><supported-report><report><expand-property></expand-property></report></supported-report><supported-report><report><sync-collection></sync-collection></report></supported-report><supported-report><report><verify-calendar-user xmlns="http://me.com/_namespace/"></verify-calendar-user></report></supported-report><supported-report><report><calendarserver-principal-search xmlns="http://calendarserver.org/ns/"></calendarserver-principal-search></report></supported-report></supported-report-set>
+                    
+                
+            </prop>
+                <status>HTTP/1.1 200 OK</status>
+        </propstat>
+        
+</response>
+
+
+</multistatus>
+<<<<<
+
+Task 178
+
+>>>>> 2020-07-09 01:27:49.921
+OPTIONS https://almightylinuxgod%40mac.com@p66-caldav.icloud.com/47120252/principal/
+User-Agent: iOS/14.0 (18A5301v) dataaccessd/1.0
+X-Apple-DAV-Pushtoken: 6164c8cfed88ba08b2947046800b15c5e8be154e8d7785d8eaf54b51b4652073
+X-Apple-I-Client-Time: 2020-07-09T08:27:49Z
+X-Apple-I-Locale: en_US
+X-Apple-I-MD: AAAABQAAABCOnOFHAJ50mkG2llwvJihAAAAAAw==
+X-Apple-I-MD-M: s/0ezDhy3jm5cFKeijPnXm91I2rnYJlw5k2ufGhHnXzmDrv4+fWPI/7doHhvjoxEQbOduN7ZeKejdNho
+X-Apple-I-MD-RINFO: 17106176
+X-Apple-I-TimeZone: PDT
+X-MMe-Client-Info: <iPhone12,5> <iPhone OS;14.0;18A5301v> <com.apple.AuthKit/1 (com.apple.dataaccess.dataaccessd/1.0)>
+
+
+>>>>>
+
+Task 178
+
+<<<<< 2020-07-09 01:27:50.015
+HTTP/1.1 200 (OK)
+
+access-control-expose-headers: X-Apple-Request-UUID,Via
+Allow: ACL, COPY, DELETE, GET, HEAD, LOCK, MKCOL, MOVE, OPTIONS, PROPFIND, PROPPATCH, PUT, REPORT, UNLOCK
+Apple-Originating-System: UnknownOriginatingSystem
+apple-seq: 0
+apple-tk: false
+Connection: keep-alive
+Content-Length: 0
+Date: Thu, 09 Jul 2020 08:27:49 GMT
+DAV: 1, access-control, calendar-access, calendar-schedule, calendar-auto-schedule, calendar-audit, caldavserver-supports-telephone, calendar-managed-attachments, calendarserver-sharing, calendarserver-subscribed, calendarserver-home-sync
+Server: AppleHttpServer/ac9d40131a4d
+Strict-Transport-Security: max-age=31536000; includeSubDomains;
+Via: xrail:mr90p00ic-zteu08120801.me.com:8301:19C518:grp23,631194250daa17e24277dea86cf30319:53f1c5373f29c5db777893a322f6d0c3:San Jose
+X-Accept-Client-Encoding: gzip
+X-Apple-API-Version: NONE
+X-Apple-Jingle-Correlation-Key: 227NCXUUTBGBBA7IW72JB2UPSQ
+X-Apple-Request-UUID: d6bed15e-9498-4c10-83e8-b7f490ea8f94
+X-Responding-Instance: caldavj:36600201:mr30p66ic-tyfb03080601:8501:2012B497:0a77e84795f0
+
+
+Task 180
+
+>>>>> 2020-07-09 01:27:50.037
+REPORT https://almightylinuxgod%40mac.com@p66-caldav.icloud.com:443/47120252/calendars/
+Brief: t
+Cache-Control: no-transform
+Content-Encoding: gzip
+Content-Length: 676
+Content-Type: text/xml
+Depth: 1
+Prefer: return=minimal
+User-Agent: iOS/14.0 (18A5301v) dataaccessd/1.0
+X-Apple-Client-Info: <iPhone12,5> <iPhone OS;14.0;18A5301v> <com.apple.coredav/1.0.1 (com.apple.dataaccess.dataaccessd/1.0)>
+X-Apple-DAV-Pushtoken: 6164c8cfed88ba08b2947046800b15c5e8be154e8d7785d8eaf54b51b4652073
+X-Apple-I-Client-Time: 2020-07-09T08:27:50Z
+X-Apple-I-Locale: en_US
+X-Apple-I-MD: AAAABQAAABCOnOFHAJ50mkG2llwvJihAAAAAAw==
+X-Apple-I-MD-M: s/0ezDhy3jm5cFKeijPnXm91I2rnYJlw5k2ufGhHnXzmDrv4+fWPI/7doHhvjoxEQbOduN7ZeKejdNho
+X-Apple-I-MD-RINFO: 17106176
+X-Apple-I-TimeZone: PDT
+X-MMe-Client-Info: <iPhone12,5> <iPhone OS;14.0;18A5301v> <com.apple.AuthKit/1 (com.apple.dataaccess.dataaccessd/1.0)>
+
+[compression: gzip]
+<?xml version="1.0" encoding="UTF-8"?>
+<A:sync-collection xmlns:A="DAV:">
+  <A:sync-token>FT=-@RU=1603f107-40da-4de7-b45b-034ec6d6f3f2@S=13415</A:sync-token>
+  <A:sync-level>1</A:sync-level>
+  <A:prop>
+    <B:calendar-timezone xmlns:B="urn:ietf:params:xml:ns:caldav"/>
+    <C:subscribed-strip-attachments xmlns:C="http://calendarserver.org/ns/"/>
+    <C:subscribed-strip-todos xmlns:C="http://calendarserver.org/ns/"/>
+    <F:calendar-color xmlns:F="http://apple.com/ns/ical/"/>
+    <F:calendar-order xmlns:F="http://apple.com/ns/ical/"/>
+    <C:pre-publish-url xmlns:C="http://calendarserver.org/ns/"/>
+    <A:supported-report-set/>
+    <A:quota-used-bytes/>
+    <F:autoprovisioned xmlns:F="http://apple.com/ns/ical/"/>
+    <A:displayname/>
+    <F:language-code xmlns:F="http://apple.com/ns/ical/"/>
+    <B:default-alarm-vevent-date xmlns:B="urn:ietf:params:xml:ns:caldav"/>
+    <A:add-member/>
+    <A:resource-id/>
+    <A:current-user-privilege-set/>
+    <C:source xmlns:C="http://calendarserver.org/ns/"/>
+    <B:schedule-default-calendar-URL xmlns:B="urn:ietf:params:xml:ns:caldav"/>
+    <A:quota-available-bytes/>
+    <C:invite xmlns:C="http://calendarserver.org/ns/"/>
+    <A:owner/>
+    <C:allowed-sharing-modes xmlns:C="http://calendarserver.org/ns/"/>
+    <F:refreshrate xmlns:F="http://apple.com/ns/ical/"/>
+    <C:push-transports xmlns:C="http://calendarserver.org/ns/"/>
+    <E:bulk-requests xmlns:E="http://me.com/_namespace/"/>
+    <B:calendar-free-busy-set xmlns:B="urn:ietf:params:xml:ns:caldav"/>
+    <C:subscribed-strip-alarms xmlns:C="http://calendarserver.org/ns/"/>
+    <A:sync-token/>
+    <B:max-attendees-per-instance xmlns:B="urn:ietf:params:xml:ns:caldav"/>
+    <B:calendar-description xmlns:B="urn:ietf:params:xml:ns:caldav"/>
+    <C:publish-url xmlns:C="http://calendarserver.org/ns/"/>
+    <F:location-code xmlns:F="http://apple.com/ns/ical/"/>
+    <B:default-alarm-vevent-datetime xmlns:B="urn:ietf:params:xml:ns:caldav"/>
+    <B:calendar-alarm xmlns:B="urn:ietf:params:xml:ns:caldav"/>
+    <B:supported-calendar-component-sets xmlns:B="urn:ietf:params:xml:ns:caldav"/>
+    <B:supported-calendar-component-set xmlns:B="urn:ietf:params:xml:ns:caldav"/>
+    <C:getctag xmlns:C="http://calendarserver.org/ns/"/>
+    <A:resourcetype/>
+    <C:pushkey xmlns:C="http://calendarserver.org/ns/"/>
+    <B:schedule-calendar-transp xmlns:B="urn:ietf:params:xml:ns:caldav"/>
+  </A:prop>
+</A:sync-collection>
+
+>>>>>
+
+Task 180
+
+<<<<< 2020-07-09 01:27:50.181
+HTTP/1.1 207 (Multi-Status)
+
+access-control-expose-headers: X-Apple-Request-UUID,Via
+Apple-Originating-System: UnknownOriginatingSystem
+apple-seq: 0
+apple-tk: false
+Connection: keep-alive
+Content-Encoding: gzip
+Content-Type: application/xml; charset=UTF-8
+Date: Thu, 09 Jul 2020 08:27:50 GMT
+Server: AppleHttpServer/ac9d40131a4d
+Strict-Transport-Security: max-age=31536000; includeSubDomains;
+Transfer-Encoding: Identity
+Via: xrail:mr90p00ic-zteu08131701.me.com:8301:19C518:grp23,631194250daa17e24277dea86cf30319:53f1c5373f29c5db777893a322f6d0c3:San Jose
+X-Apple-API-Version: v1
+X-Apple-Jingle-Correlation-Key: TVMYBOT7EFG3JDLCLQX6KM5DXE
+X-Apple-Request-UUID: 9d5980ba-7f21-4db4-8d62-5c2fe533a3b9
+X-Responding-Instance: caldavj:36601201:mr30p66ic-tyfb03053401:8501:2012B497:0a77e84795f0
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<multistatus xmlns="DAV:">
+    <sync-token>FT=-@RU=1603f107-40da-4de7-b45b-034ec6d6f3f2@S=13415</sync-token>
+</multistatus>
+<<<<<
+
+Task 182
+
+>>>>> 2020-07-09 01:27:50.331
+PROPFIND https://richardkmark%40gmail.com@calendar.google.com/calendar/dav/richardkmark%40gmail.com/user/
+Authorization: <Redacted>
+Brief: t
+Content-Length: 819
+Content-Type: text/xml
+Depth: 0
+Prefer: return=minimal
+User-Agent: iOS/14.0 (18A5301v) dataaccessd/1.0
+
+<?xml version="1.0" encoding="UTF-8"?>
+<A:propfind xmlns:A="DAV:">
+  <A:prop>
+    <B:calendar-home-set xmlns:B="urn:ietf:params:xml:ns:caldav"/>
+    <B:calendar-user-address-set xmlns:B="urn:ietf:params:xml:ns:caldav"/>
+    <A:current-user-principal/>
+    <A:displayname/>
+    <C:dropbox-home-URL xmlns:C="http://calendarserver.org/ns/"/>
+    <C:email-address-set xmlns:C="http://calendarserver.org/ns/"/>
+    <B:max-attendees-per-instance xmlns:B="urn:ietf:params:xml:ns:caldav"/>
+    <C:notification-URL xmlns:C="http://calendarserver.org/ns/"/>
+    <A:principal-collection-set/>
+    <A:principal-URL/>
+    <A:resource-id/>
+    <B:schedule-inbox-URL xmlns:B="urn:ietf:params:xml:ns:caldav"/>
+    <B:schedule-outbox-URL xmlns:B="urn:ietf:params:xml:ns:caldav"/>
+    <A:supported-report-set/>
+  </A:prop>
+</A:propfind>
+
+>>>>>
+
+Task 182
+
+<<<<< 2020-07-09 01:27:50.753
+HTTP/1.1 207 (Multi-Status)
+
+Alt-Svc: h3-29=":443"; ma=2592000,h3-27=":443"; ma=2592000,h3-25=":443"; ma=2592000,h3-T050=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Cache-Control: private, max-age=0
+Content-Encoding: gzip
+Content-Security-Policy: frame-ancestors 'self'
+Content-Type: text/xml; charset=UTF-8
+Date: Thu, 09 Jul 2020 08:27:50 GMT
+DAV: 1, calendar-access, calendar-schedule, calendar-auto-schedule, calendar-proxy
+Expires: Thu, 09 Jul 2020 08:27:50 GMT
+Server: GSE
+Transfer-Encoding: Identity
+Vary: Origin, X-Origin
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+
+<?xml version="1.0" encoding="UTF-8"?>
+<D:multistatus xmlns:D="DAV:" xmlns:caldav="urn:ietf:params:xml:ns:caldav" xmlns:cs="http://calendarserver.org/ns/" xmlns:ical="http://apple.com/ns/ical/">
+ <D:response xmlns:carddav="urn:ietf:params:xml:ns:carddav" xmlns:cm="http://cal.me.com/_namespace/" xmlns:md="urn:mobileme:davservices">
+  <D:href>/calendar/dav/richardkmark%40gmail.com/user/</D:href>
+  <D:propstat>
+   <D:status>HTTP/1.1 200 OK</D:status>
+   <D:prop>
+    <D:displayname>Rick Mark</D:displayname>
+    <caldav:calendar-user-address-set>
+     <D:href>/calendar/dav/richardkmark%40gmail.com/user/</D:href>
+     <D:href>mailto:richardkmark@gmail.com</D:href>
+    </caldav:calendar-user-address-set>
+    <caldav:calendar-home-set>
+     <D:href>/calendar/dav/richardkmark%40gmail.com/</D:href>
+    </caldav:calendar-home-set>
+    <caldav:schedule-inbox-URL>
+     <D:href>/calendar/dav/richardkmark%40gmail.com/inbox/</D:href>
+    </caldav:schedule-inbox-URL>
+    <caldav:schedule-outbox-URL>
+     <D:href>/calendar/dav/richardkmark%40gmail.com/outbox/</D:href>
+    </caldav:schedule-outbox-URL>
+    <D:principal-URL>
+     <D:href>/calendar/dav/richardkmark@gmail.com/user/</D:href>
+    </D:principal-URL>
+   </D:prop>
+  </D:propstat>
+ </D:response>
+</D:multistatus>
+
+<<<<<
+
+Task 185
+
+>>>>> 2020-07-09 01:27:50.763
+OPTIONS https://richardkmark%40gmail.com@calendar.google.com/calendar/dav/richardkmark%40gmail.com/user/
+Authorization: <Redacted>
+User-Agent: iOS/14.0 (18A5301v) dataaccessd/1.0
+
+
+>>>>>
+
+Task 185
+
+<<<<< 2020-07-09 01:27:51.005
+HTTP/1.1 200 (OK)
+
+Allow: OPTIONS, PROPFIND, REPORT
+Alt-Svc: h3-29=":443"; ma=2592000,h3-27=":443"; ma=2592000,h3-25=":443"; ma=2592000,h3-T050=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Content-Length: 0
+Content-Security-Policy: frame-ancestors 'self'
+Content-Type: text/plain
+Date: Thu, 09 Jul 2020 08:27:50 GMT
+DAV: 1, calendar-access, calendar-schedule, calendar-auto-schedule, calendar-proxy
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Pragma: no-cache
+Server: GSE
+Vary: Origin, X-Origin
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+
+
+Task 186
+
+>>>>> 2020-07-09 01:27:51.012
+PROPFIND https://richardkmark%40gmail.com@calendar.google.com/calendar/dav/richardkmark%40gmail.com/user/
+Authorization: <Redacted>
+Brief: t
+Content-Length: 130
+Content-Type: text/xml
+Depth: 0
+Prefer: return=minimal
+User-Agent: iOS/14.0 (18A5301v) dataaccessd/1.0
+
+<?xml version="1.0" encoding="UTF-8"?>
+<A:propfind xmlns:A="DAV:">
+  <A:prop>
+    <A:group-membership/>
+  </A:prop>
+</A:propfind>
+
+>>>>>
+
+Task 186
+
+<<<<< 2020-07-09 01:27:51.283
+HTTP/1.1 207 (Multi-Status)
+
+Alt-Svc: h3-29=":443"; ma=2592000,h3-27=":443"; ma=2592000,h3-25=":443"; ma=2592000,h3-T050=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Cache-Control: private, max-age=0
+Content-Encoding: gzip
+Content-Security-Policy: frame-ancestors 'self'
+Content-Type: text/xml; charset=UTF-8
+Date: Thu, 09 Jul 2020 08:27:51 GMT
+DAV: 1, calendar-access, calendar-schedule, calendar-auto-schedule, calendar-proxy
+Expires: Thu, 09 Jul 2020 08:27:51 GMT
+Server: GSE
+Transfer-Encoding: Identity
+Vary: Origin, X-Origin
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+
+<?xml version="1.0" encoding="UTF-8"?>
+<D:multistatus xmlns:D="DAV:" xmlns:caldav="urn:ietf:params:xml:ns:caldav" xmlns:cs="http://calendarserver.org/ns/" xmlns:ical="http://apple.com/ns/ical/">
+ <D:response xmlns:carddav="urn:ietf:params:xml:ns:carddav" xmlns:cm="http://cal.me.com/_namespace/" xmlns:md="urn:mobileme:davservices">
+  <D:href>/calendar/dav/richardkmark%40gmail.com/user/</D:href>
+  <D:propstat>
+   <D:status>HTTP/1.1 200 OK</D:status>
+  </D:propstat>
+ </D:response>
+</D:multistatus>
+
+<<<<<
+
+Task 188
+
+>>>>> 2020-07-09 01:27:51.334
+PROPFIND https://richardkmark%40gmail.com@calendar.google.com/calendar/dav/richardkmark%40gmail.com/
+Authorization: <Redacted>
+Brief: t
+Content-Length: 2237
+Content-Type: text/xml
+Depth: 1
+Prefer: return=minimal
+User-Agent: iOS/14.0 (18A5301v) dataaccessd/1.0
+
+<?xml version="1.0" encoding="UTF-8"?>
+<A:propfind xmlns:A="DAV:">
+  <A:prop>
+    <A:add-member/>
+    <C:allowed-sharing-modes xmlns:C="http://calendarserver.org/ns/"/>
+    <F:autoprovisioned xmlns:F="http://apple.com/ns/ical/"/>
+    <E:bulk-requests xmlns:E="http://me.com/_namespace/"/>
+    <B:calendar-alarm xmlns:B="urn:ietf:params:xml:ns:caldav"/>
+    <F:calendar-color xmlns:F="http://apple.com/ns/ical/"/>
+    <B:calendar-description xmlns:B="urn:ietf:params:xml:ns:caldav"/>
+    <B:calendar-free-busy-set xmlns:B="urn:ietf:params:xml:ns:caldav"/>
+    <F:calendar-order xmlns:F="http://apple.com/ns/ical/"/>
+    <B:calendar-timezone xmlns:B="urn:ietf:params:xml:ns:caldav"/>
+    <A:current-user-privilege-set/>
+    <B:default-alarm-vevent-date xmlns:B="urn:ietf:params:xml:ns:caldav"/>
+    <B:default-alarm-vevent-datetime xmlns:B="urn:ietf:params:xml:ns:caldav"/>
+    <A:displayname/>
+    <C:getctag xmlns:C="http://calendarserver.org/ns/"/>
+    <F:language-code xmlns:F="http://apple.com/ns/ical/"/>
+    <F:location-code xmlns:F="http://apple.com/ns/ical/"/>
+    <B:max-attendees-per-instance xmlns:B="urn:ietf:params:xml:ns:caldav"/>
+    <A:owner/>
+    <C:pre-publish-url xmlns:C="http://calendarserver.org/ns/"/>
+    <C:publish-url xmlns:C="http://calendarserver.org/ns/"/>
+    <C:push-transports xmlns:C="http://calendarserver.org/ns/"/>
+    <C:pushkey xmlns:C="http://calendarserver.org/ns/"/>
+    <A:quota-available-bytes/>
+    <A:quota-used-bytes/>
+    <F:refreshrate xmlns:F="http://apple.com/ns/ical/"/>
+    <A:resource-id/>
+    <A:resourcetype/>
+    <B:schedule-calendar-transp xmlns:B="urn:ietf:params:xml:ns:caldav"/>
+    <B:schedule-default-calendar-URL xmlns:B="urn:ietf:params:xml:ns:caldav"/>
+    <C:source xmlns:C="http://calendarserver.org/ns/"/>
+    <C:subscribed-strip-alarms xmlns:C="http://calendarserver.org/ns/"/>
+    <C:subscribed-strip-attachments xmlns:C="http://calendarserver.org/ns/"/>
+    <C:subscribed-strip-todos xmlns:C="http://calendarserver.org/ns/"/>
+    <B:supported-calendar-component-set xmlns:B="urn:ietf:params:xml:ns:caldav"/>
+    <B:supported-calendar-component-sets xmlns:B="urn:ietf:params:xml:ns:caldav"/>
+    <A:supported-report-set/>
+    <A:sync-token/>
+  </A:prop>
+</A:propfind>
+
+>>>>>
+
+Task 188
+
+<<<<< 2020-07-09 01:27:51.624
+HTTP/1.1 207 (Multi-Status)
+
+Alt-Svc: h3-29=":443"; ma=2592000,h3-27=":443"; ma=2592000,h3-25=":443"; ma=2592000,h3-T050=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Cache-Control: private, max-age=0
+Content-Encoding: gzip
+Content-Security-Policy: frame-ancestors 'self'
+Content-Type: text/xml; charset=UTF-8
+Date: Thu, 09 Jul 2020 08:27:51 GMT
+Expires: Thu, 09 Jul 2020 08:27:51 GMT
+Server: GSE
+Transfer-Encoding: Identity
+Vary: Origin, X-Origin
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+
+<?xml version="1.0" encoding="UTF-8"?>
+<D:multistatus xmlns:D="DAV:" xmlns:caldav="urn:ietf:params:xml:ns:caldav" xmlns:cs="http://calendarserver.org/ns/" xmlns:ical="http://apple.com/ns/ical/">
+ <D:response xmlns:carddav="urn:ietf:params:xml:ns:carddav" xmlns:cm="http://cal.me.com/_namespace/" xmlns:md="urn:mobileme:davservices">
+  <D:href>/calendar/dav/richardkmark%40gmail.com/</D:href>
+  <D:propstat>
+   <D:status>HTTP/1.1 200 OK</D:status>
+   <D:prop>
+    <D:supported-report-set>
+     <D:supported-report>
+      <D:report>
+       <D:sync-collection/>
+      </D:report>
+     </D:supported-report>
+    </D:supported-report-set>
+    <D:resourcetype>
+     <D:collection/>
+    </D:resourcetype>
+    <D:sync-token/>
+   </D:prop>
+  </D:propstat>
+ </D:response>
+ <D:response xmlns:carddav="urn:ietf:params:xml:ns:carddav" xmlns:cm="http://cal.me.com/_namespace/" xmlns:md="urn:mobileme:davservices">
+  <D:href>/calendar/dav/richardkmark%40gmail.com/events/</D:href>
+  <D:propstat>
+   <D:status>HTTP/1.1 200 OK</D:status>
+   <D:prop>
+    <D:displayname>rickmark@outlook.com</D:displayname>
+    <D:owner>
+     <D:href>/calendar/dav/richardkmark%40gmail.com/user</D:href>
+    </D:owner>
+    <D:current-user-privilege-set>
+     <D:privilege>
+      <D:read/>
+     </D:privilege>
+     <D:privilege>
+      <caldav:read-free-busy/>
+     </D:privilege>
+     <D:privilege>
+      <D:read-current-user-privilege-set/>
+     </D:privilege>
+     <D:privilege>
+      <D:write/>
+     </D:privilege>
+     <D:privilege>
+      <D:write-content/>
+     </D:privilege>
+     <D:privilege>
+      <D:write-properties/>
+     </D:privilege>
+     <D:privilege>
+      <D:bind/>
+     </D:privilege>
+     <D:privilege>
+      <D:unbind/>
+     </D:privilege>
+    </D:current-user-privilege-set>
+    <cs:getctag>63708104384</cs:getctag>
+    <D:supported-report-set>
+     <D:supported-report>
+      <D:report>
+       <caldav:calendar-multiget/>
+      </D:report>
+     </D:supported-report>
+     <D:supported-report>
+      <D:report>
+       <caldav:calendar-query/>
+      </D:report>
+     </D:supported-report>
+     <D:supported-report>
+      <D:report>
+       <D:sync-collection/>
+      </D:report>
+     </D:supported-report>
+    </D:supported-report-set>
+    <ical:calendar-color>#9FE1E7FF</ical:calendar-color>
+    <ical:calendar-order>1</ical:calendar-order>
+    <caldav:calendar-description>richardkmark@gmail.com</caldav:calendar-description>
+    <caldav:calendar-timezone>BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+X-WR-CALNAME:rickmark@outlook.com
+X-WR-TIMEZONE:America/Los_Angeles
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+X-LIC-LOCATION:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+END:VCALENDAR
+</caldav:calendar-timezone>
+    <caldav:supported-calendar-component-set>
+     <caldav:comp name="VEVENT"/>
+    </caldav:supported-calendar-component-set>
+    <D:resourcetype>
+     <D:collection/>
+     <caldav:calendar/>
+    </D:resourcetype>
+    <D:sync-token>/calendar/dav/richardkmark%40gmail.com/events/sync/ChQIkNKjsb3D5QIQkNKjsb3D5QIYBQ==</D:sync-token>
+   </D:prop>
+  </D:propstat>
+ </D:response>
+ <D:response xmlns:carddav="urn:ietf:params:xml:ns:carddav" xmlns:cm="http://cal.me.com/_namespace/" xmlns:md="urn:mobileme:davservices">
+  <D:href>/calendar/dav/richardkmark%40gmail.com/user</D:href>
+  <D:propstat>
+   <D:status>HTTP/1.1 200 OK</D:status>
+   <D:prop>
+    <D:displayname>Rick Mark</D:displayname>
+    <D:owner>
+     <D:href>/calendar/dav/richardkmark%40gmail.com/user</D:href>
+    </D:owner>
+    <D:resourcetype>
+     <D:principal/>
+    </D:resourcetype>
+   </D:prop>
+  </D:propstat>
+ </D:response>
+ <D:response xmlns:carddav="urn:ietf:params:xml:ns:carddav" xmlns:cm="http://cal.me.com/_namespace/" xmlns:md="urn:mobileme:davservices">
+  <D:href>/calendar/dav/richardkmark%40gmail.com/inbox/</D:href>
+  <D:propstat>
+   <D:status>HTTP/1.1 200 OK</D:status>
+   <D:prop>
+    <D:owner>
+     <D:href>/calendar/dav/richardkmark%40gmail.com/user</D:href>
+    </D:owner>
+    <cs:getctag>never-changes</cs:getctag>
+    <caldav:calendar-free-busy-set>
+     <D:href>/calendar/dav/richardkmark%40gmail.com/events/</D:href>
+    </caldav:calendar-free-busy-set>
+    <D:resourcetype>
+     <D:collection/>
+     <caldav:schedule-inbox/>
+    </D:resourcetype>
+   </D:prop>
+  </D:propstat>
+ </D:response>
+ <D:response xmlns:carddav="urn:ietf:params:xml:ns:carddav" xmlns:cm="http://cal.me.com/_namespace/" xmlns:md="urn:mobileme:davservices">
+  <D:href>/calendar/dav/richardkmark%40gmail.com/outbox/</D:href>
+  <D:propstat>
+   <D:status>HTTP/1.1 200 OK</D:status>
+   <D:prop>
+    <cs:getctag>never-changes</cs:getctag>
+    <D:resourcetype>
+     <D:collection/>
+     <caldav:schedule-outbox/>
+    </D:resourcetype>
+   </D:prop>
+  </D:propstat>
+ </D:response>
+ <D:response xmlns:carddav="urn:ietf:params:xml:ns:carddav" xmlns:cm="http://cal.me.com/_namespace/" xmlns:md="urn:mobileme:davservices">
+  <D:href>/calendar/dav/c5i68sj5edpm4rrfdchm6rreehgm6t3j81jn4rrle0n7cbj3c5m6arj4c5p2sprfdtjmop9ecdnmq%40virtual/events/</D:href>
+  <D:propstat>
+   <D:status>HTTP/1.1 200 OK</D:status>
+   <D:prop>
+    <D:displayname>Contacts</D:displayname>
+    <D:owner>
+     <D:href>/calendar/dav/c5i68sj5edpm4rrfdchm6rreehgm6t3j81jn4rrle0n7cbj3c5m6arj4c5p2sprfdtjmop9ecdnmq%40virtual/user</D:href>
+    </D:owner>
+    <D:current-user-privilege-set>
+     <D:privilege>
+      <D:read/>
+     </D:privilege>
+     <D:privilege>
+      <caldav:read-free-busy/>
+     </D:privilege>
+     <D:privilege>
+      <D:read-current-user-privilege-set/>
+     </D:privilege>
+     <D:privilege>
+      <D:write-properties/>
+     </D:privilege>
+    </D:current-user-privilege-set>
+    <cs:getctag>63729850055</cs:getctag>
+    <D:supported-report-set>
+     <D:supported-report>
+      <D:report>
+       <caldav:calendar-multiget/>
+      </D:report>
+     </D:supported-report>
+     <D:supported-report>
+      <D:report>
+       <caldav:calendar-query/>
+      </D:report>
+     </D:supported-report>
+     <D:supported-report>
+      <D:report>
+       <D:sync-collection/>
+      </D:report>
+     </D:supported-report>
+    </D:supported-report-set>
+    <ical:calendar-color>#92E1C0FF</ical:calendar-color>
+    <ical:calendar-order>2</ical:calendar-order>
+    <caldav:calendar-description>addressbook#contacts@group.v.calendar.google.com</caldav:calendar-description>
+    <caldav:calendar-timezone>BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+X-WR-TIMEZONE:America/Los_Angeles
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+X-LIC-LOCATION:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+END:VCALENDAR
+</caldav:calendar-timezone>
+    <caldav:supported-calendar-component-set>
+     <caldav:comp name="VEVENT"/>
+    </caldav:supported-calendar-component-set>
+    <D:resourcetype>
+     <D:collection/>
+     <caldav:calendar/>
+     <cs:shared/>
+    </D:resourcetype>
+    <D:sync-token>/calendar/dav/c5i68sj5edpm4rrfdchm6rreehgm6t3j81jn4rrle0n7cbj3c5m6arj4c5p2sprfdtjmop9ecdnmq%40virtual/events/sync/ChQIwL/rqK686gIQwL/rqK686gIYAQ==</D:sync-token>
+   </D:prop>
+  </D:propstat>
+ </D:response>
+ <D:response xmlns:carddav="urn:ietf:params:xml:ns:carddav" xmlns:cm="http://cal.me.com/_namespace/" xmlns:md="urn:mobileme:davservices">
+  <D:href>/calendar/dav/cln2stbjc4hmgrrcd5i62ua0ctp6utbg5pr2sor1dhimsp31e8n6errfctm6abj3dtmg%40virtual/events/</D:href>
+  <D:propstat>
+   <D:status>HTTP/1.1 200 OK</D:status>
+   <D:prop>
+    <D:displayname>Holidays in United States</D:displayname>
+    <D:owner>
+     <D:href>/calendar/dav/cln2stbjc4hmgrrcd5i62ua0ctp6utbg5pr2sor1dhimsp31e8n6errfctm6abj3dtmg%40virtual/user</D:href>
+    </D:owner>
+    <D:current-user-privilege-set>
+     <D:privilege>
+      <D:read/>
+     </D:privilege>
+     <D:privilege>
+      <caldav:read-free-busy/>
+     </D:privilege>
+     <D:privilege>
+      <D:read-current-user-privilege-set/>
+     </D:privilege>
+     <D:privilege>
+      <D:write-properties/>
+     </D:privilege>
+    </D:current-user-privilege-set>
+    <cs:getctag>63729874854</cs:getctag>
+    <D:supported-report-set>
+     <D:supported-report>
+      <D:report>
+       <caldav:calendar-multiget/>
+      </D:report>
+     </D:supported-report>
+     <D:supported-report>
+      <D:report>
+       <caldav:calendar-query/>
+      </D:report>
+     </D:supported-report>
+     <D:supported-report>
+      <D:report>
+       <D:sync-collection/>
+      </D:report>
+     </D:supported-report>
+    </D:supported-report-set>
+    <ical:calendar-color>#42D692FF</ical:calendar-color>
+    <ical:calendar-order>3</ical:calendar-order>
+    <caldav:calendar-description>en.usa#holiday@group.v.calendar.google.com</caldav:calendar-description>
+    <caldav:calendar-timezone>BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+X-WR-TIMEZONE:America/Los_Angeles
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+X-LIC-LOCATION:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+END:VCALENDAR
+</caldav:calendar-timezone>
+    <caldav:supported-calendar-component-set>
+     <caldav:comp name="VEVENT"/>
+    </caldav:supported-calendar-component-set>
+    <D:resourcetype>
+     <D:collection/>
+     <caldav:calendar/>
+     <cs:shared/>
+    </D:resourcetype>
+    <D:sync-token>/calendar/dav/cln2stbjc4hmgrrcd5i62ua0ctp6utbg5pr2sor1dhimsp31e8n6errfctm6abj3dtmg%40virtual/events/sync/ChQIgKv22Yq96gIQgKv22Yq96gIYAQ==</D:sync-token>
+   </D:prop>
+  </D:propstat>
+ </D:response>
+</D:multistatus>
+
+<<<<<

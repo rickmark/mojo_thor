@@ -1,0 +1,263 @@
+{"app_name":"grindrx","timestamp":"2020-07-06 07:07:41.00 -0700","app_version":"6.15.0","slice_uuid":"62caa164-090f-3750-bdac-deadfa4cd3af","adam_id":"319881193","build_version":"16944.22944","platform":2,"bundleID":"com.grindrguy.grindrx","share_with_app_devs":1,"is_first_party":0,"bug_type":"309","os_version":"iPhone OS 14.0 (18A5301v)","incident_id":"E98A632D-3C87-43B3-B629-A616A888BC6A","name":"grindrx"}
+{
+  "uptime" : 280000,
+  "procLaunch" : "2020-07-06 00:56:36.6308 -0700",
+  "procRole" : "unknown",
+  "exception" : {
+    "type" : "EXC_BAD_ACCESS",
+    "signal" : "SIGBUS",
+    "subtype" : " FS pagein error: 1 Operation not permitted"
+  },
+  "userID" : 501,
+  "modelCode" : "iPhone12,5",
+  "coalitionID" : 1601,
+  "osVersion" : {
+    "train" : "iPhone OS 14.0",
+    "build" : "18A5301v",
+    "releaseType" : "Beta"
+  },
+  "captureTime" : "2020-07-06 07:07:40.2476 -0700",
+  "incident" : "E98A632D-3C87-43B3-B629-A616A888BC6A",
+  "pid" : 12899,
+  "cpuType" : "ARM-64",
+  "procName" : "grindrx",
+  "procPath" : "\/Volumes\/VOLUME\/*\/grindrx.app\/grindrx",
+  "bundleInfo" : {"CFBundleShortVersionString":"6.15.0","CFBundleVersion":"16944.22944","CFBundleIdentifier":"com.grindrguy.grindrx","DTAppStoreToolsBuild":"11E608a"},
+  "storeInfo" : {"storeCohortMetadata":"7|date=1250310600000&sf=143441","itemID":"319881193","deviceIdentifierForVendor":"419641BD-FD0C-437E-8ECD-C735F6A68FB5","applicationVariant":"1:iPhone12,5:13","applicationType":"User"},
+  "parentProc" : "launchd",
+  "parentPid" : 1,
+  "coalitionName" : "com.grindrguy.grindrx",
+  "crashReporterKey" : "79c8e38c0fdc9c09bcf43329ed8e406290c19b4c",
+  "basebandVersion" : "1.50.14",
+  "vmregioninfo" : "0x1192572e5 is in 0x118e00000-0x11a600000;  bytes after start: 4551397  bytes before end: 20614426\n      REGION TYPE                      START - END             [ VSIZE] PRT\/MAX SHRMOD  REGION DETAIL\n      MALLOC_TINY                   118d00000-118e00000        [ 1024K] rw-\/rwx SM=PRV  \n--->  mapped file                   118e00000-11a600000        [ 24.0M] r--\/rw- SM=S\/A  ...t_id=6beb9eaf\n      MALLOC_TINY                   11a600000-11a700000        [ 1024K] rw-\/rwx SM=PRV  ",
+  "is_corpse" : 1,
+  "termination" : {"reason":"Namespace SIGNAL, Code 0xa","signal":"Bus error: 10","byProc":"exc handler","code":10,"namespace":"SIGNAL","byPid":12899,"flags":0},
+  "threads" : [{"triggered":true,"id":3403843,"queue":"com.apple.main-thread","frames":[[0,12838220],[0,14009840],[0,14012212],[0,29681252],[0,1686840],[1,1402508],[2,649340],[2,648460],[2,645928],[2,622888],[2,620080],[3,14360],[4,11782712],[4,11807016],[0,1766368],[5,5004]]},{"id":3403859,"name":"JavaScriptCore bmalloc scavenger","frames":[[6,161652],[7,21840],[8,39420],[9,15402572],[9,15420344],[9,15419376],[9,15424628],[7,7320],[7,42888]]},{"id":3403872,"name":"com.apple.uikit.eventfetch-thread","frames":[[6,16048],[6,12900],[2,645276],[2,622336],[2,620080],[1,32448],[1,32152],[4,12496476],[1,1512184],[7,7320],[7,42888]]},{"id":3404029,"name":"com.twitter.crashlytics.ios.MachExceptionServer","frames":[[6,16048],[6,12900],[0,26843872],[7,7320],[7,42888]]},{"id":3404254,"name":"AVAudioSession Notify Thread","frames":[[6,16048],[6,12900],[2,645276],[2,622336],[2,620080],[10,50168],[10,58580],[7,7320],[7,42888]]},{"id":3404356,"name":"com.apple.NSURLConnectionLoader","frames":[[6,16048],[6,12900],[2,645276],[2,622336],[2,620080],[11,2324908],[1,1512184],[7,7320],[7,42888]]},{"id":3405412,"name":"GRDATABASE_WRITE_THREAD","frames":[[6,16048],[6,12900],[2,645276],[2,622336],[2,620080],[1,32448],[1,239740],[0,1483552],[1,1512184],[7,7320],[7,42888]]},{"id":3405413,"name":"GRDATABASE_READ_THREAD","frames":[[6,16048],[6,12900],[2,645276],[2,622336],[2,620080],[1,32448],[1,239740],[0,1483724],[1,1512184],[7,7320],[7,42888]]},{"id":3405417,"name":"Realm notification listener","frames":[[6,169212],[0,29434452],[0,29435836],[7,7320],[7,42888]]},{"id":3405460,"name":"com.apple.CFStream.LegacyThread","frames":[[6,16048],[6,12900],[2,645276],[2,622336],[2,620080],[2,762168],[7,7320],[7,42888]]},{"id":3405476,"name":"com.apple.CFSocket.private","frames":[[6,162904],[2,695776],[7,7320],[7,42888]]},{"id":3405535,"name":"WebThread","frames":[[6,16048],[6,12900],[2,645276],[2,622336],[2,620080],[12,12233232],[7,7320],[7,42888]]},{"id":3426709,"queue":"com.google.fira.worker","frames":[[13,31828],[13,39136],[13,39136],[13,38944],[13,60680],[13,58480],[13,68740],[14,169784],[14,740304],[14,270116],[0,33692260],[0,33693884],[0,33435612],[0,33520184],[0,33520008],[0,33517572],[15,10396],[15,17300],[15,45876],[15,48736],[15,88940],[7,14600],[7,42876]]},{"id":3563917,"frames":[[7,42868]]},{"id":3563938,"frames":[[7,42868]]},{"id":3563999,"name":"GCDAsyncSocket-CFStream","frames":[[6,16048],[6,12900],[2,645276],[2,622336],[2,620080],[1,32448],[0,26698012],[1,1512184],[7,7320],[7,42888]]},{"id":3564091,"frames":[[7,42868]]},{"id":3564275,"frames":[[7,42868]]},{"id":3564276,"frames":[[7,42868]]}],
+  "threadState" : {
+  "x" : [
+    4423377600,
+    13,
+    4037,
+    0,
+    114,
+    114,
+    4611686029190422448,
+    10784458160,
+    4716851928,
+    4423377264,
+    0,
+    8725728701073936,
+    5,
+    4423043648,
+    32210692985809152,
+    4404986016,
+    6828498916,
+    4414249152,
+    4695803276,
+    13,
+    4423376832,
+    4423376832,
+    13,
+    4430159872,
+    8298366920,
+    4391353205,
+    10760181296,
+    8041718059,
+    8049209771
+  ],
+  "flavor" : "ARM_THREAD_STATE64",
+  "lr" : 4358489584,
+  "cpsr" : 1610612736,
+  "fp" : 6122395616,
+  "sp" : 6122395600,
+  "esr" : 2449473543,
+  "esr_description" : "(Data Abort) byte read Translation fault",
+  "pc" : 4357317964
+},
+  "usedImages" : [
+  [
+    "62caa164-090f-3750-bdac-deadfa4cd3af",
+    4344479744,
+    "P"
+  ],
+  [
+    "e4deeb39-f560-3043-b1a5-62242dee0f18",
+    6834765824,
+    "P"
+  ],
+  [
+    "334fce90-3729-30b1-8f52-182b5aceb454",
+    6830428160,
+    "P"
+  ],
+  [
+    "a6cda35f-0936-3eb7-981f-bf50edb5b06e",
+    7030108160,
+    "P"
+  ],
+  [
+    "8b922c39-ce14-3b3f-b9c1-a5414ebe342c",
+    6894292992,
+    "P"
+  ],
+  [
+    "496ad165-6976-3479-8511-bf5bed814142",
+    6829518848,
+    "P"
+  ],
+  [
+    "3ef668b5-8d98-3daf-a94c-cc8f2a657abd",
+    6829318144,
+    "P"
+  ],
+  [
+    "bfdbeb73-e71e-321d-8589-2ff410dca347",
+    6828486656,
+    "P"
+  ],
+  [
+    "24bd1575-64d6-3706-80bb-7fc039ea38e1",
+    6829797376,
+    "P"
+  ],
+  [
+    "0284d7b5-51df-34c8-807f-ba431ebcae1d",
+    7116169216,
+    "P"
+  ],
+  [
+    "5c74ce35-0017-3db1-b1a3-10c4f44f7c8a",
+    7919480832,
+    "P"
+  ],
+  [
+    "a7186555-a05b-3836-b64c-027551f6af66",
+    6888689664,
+    "P"
+  ],
+  [
+    "f5fdfe40-78e8-33ad-be8c-45ef846b2618",
+    6979792896,
+    "P"
+  ],
+  [
+    "b784a3e3-967e-3cd4-b08e-27e41c7994fc",
+    6827200512,
+    "P"
+  ],
+  [
+    "9c3b29ba-7d13-3d16-a6d2-81f9f9ad8577",
+    6861074432,
+    "P"
+  ],
+  [
+    "28a090f9-05c2-3563-845f-4fe958ebdc4d",
+    6828040192,
+    "P"
+  ]
+],
+  "legacyInfo" : {
+  "imageExtraInfo" : [
+    {
+      "size" : 53018624,
+      "arch" : "arm64",
+      "path" : "\/Volumes\/VOLUME\/*\/grindrx.app\/grindrx",
+      "name" : "grindrx"
+    },
+    {
+      "size" : 2809856,
+      "arch" : "arm64e",
+      "path" : "\/System\/Library\/Frameworks\/Foundation.framework\/Foundation",
+      "name" : "Foundation"
+    },
+    {
+      "size" : 3842048,
+      "arch" : "arm64e",
+      "path" : "\/System\/Library\/Frameworks\/CoreFoundation.framework\/CoreFoundation",
+      "name" : "CoreFoundation"
+    },
+    {
+      "size" : 36864,
+      "arch" : "arm64e",
+      "path" : "\/System\/Library\/PrivateFrameworks\/GraphicsServices.framework\/GraphicsServices",
+      "name" : "GraphicsServices"
+    },
+    {
+      "size" : 20647936,
+      "arch" : "arm64e",
+      "path" : "\/System\/Library\/PrivateFrameworks\/UIKitCore.framework\/UIKitCore",
+      "name" : "UIKitCore"
+    },
+    {
+      "size" : 237568,
+      "arch" : "arm64e",
+      "path" : "\/usr\/lib\/system\/libdyld.dylib",
+      "name" : "libdyld.dylib"
+    },
+    {
+      "size" : 200704,
+      "arch" : "arm64e",
+      "path" : "\/usr\/lib\/system\/libsystem_kernel.dylib",
+      "name" : "libsystem_kernel.dylib"
+    },
+    {
+      "size" : 49152,
+      "arch" : "arm64e",
+      "path" : "\/usr\/lib\/system\/libsystem_pthread.dylib",
+      "name" : "libsystem_pthread.dylib"
+    },
+    {
+      "size" : 372736,
+      "arch" : "arm64e",
+      "path" : "\/usr\/lib\/libc++.1.dylib",
+      "name" : "libc++.1.dylib"
+    },
+    {
+      "size" : 16445440,
+      "arch" : "arm64e",
+      "path" : "\/System\/Library\/Frameworks\/JavaScriptCore.framework\/JavaScriptCore",
+      "name" : "JavaScriptCore"
+    },
+    {
+      "size" : 98304,
+      "arch" : "arm64e",
+      "path" : "\/System\/Library\/PrivateFrameworks\/AudioSession.framework\/AudioSession",
+      "name" : "AudioSession"
+    },
+    {
+      "size" : 4546560,
+      "arch" : "arm64e",
+      "path" : "\/System\/Library\/Frameworks\/CFNetwork.framework\/CFNetwork",
+      "name" : "CFNetwork"
+    },
+    {
+      "size" : 36696064,
+      "arch" : "arm64e",
+      "path" : "\/System\/Library\/PrivateFrameworks\/WebCore.framework\/WebCore",
+      "name" : "WebCore"
+    },
+    {
+      "size" : 94208,
+      "arch" : "arm64e",
+      "path" : "\/usr\/lib\/system\/libsystem_trace.dylib",
+      "name" : "libsystem_trace.dylib"
+    },
+    {
+      "size" : 1597440,
+      "arch" : "arm64e",
+      "path" : "\/usr\/lib\/libsqlite3.dylib",
+      "name" : "libsqlite3.dylib"
+    },
+    {
+      "size" : 270336,
+      "arch" : "arm64e",
+      "path" : "\/usr\/lib\/system\/libdispatch.dylib",
+      "name" : "libdispatch.dylib"
+    }
+  ],
+  "threadTriggered" : {
+    "index" : 0,
+    "queue" : "com.apple.main-thread"
+  }
+}
+}

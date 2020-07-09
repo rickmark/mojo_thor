@@ -1,0 +1,246 @@
+{"app_name":"locationd","timestamp":"2020-07-05 22:50:38.00 -0700","app_version":"","slice_uuid":"bedcb160-b644-32ea-9a44-215f5bf93d28","build_version":"","platform":2,"share_with_app_devs":1,"is_first_party":1,"bug_type":"309","os_version":"iPhone OS 14.0 (18A5301v)","incident_id":"38196659-98CA-4DEB-AFB3-1EEFDEFD0307","name":"locationd"}
+{
+  "uptime" : 260000,
+  "procLaunch" : "2020-07-05 22:49:49.3377 -0700",
+  "procRole" : "Unspecified",
+  "exception" : {
+    "type" : "EXC_BAD_ACCESS",
+    "signal" : "SIGSEGV",
+    "subtype" : "KERN_INVALID_ADDRESS at 0x3333333333333333 -> 0x0000003333333333 (possible pointer authentication failure)"
+  },
+  "userID" : 0,
+  "modelCode" : "iPhone12,5",
+  "coalitionID" : 590,
+  "osVersion" : {
+    "train" : "iPhone OS 14.0",
+    "build" : "18A5301v",
+    "releaseType" : "Beta"
+  },
+  "captureTime" : "2020-07-05 22:50:38.1030 -0700",
+  "incident" : "38196659-98CA-4DEB-AFB3-1EEFDEFD0307",
+  "pid" : 12056,
+  "cpuType" : "ARM-64",
+  "procName" : "locationd",
+  "procPath" : "\/usr\/libexec\/locationd",
+  "parentProc" : "launchd",
+  "parentPid" : 1,
+  "coalitionName" : "com.apple.locationd",
+  "crashReporterKey" : "79c8e38c0fdc9c09bcf43329ed8e406290c19b4c",
+  "basebandVersion" : "1.50.14",
+  "vmregioninfo" : "0x3333333333 is not in any region.  Bytes after previous region: 211329299252  \n      REGION TYPE                      START - END             [ VSIZE] PRT\/MAX SHRMOD  REGION DETAIL\n      unused shlib __TEXT           1fe77a000-1fefe0000        [ 8600K] r--\/r-- SM=COW  ... this process\n--->  \n      UNUSED SPACE AT END",
+  "is_corpse" : 1,
+  "termination" : {"reason":"Namespace SIGNAL, Code 0xb","signal":"Segmentation fault: 11","byProc":"exc handler","code":11,"namespace":"SIGNAL","byPid":12056,"flags":0},
+  "threads" : [{"id":3331814,"queue":"com.apple.main-thread","frames":[[0,169292],[1,145192],[1,147940],[1,75244],[1,74196],[2,83924],[3,2329192],[4,647460],[4,647272],[4,644856],[4,621948],[4,620080],[4,623756],[3,14409772],[3,14412268],[3,14420168],[5,5004]]},{"id":3331821,"name":"com.apple.CoreMotion.MotionThread","frames":[[0,16048],[0,12900],[4,645276],[4,622336],[4,620080],[4,623756],[3,5386476],[6,7320],[6,42888]]},{"id":3331823,"frames":[[6,42868]]},{"id":3331826,"queue":"CLWifiLocationProviderSilo(CLPositioningWorkloop)","frames":[[7,87440],[7,75892],[8,72532],[3,2437276],[3,2437164],[3,2436292],[3,2418576],[3,9574736],[3,2401676],[3,2409804],[3,3090956],[3,1033668],[4,1203348],[4,8004],[4,9480],[1,10396],[1,17300],[1,45876],[1,48788],[1,53140],[1,88940],[6,14600],[6,42876]]},{"id":3331830,"frames":[[0,16048],[0,12900],[4,645276],[4,622336],[4,620080],[9,32448],[9,239740],[9,1512184],[6,7320],[6,42888]]},{"id":3331839,"frames":[[10,239416],[10,239416],[10,247028],[3,11747528],[11,219902325555]],"triggered":true},{"id":3331856,"name":"CommonUtilities-WiFi-Thread","frames":[[0,16048],[0,12900],[4,645276],[4,622336],[4,620080],[4,623756],[12,56440],[9,1512184],[6,7320],[6,42888]]},{"id":3331870,"queue":"NSOperationQueue 0x1063c4950 (QOS: UNSPECIFIED)","frames":[[0,16048],[0,12900],[13,471336],[13,425748],[13,425060],[14,84384],[9,1236988],[9,126508],[9,1239652],[9,1238292],[1,73448],[1,17300],[1,29828],[1,27576],[1,83888],[1,85908],[6,14540],[6,42876]]},{"id":3332042,"frames":[[6,42868]]},{"id":3332140,"frames":[[6,42868]]},{"id":3332141,"frames":[[6,42868]]},{"id":3332229,"frames":[[6,42868]]},{"id":3332230,"frames":[[6,42868]]}],
+  "threadState" : {
+  "x" : [
+    3689348814741910323,
+    0,
+    2147478524,
+    6109393401,
+    48,
+    2,
+    0,
+    0,
+    3689348814741910323,
+    8362037800,
+    137,
+    9223372036854775670,
+    0,
+    0,
+    0,
+    1,
+    396,
+    2,
+    0,
+    4396706424,
+    4100,
+    1,
+    6109389502,
+    6109389369,
+    189,
+    6109389368,
+    188,
+    67,
+    0
+  ],
+  "flavor" : "ARM_THREAD_STATE64",
+  "lr" : 6827759416,
+  "cpsr" : 536870912,
+  "fp" : 6109389088,
+  "sp" : 6109389072,
+  "esr" : 2449473540,
+  "esr_description" : "(Data Abort) byte read Translation fault",
+  "pc" : 6827759416
+},
+  "usedImages" : [
+  [
+    "3ef668b5-8d98-3daf-a94c-cc8f2a657abd",
+    6829318144,
+    "P"
+  ],
+  [
+    "28a090f9-05c2-3563-845f-4fe958ebdc4d",
+    6828040192,
+    "P"
+  ],
+  [
+    "f5117106-a5aa-34eb-bfa5-cb2cd43f82a0",
+    6970462208,
+    "P"
+  ],
+  [
+    "bedcb160-b644-32ea-9a44-215f5bf93d28",
+    4368367616,
+    "P"
+  ],
+  [
+    "334fce90-3729-30b1-8f52-182b5aceb454",
+    6830428160,
+    "P"
+  ],
+  [
+    "496ad165-6976-3479-8511-bf5bed814142",
+    6829518848,
+    "P"
+  ],
+  [
+    "bfdbeb73-e71e-321d-8589-2ff410dca347",
+    6828486656,
+    "P"
+  ],
+  [
+    "6379b758-0a24-3de6-8bf4-83ee8049e818",
+    6828310528,
+    "P"
+  ],
+  [
+    "29f1a81f-d0cc-3cef-a3e6-cf18507e40ab",
+    6829228032,
+    "P"
+  ],
+  [
+    "e4deeb39-f560-3043-b1a5-62242dee0f18",
+    6834765824,
+    "P"
+  ],
+  [
+    "c4f2e49f-dfec-369b-af8d-57609c06082b",
+    6827520000,
+    "P"
+  ],
+  [
+    "00000000-0000-0000-0000-000000000000",
+    0,
+    "A"
+  ],
+  [
+    "ea496dca-3fd4-3013-93d9-ff95bd038fab",
+    6880653312,
+    "P"
+  ],
+  [
+    "ab64536d-3be0-3e09-b751-e05f7f0aa132",
+    6846349312,
+    "P"
+  ],
+  [
+    "b01446a4-9d6e-3b52-9930-6aaefbb54bd4",
+    7184613376,
+    "P"
+  ]
+],
+  "legacyInfo" : {
+  "imageExtraInfo" : [
+    {
+      "size" : 200704,
+      "arch" : "arm64e",
+      "path" : "\/usr\/lib\/system\/libsystem_kernel.dylib",
+      "name" : "libsystem_kernel.dylib"
+    },
+    {
+      "size" : 270336,
+      "arch" : "arm64e",
+      "path" : "\/usr\/lib\/system\/libdispatch.dylib",
+      "name" : "libdispatch.dylib"
+    },
+    {
+      "size" : 155648,
+      "arch" : "arm64e",
+      "path" : "\/System\/Library\/PrivateFrameworks\/LocationSupport.framework\/LocationSupport",
+      "name" : "LocationSupport"
+    },
+    {
+      "size" : 23560192,
+      "arch" : "arm64e",
+      "path" : "\/usr\/libexec\/locationd",
+      "name" : "locationd"
+    },
+    {
+      "size" : 3842048,
+      "arch" : "arm64e",
+      "path" : "\/System\/Library\/Frameworks\/CoreFoundation.framework\/CoreFoundation",
+      "name" : "CoreFoundation"
+    },
+    {
+      "size" : 237568,
+      "arch" : "arm64e",
+      "path" : "\/usr\/lib\/system\/libdyld.dylib",
+      "name" : "libdyld.dylib"
+    },
+    {
+      "size" : 49152,
+      "arch" : "arm64e",
+      "path" : "\/usr\/lib\/system\/libsystem_pthread.dylib",
+      "name" : "libsystem_pthread.dylib"
+    },
+    {
+      "size" : 147456,
+      "arch" : "arm64e",
+      "path" : "\/usr\/lib\/system\/libsystem_malloc.dylib",
+      "name" : "libsystem_malloc.dylib"
+    },
+    {
+      "size" : 90112,
+      "arch" : "arm64e",
+      "path" : "\/usr\/lib\/libc++abi.dylib",
+      "name" : "libc++abi.dylib"
+    },
+    {
+      "size" : 2809856,
+      "arch" : "arm64e",
+      "path" : "\/System\/Library\/Frameworks\/Foundation.framework\/Foundation",
+      "name" : "Foundation"
+    },
+    {
+      "size" : 520192,
+      "arch" : "arm64e",
+      "path" : "\/usr\/lib\/system\/libsystem_c.dylib",
+      "name" : "libsystem_c.dylib"
+    },
+    {
+      "size" : 0
+    },
+    {
+      "size" : 114688,
+      "arch" : "arm64e",
+      "path" : "\/System\/Library\/PrivateFrameworks\/CommonUtilities.framework\/CommonUtilities",
+      "name" : "CommonUtilities"
+    },
+    {
+      "size" : 696320,
+      "arch" : "arm64e",
+      "path" : "\/System\/Library\/Frameworks\/IOKit.framework\/Versions\/A\/IOKit",
+      "name" : "IOKit"
+    },
+    {
+      "size" : 184320,
+      "arch" : "arm64e",
+      "path" : "\/System\/Library\/PrivateFrameworks\/PersistentConnection.framework\/PersistentConnection",
+      "name" : "PersistentConnection"
+    }
+  ],
+  "threadTriggered" : {
+    "index" : 5
+  }
+}
+}

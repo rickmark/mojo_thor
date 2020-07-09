@@ -1,0 +1,230 @@
+{"app_name":"grindrx","timestamp":"2020-07-07 21:55:11.00 -0700","app_version":"6.16.1","slice_uuid":"4dfa465f-2aa0-3612-a712-f5d41fa0ebc6","adam_id":"319881193","build_version":"17042.23178","platform":2,"bundleID":"com.grindrguy.grindrx","share_with_app_devs":1,"is_first_party":0,"bug_type":"309","os_version":"iPhone OS 14.0 (18A5301v)","incident_id":"1BDD1AFA-1CB7-48CA-A93F-53FAAA1C1EF8","name":"grindrx"}
+{
+  "uptime" : 390000,
+  "procLaunch" : "2020-07-07 20:56:50.1572 -0700",
+  "procRole" : "unknown",
+  "exception" : {
+    "type" : "EXC_BAD_ACCESS",
+    "signal" : "SIGBUS",
+    "subtype" : " FS pagein error: 1 Operation not permitted"
+  },
+  "userID" : 501,
+  "modelCode" : "iPhone12,5",
+  "coalitionID" : 1601,
+  "osVersion" : {
+    "train" : "iPhone OS 14.0",
+    "build" : "18A5301v",
+    "releaseType" : "Beta"
+  },
+  "captureTime" : "2020-07-07 21:55:10.6805 -0700",
+  "incident" : "1BDD1AFA-1CB7-48CA-A93F-53FAAA1C1EF8",
+  "pid" : 28239,
+  "cpuType" : "ARM-64",
+  "procName" : "grindrx",
+  "procPath" : "\/Volumes\/VOLUME\/*\/grindrx.app\/grindrx",
+  "bundleInfo" : {"CFBundleShortVersionString":"6.16.1","CFBundleVersion":"17042.23178","CFBundleIdentifier":"com.grindrguy.grindrx","DTAppStoreToolsBuild":"11E608a"},
+  "storeInfo" : {"storeCohortMetadata":"8|date=1250311776000&amp;sf=143441","itemID":"319881193","deviceIdentifierForVendor":"419641BD-FD0C-437E-8ECD-C735F6A68FB5","applicationVariant":"1:iPhone12,5:13","applicationType":"User"},
+  "parentProc" : "launchd",
+  "parentPid" : 1,
+  "coalitionName" : "com.grindrguy.grindrx",
+  "crashReporterKey" : "79c8e38c0fdc9c09bcf43329ed8e406290c19b4c",
+  "basebandVersion" : "1.50.14",
+  "vmregioninfo" : "0x1181572e5 is in 0x117d00000-0x119b00000;  bytes after start: 4551397  bytes before end: 26905882\n      REGION TYPE                      START - END             [ VSIZE] PRT\/MAX SHRMOD  REGION DETAIL\n      WebKit Malloc                 117c00000-117d00000        [ 1024K] rw-\/rwx SM=PRV  \n--->  mapped file                   117d00000-119b00000        [ 30.0M] r--\/rw- SM=PRV  ...t_id=6bfe12af\n      mapped file                   119b00000-1212a8000        [119.7M] r--\/rw- SM=COW  ...t_id=6b0b34af",
+  "is_corpse" : 1,
+  "termination" : {"reason":"Namespace SIGNAL, Code 0xa","signal":"Bus error: 10","byProc":"exc handler","code":10,"namespace":"SIGNAL","byPid":28239,"flags":0},
+  "threads" : [{"triggered":true,"id":4621430,"queue":"com.apple.main-thread","frames":[[0,12443224],[0,13614844],[0,13617216],[0,28994032],[0,1148328],[1,1402508],[2,649340],[2,648460],[2,645928],[2,622888],[2,620080],[3,14360],[4,11782712],[4,11807016],[0,1193108],[5,5004]]},{"id":4621457,"name":"JavaScriptCore bmalloc scavenger","frames":[[6,161652],[7,21840],[8,39420],[9,15402572],[9,15420344],[9,15419376],[9,15424628],[7,7320],[7,42888]]},{"id":4621473,"name":"com.apple.uikit.eventfetch-thread","frames":[[6,16048],[6,12900],[2,645276],[2,622336],[2,620080],[1,32448],[1,32152],[4,12496476],[1,1512184],[7,7320],[7,42888]]},{"id":4621496,"name":"com.google.firebase.crashlytics.MachExceptionServer","frames":[[6,16048],[6,12900],[0,33870200],[7,7320],[7,42888]]},{"id":4621524,"name":"AVAudioSession Notify Thread","frames":[[6,16048],[6,12900],[2,645276],[2,622336],[2,620080],[10,50168],[10,58580],[7,7320],[7,42888]]},{"id":4621525,"name":"com.apple.NSURLConnectionLoader","frames":[[6,16048],[6,12900],[2,645276],[2,622336],[2,620080],[11,2324908],[1,1512184],[7,7320],[7,42888]]},{"id":4621580,"name":"GRDATABASE_WRITE_THREAD","frames":[[6,16048],[6,12900],[2,645276],[2,622336],[2,620080],[1,32448],[1,239740],[0,1020852],[1,1512184],[7,7320],[7,42888]]},{"id":4621581,"name":"GRDATABASE_READ_THREAD","frames":[[6,16048],[6,12900],[2,645276],[2,622336],[2,620080],[1,32448],[1,239740],[0,1021024],[1,1512184],[7,7320],[7,42888]]},{"id":4621587,"name":"Realm notification listener","frames":[[6,169212],[0,28747232],[0,28748616],[7,7320],[7,42888]]},{"id":4621617,"name":"com.apple.CFStream.LegacyThread","frames":[[6,16048],[6,12900],[2,645276],[2,622336],[2,620080],[2,762168],[7,7320],[7,42888]]},{"id":4621630,"name":"com.apple.CFSocket.private","frames":[[6,162904],[2,695776],[7,7320],[7,42888]]},{"id":4621697,"name":"WebThread","frames":[[6,16048],[6,12900],[2,645276],[2,622336],[2,620080],[12,12233232],[7,7320],[7,42888]]},{"id":4663337,"frames":[[7,42868]]},{"id":4663376,"name":"GCDAsyncSocket-CFStream","frames":[[6,16048],[6,12900],[2,645276],[2,622336],[2,620080],[1,32448],[0,26303372],[1,1512184],[7,7320],[7,42888]]},{"id":4663462,"frames":[[7,42868]]},{"id":4663463,"frames":[[7,42868]]},{"id":4663667,"frames":[[7,42868]]}],
+  "threadState" : {
+  "x" : [
+    4376171856,
+    13,
+    4087,
+    0,
+    114,
+    114,
+    4611686029230103584,
+    10748872528,
+    4699026136,
+    4376171520,
+    0,
+    8725728653925056,
+    5,
+    4375894784,
+    32210692985809152,
+    4357545328,
+    6828498916,
+    4363917504,
+    4649152796,
+    13,
+    4376171088,
+    4376171088,
+    13,
+    4378904576,
+    8298366920,
+    4347226892,
+    10791910992,
+    8041718059,
+    8049209771
+  ],
+  "flavor" : "ARM_THREAD_STATE64",
+  "lr" : 4309597948,
+  "cpsr" : 1610612736,
+  "fp" : 6170892256,
+  "sp" : 6170892240,
+  "esr" : 2449473543,
+  "esr_description" : "(Data Abort) byte read Translation fault",
+  "pc" : 4308426328
+},
+  "usedImages" : [
+  [
+    "4dfa465f-2aa0-3612-a712-f5d41fa0ebc6",
+    4295983104,
+    "P"
+  ],
+  [
+    "e4deeb39-f560-3043-b1a5-62242dee0f18",
+    6834765824,
+    "P"
+  ],
+  [
+    "334fce90-3729-30b1-8f52-182b5aceb454",
+    6830428160,
+    "P"
+  ],
+  [
+    "a6cda35f-0936-3eb7-981f-bf50edb5b06e",
+    7030108160,
+    "P"
+  ],
+  [
+    "8b922c39-ce14-3b3f-b9c1-a5414ebe342c",
+    6894292992,
+    "P"
+  ],
+  [
+    "496ad165-6976-3479-8511-bf5bed814142",
+    6829518848,
+    "P"
+  ],
+  [
+    "3ef668b5-8d98-3daf-a94c-cc8f2a657abd",
+    6829318144,
+    "P"
+  ],
+  [
+    "bfdbeb73-e71e-321d-8589-2ff410dca347",
+    6828486656,
+    "P"
+  ],
+  [
+    "24bd1575-64d6-3706-80bb-7fc039ea38e1",
+    6829797376,
+    "P"
+  ],
+  [
+    "0284d7b5-51df-34c8-807f-ba431ebcae1d",
+    7116169216,
+    "P"
+  ],
+  [
+    "5c74ce35-0017-3db1-b1a3-10c4f44f7c8a",
+    7919480832,
+    "P"
+  ],
+  [
+    "a7186555-a05b-3836-b64c-027551f6af66",
+    6888689664,
+    "P"
+  ],
+  [
+    "f5fdfe40-78e8-33ad-be8c-45ef846b2618",
+    6979792896,
+    "P"
+  ]
+],
+  "legacyInfo" : {
+  "imageExtraInfo" : [
+    {
+      "size" : 54083584,
+      "arch" : "arm64",
+      "path" : "\/Volumes\/VOLUME\/*\/grindrx.app\/grindrx",
+      "name" : "grindrx"
+    },
+    {
+      "size" : 2809856,
+      "arch" : "arm64e",
+      "path" : "\/System\/Library\/Frameworks\/Foundation.framework\/Foundation",
+      "name" : "Foundation"
+    },
+    {
+      "size" : 3842048,
+      "arch" : "arm64e",
+      "path" : "\/System\/Library\/Frameworks\/CoreFoundation.framework\/CoreFoundation",
+      "name" : "CoreFoundation"
+    },
+    {
+      "size" : 36864,
+      "arch" : "arm64e",
+      "path" : "\/System\/Library\/PrivateFrameworks\/GraphicsServices.framework\/GraphicsServices",
+      "name" : "GraphicsServices"
+    },
+    {
+      "size" : 20647936,
+      "arch" : "arm64e",
+      "path" : "\/System\/Library\/PrivateFrameworks\/UIKitCore.framework\/UIKitCore",
+      "name" : "UIKitCore"
+    },
+    {
+      "size" : 237568,
+      "arch" : "arm64e",
+      "path" : "\/usr\/lib\/system\/libdyld.dylib",
+      "name" : "libdyld.dylib"
+    },
+    {
+      "size" : 200704,
+      "arch" : "arm64e",
+      "path" : "\/usr\/lib\/system\/libsystem_kernel.dylib",
+      "name" : "libsystem_kernel.dylib"
+    },
+    {
+      "size" : 49152,
+      "arch" : "arm64e",
+      "path" : "\/usr\/lib\/system\/libsystem_pthread.dylib",
+      "name" : "libsystem_pthread.dylib"
+    },
+    {
+      "size" : 372736,
+      "arch" : "arm64e",
+      "path" : "\/usr\/lib\/libc++.1.dylib",
+      "name" : "libc++.1.dylib"
+    },
+    {
+      "size" : 16445440,
+      "arch" : "arm64e",
+      "path" : "\/System\/Library\/Frameworks\/JavaScriptCore.framework\/JavaScriptCore",
+      "name" : "JavaScriptCore"
+    },
+    {
+      "size" : 98304,
+      "arch" : "arm64e",
+      "path" : "\/System\/Library\/PrivateFrameworks\/AudioSession.framework\/AudioSession",
+      "name" : "AudioSession"
+    },
+    {
+      "size" : 4546560,
+      "arch" : "arm64e",
+      "path" : "\/System\/Library\/Frameworks\/CFNetwork.framework\/CFNetwork",
+      "name" : "CFNetwork"
+    },
+    {
+      "size" : 36696064,
+      "arch" : "arm64e",
+      "path" : "\/System\/Library\/PrivateFrameworks\/WebCore.framework\/WebCore",
+      "name" : "WebCore"
+    }
+  ],
+  "threadTriggered" : {
+    "index" : 0,
+    "queue" : "com.apple.main-thread"
+  }
+}
+}

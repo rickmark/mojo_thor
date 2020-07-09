@@ -1,0 +1,101 @@
+{"app_name":"grindrx","timestamp":"2020-07-05 20:05:35.00 -0700","app_version":"6.15.0","slice_uuid":"62CAA164-090F-3750-BDAC-DEADFA4CD3AF","adam_id":319881193,"build_version":"16944.22944","bundleID":"com.grindrguy.grindrx","share_with_app_devs":1,"is_first_party":0,"bug_type":"142","os_version":"iPhone OS 14.0 (18A5301v)","incident_id":"59757BF4-91FF-4680-85E2-ADDECE2D9131","name":"grindrx"}
+Date/Time:        2020-07-05 20:05:31.718 -0700
+End time:         2020-07-05 20:05:35.157 -0700
+OS Version:       iPhone OS 14.0 (Build 18A5301v)
+Architecture:     arm64e
+Report Version:   31
+Incident Identifier: 59757BF4-91FF-4680-85E2-ADDECE2D9131
+Share With Devs:  Yes
+
+Data Source:      Microstackshots
+Shared Cache:     92537455-A74B-3198-96CD-F2D2D2778315 slid base address 0x196ea8000, slide 0x16ea8000
+
+Command:          grindrx
+Path:             /private/var/containers/Bundle/Application/1F233B70-CBA0-4C9A-8C4B-ABD2A5682040/grindrx.app/grindrx
+Identifier:       com.grindrguy.grindrx
+Version:          6.15.0 (16944.22944)
+Adam ID:          319881193
+Is First Party:   No
+Beta Identifier:  419641BD-FD0C-437E-8ECD-C735F6A68FB5
+Parent:           UNKNOWN [1]
+PID:              10086
+
+Event:            wakeups
+Action taken:     none
+Wakeups:          45001 wakeups over the last 3 seconds (13087 wakeups per second average), exceeding limit of 150 wakeups per second over 300 seconds
+Wakeups limit:    45000
+Limit duration:   300s
+Wakeups caused:   45001
+Wakeups duration: 3s
+Duration:         3.44s
+Duration Sampled: 0.90s
+Steps:            2
+
+Hardware model:   iPhone12,5
+Active cpus:      6
+
+
+Heaviest stack for the target process:
+  2  ??? (libsystem_pthread.dylib + 14600) [0x19702a908]
+  2  ??? (libdispatch.dylib + 88940) [0x196fcfb6c]
+  2  ??? (libdispatch.dylib + 48736) [0x196fc5e60]
+  2  ??? (libdispatch.dylib + 45876) [0x196fc5334]
+  2  ??? (libdispatch.dylib + 17300) [0x196fbe394]
+  2  ??? (libdispatch.dylib + 10396) [0x196fbc89c]
+  2  ??? (grindrx + 9531940) [0x1037a7224]
+  1  ??? (grindrx + 30938920) [0x104c11728]
+  1  ??? (CoreFoundation + 64728) [0x197210cd8]
+  1  ??? (CoreFoundation + 753692) [0x1972b901c]
+  1  ??? (CFNetwork + 1065800) [0x19aa95348]
+  1  ??? (CFNetwork + 1066248) [0x19aa95508]
+  1  ??? (CoreFoundation + 620080) [0x197298630]
+  1  ??? (CoreFoundation + 622336) [0x197298f00]
+  1  ??? (libsystem_kernel.dylib + 158836) [0x197118c74]
+
+
+Powerstats for:   grindrx (Grindr) [10086]
+UUID:             62CAA164-090F-3750-BDAC-DEADFA4CD3AF
+Adam ID:          319881193
+Is First Party:   No
+Beta Identifier:  419641BD-FD0C-437E-8ECD-C735F6A68FB5
+App Version:      6.15.0
+Build Version:    16944.22944
+Path:             /private/var/containers/Bundle/Application/1F233B70-CBA0-4C9A-8C4B-ABD2A5682040/grindrx.app/grindrx
+Architecture:     arm64
+Parent:           UNKNOWN [1]
+UID:              501
+Footprint:        121.27 MB
+Pageins:          476 pages
+Start time:       2020-07-05 20:05:33.929 -0700
+End time:         2020-07-05 20:05:34.824 -0700
+Num samples:      2 (100%)
+Primary state:    2 samples Frontmost App, Non-Suppressed, User mode, Effective Thread QoS User Initiated, Requested Thread QoS User Initiated, Override Thread QoS Unspecified
+User Activity:    0 samples Idle, 2 samples Active
+Power Source:     0 samples on Battery, 2 samples on AC
+  2  ??? (libsystem_pthread.dylib + 14600) [0x19702a908]
+    2  ??? (libdispatch.dylib + 88940) [0x196fcfb6c]
+      2  ??? (libdispatch.dylib + 48736) [0x196fc5e60]
+        2  ??? (libdispatch.dylib + 45876) [0x196fc5334]
+          2  ??? (libdispatch.dylib + 17300) [0x196fbe394]
+            2  ??? (libdispatch.dylib + 10396) [0x196fbc89c]
+              2  ??? (grindrx + 9531940) [0x1037a7224]
+                1  ??? (grindrx + 30938920) [0x104c11728]
+                  1  ??? (CoreFoundation + 64728) [0x197210cd8]
+                    1  ??? (CoreFoundation + 753692) [0x1972b901c]
+                      1  ??? (CFNetwork + 1065800) [0x19aa95348]
+                        1  ??? (CFNetwork + 1066248) [0x19aa95508]
+                          1  ??? (CoreFoundation + 620080) [0x197298630]
+                            1  ??? (CoreFoundation + 622336) [0x197298f00]
+                              1  ??? (libsystem_kernel.dylib + 158836) [0x197118c74]
+                1  ??? (grindrx + 30938844) [0x104c116dc]
+                  1  ??? (libsystem_c.dylib + 472748) [0x196fae6ac]
+                    1  ??? (libsystem_kernel.dylib + 163144) [0x197119d48]
+
+  Binary Images:
+           0x102e90000 -                ???  com.grindrguy.grindrx 6.15.0 (16944.22944) <62CAA164-090F-3750-BDAC-DEADFA4CD3AF>  /private/var/containers/Bundle/Application/1F233B70-CBA0-4C9A-8C4B-ABD2A5682040/grindrx.app/grindrx
+           0x196f3b000 -        0x196fb9fff  libsystem_c.dylib                          <C4F2E49F-DFEC-369B-AF8D-57609C06082B>  /usr/lib/system/libsystem_c.dylib
+           0x196fba000 -        0x196ffbfff  libdispatch.dylib                          <28A090F9-05C2-3563-845F-4FE958EBDC4D>  /usr/lib/system/libdispatch.dylib
+           0x197027000 -        0x197032fff  libsystem_pthread.dylib                    <BFDBEB73-E71E-321D-8589-2FF410DCA347>  /usr/lib/system/libsystem_pthread.dylib
+           0x1970f2000 -        0x197122fff  libsystem_kernel.dylib                     <3EF668B5-8D98-3DAF-A94C-CC8F2A657ABD>  /usr/lib/system/libsystem_kernel.dylib
+           0x197201000 -        0x1975aafff  CoreFoundation                             <334FCE90-3729-30B1-8F52-182B5ACEB454>  /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+           0x19a991000 -        0x19ade6fff  CFNetwork                                  <A7186555-A05B-3836-B64C-027551F6AF66>  /System/Library/Frameworks/CFNetwork.framework/CFNetwork
