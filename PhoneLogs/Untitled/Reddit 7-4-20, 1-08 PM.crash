@@ -1,0 +1,343 @@
+Date/Time:        2020-07-04 13:08:44.987 -0700
+End time:         2020-07-04 13:13:38.329 -0700
+OS Version:       iPhone OS 14.0 (Build 18A5301v)
+Architecture:     arm64e
+Report Version:   31
+Incident Identifier: 32BA85FB-0691-4E37-9451-E64BE6DE21E8
+Share With Devs:  Yes
+
+Data Source:      Microstackshots
+Shared Cache:     92537455-A74B-3198-96CD-F2D2D2778315 slid base address 0x196ea8000, slide 0x16ea8000
+
+Command:          Reddit
+Path:             /private/var/containers/Bundle/Application/48E7E149-09C8-485C-82C1-B8B353EF0A4E/Reddit.app/Reddit
+Identifier:       com.reddit.Reddit
+Version:          2020.24.0 (307189)
+Adam ID:          1064216828
+Is First Party:   No
+Beta Identifier:  93804F98-C671-445E-A398-2E14816740B1
+Parent:           UNKNOWN [1]
+PID:              5719
+
+Event:            wakeups
+Action taken:     none
+Wakeups:          45001 wakeups over the last 293 seconds (153 wakeups per second average), exceeding limit of 150 wakeups per second over 300 seconds
+Wakeups limit:    45000
+Limit duration:   300s
+Wakeups caused:   45001
+Wakeups duration: 293s
+Duration:         293.34s
+Duration Sampled: 263.28s
+Steps:            34
+
+Hardware model:   iPhone12,5
+Active cpus:      6
+
+
+Heaviest stack for the target process:
+  18  ??? (libdyld.dylib + 5004) [0x19712438c]
+  18  ??? (Reddit + 5653616) [0x100948470]
+  18  ??? (UIKitCore + 11807016) [0x19ba2b928]
+  18  ??? (UIKitCore + 11782712) [0x19ba25a38]
+  18  ??? (GraphicsServices + 14360) [0x1a3072818]
+  18  ??? (CoreFoundation + 620080) [0x197298630]
+  8  ??? (CoreFoundation + 623056) [0x1972991d0]
+  8  ??? (CoreFoundation + 646128) [0x19729ebf0]
+  6  ??? (libdispatch.dylib + 71124) [0x196fcb5d4]
+  6  ??? (libdispatch.dylib + 100652) [0x196fd292c]
+  6  ??? (libdispatch.dylib + 29828) [0x196fc1484]
+  6  ??? (libdispatch.dylib + 17300) [0x196fbe394]
+  3  ??? (AVFCore + 638408) [0x1d7c4adc8]
+  3  ??? (AVFCore + 640956) [0x1d7c4b7bc]
+  2  ??? (AVFCore + 638836) [0x1d7c4af74]
+  2  ??? (CoreMedia + 248080) [0x19eb64910]
+  2  ??? (CoreFoundation + 803688) [0x1972c5368]
+  2  ??? (CoreFoundation + 858916) [0x1972d2b24]
+  1  ??? (CoreFoundation + 793876) [0x1972c2d14]
+  1  ??? (CoreFoundation + 858260) [0x1972d2894]
+  1  ??? (CoreFoundation + 878200) [0x1972d7678]
+
+
+Powerstats for:   Reddit [5719]
+UUID:             6407FA78-186C-3912-AB24-BD54ED4B8A1B
+Adam ID:          1064216828
+Is First Party:   No
+Beta Identifier:  93804F98-C671-445E-A398-2E14816740B1
+App Version:      2020.24.0
+Build Version:    307189
+Path:             /private/var/containers/Bundle/Application/48E7E149-09C8-485C-82C1-B8B353EF0A4E/Reddit.app/Reddit
+Architecture:     arm64
+Parent:           UNKNOWN [1]
+UID:              501
+Footprint:        283.34 MB -> 297.72 MB (+14.38 MB)
+Pageins:          208 pages
+Start time:       2020-07-04 13:09:07.150 -0700
+End time:         2020-07-04 13:13:30.430 -0700
+Num samples:      34 (100%)
+Primary state:    14 samples Frontmost App, Non-Suppressed, User mode, Effective Thread QoS User Interactive, Requested Thread QoS User Interactive, Override Thread QoS Unspecified
+User Activity:    0 samples Idle, 34 samples Active
+Power Source:     34 samples on Battery, 0 samples on AC
+  18  ??? (libdyld.dylib + 5004) [0x19712438c]
+    18  ??? (Reddit + 5653616) [0x100948470]
+      18  ??? (UIKitCore + 11807016) [0x19ba2b928]
+        18  ??? (UIKitCore + 11782712) [0x19ba25a38]
+          18  ??? (GraphicsServices + 14360) [0x1a3072818]
+            18  ??? (CoreFoundation + 620080) [0x197298630]
+              8   ??? (CoreFoundation + 623056) [0x1972991d0]
+                8   ??? (CoreFoundation + 646128) [0x19729ebf0]
+                  6   ??? (libdispatch.dylib + 71124) [0x196fcb5d4]
+                    6   ??? (libdispatch.dylib + 100652) [0x196fd292c]
+                      6   ??? (libdispatch.dylib + 29828) [0x196fc1484]
+                        6   ??? (libdispatch.dylib + 17300) [0x196fbe394]
+                          3   ??? (AVFCore + 638408) [0x1d7c4adc8]
+                            3   ??? (AVFCore + 640956) [0x1d7c4b7bc]
+                              2   ??? (AVFCore + 638836) [0x1d7c4af74]
+                                2   ??? (CoreMedia + 248080) [0x19eb64910]
+                                  2   ??? (CoreFoundation + 803688) [0x1972c5368]
+                                    2   ??? (CoreFoundation + 858916) [0x1972d2b24]
+                                      1   ??? (CoreFoundation + 793876) [0x1972c2d14]
+                                        1   ??? (CoreFoundation + 858260) [0x1972d2894]
+                                          1   ??? (CoreFoundation + 878200) [0x1972d7678]
+                                      1   ??? (CoreFoundation + 792168) [0x1972c2668]
+                                        1   ??? (libsystem_platform.dylib + 21232) [0x1970252f0]
+                              1   ??? (AVFCore + 638512) [0x1d7c4ae30]
+                                1   ??? (CoreMedia + 236888) [0x19eb61d58]
+                                  1   ??? (CoreMedia + 228996) [0x19eb5fe84]
+                                    1   ??? (CoreMedia + 239380) [0x19eb62714]
+                                      1   ??? (libsystem_pthread.dylib + 28660) [0x19702dff4]
+                          2   ??? (AVFCore + 638384) [0x1d7c4adb0]
+                            2   ??? (AVFCore + 639964) [0x1d7c4b3dc]
+                              2   ??? (<A251E605-53D3-3CA5-9D3E-26DF5D1A05F4> + 30872) [0x10411b898]
+                                2   ??? (<A251E605-53D3-3CA5-9D3E-26DF5D1A05F4> + 30760) [0x10411b828]
+                                  2   ??? (<A251E605-53D3-3CA5-9D3E-26DF5D1A05F4> + 106964) [0x10412e1d4]
+                                    2   ??? (<A251E605-53D3-3CA5-9D3E-26DF5D1A05F4> + 62684) [0x1041234dc]
+                                      2   ??? (Reddit + 7171460) [0x100abad84]
+                                        1   ??? (Reddit + 7166736) [0x100ab9b10]
+                                          1   ??? (Reddit + 4494272) [0x10082d3c0]
+                                            1   ??? (libdispatch.dylib + 35212) [0x196fc298c]
+                                              1   ??? (libdispatch.dylib + 214448) [0x196fee5b0]
+                                                1   ??? (libsystem_malloc.dylib + 58768) [0x19700a590]
+                                        1   ??? (Reddit + 7166700) [0x100ab9aec]
+                                          1   ??? (Reddit + 7163016) [0x100ab8c88]
+                                            1   ??? (libobjc.A.dylib + 8156) [0x197034fdc]
+                          1   ??? (AVFCore + 638364) [0x1d7c4ad9c]
+                            1   ??? (AVFCore + 638512) [0x1d7c4ae30]
+                              1   ??? (CoreMedia + 236620) [0x19eb61c4c]
+                                1   ??? (CoreMedia + 231596) [0x19eb608ac]
+                                  1   ??? (libsystem_pthread.dylib + 28660) [0x19702dff4]
+                  2   ??? (libdispatch.dylib + 71404) [0x196fcb6ec]
+                    2   ??? (libdispatch.dylib + 17300) [0x196fbe394]
+                      2   ??? (libdispatch.dylib + 10396) [0x196fbc89c]
+                        1   ??? (<A251E605-53D3-3CA5-9D3E-26DF5D1A05F4> + 69660) [0x10412501c]
+                          1   ??? (<A251E605-53D3-3CA5-9D3E-26DF5D1A05F4> + 90772) [0x10412a294]
+                            1   ??? (<A251E605-53D3-3CA5-9D3E-26DF5D1A05F4> + 43964) [0x10411ebbc]
+                              1   ??? (<A251E605-53D3-3CA5-9D3E-26DF5D1A05F4> + 136712) [0x104135608]
+                                1   ??? (Reddit + 7359168) [0x100ae8ac0]
+                                  1   ??? (Reddit + 7360924) [0x100ae919c]
+                                    1   ??? (Reddit + 3110100) [0x1006db4d4]
+                                      1   ??? (Reddit + 922808) [0x1004c54b8]
+                                        1   ??? (Foundation + 30160) [0x19762b5d0]
+                                          1   ??? (CoreFoundation + 800568) [0x1972c4738]
+                                            1   ??? (CoreFoundation + 792168) [0x1972c2668]
+                                              1   ??? (CoreFoundation + 858712) [0x1972d2a58]
+                        1   ??? (<43D684F0-D618-3486-9914-D77FDB9BD772> + 759472) [0x103cfd6b0]
+                          1   ??? (Foundation + 26236) [0x19762a67c]
+                            1   ??? (CoreFoundation + 522524) [0x19728091c]
+                              1   ??? (CoreFoundation + 1389392) [0x197354350]
+                                1   ??? (CoreFoundation + 1389956) [0x197354584]
+              4   ??? (CoreFoundation + 622336) [0x197298f00]
+                4   ??? (CoreFoundation + 645276) [0x19729e89c]
+                  4   ??? (libsystem_kernel.dylib + 16048) [0x1970f5eb0]
+                    4   <Kernel mode>
+              2   ??? (CoreFoundation + 622176) [0x197298e60]
+                1   ??? (CoreFoundation + 620876) [0x19729894c]
+                  1   ??? (CoreFoundation + 643536) [0x19729e1d0]
+                    1   ??? (libobjc.A.dylib + 8272) [0x197035050]
+                1   ??? (CoreFoundation + 620856) [0x197298938]
+                  1   ??? (libsystem_kernel.dylib + 45572) [0x1970fd204]
+              1   ??? (CoreFoundation + 623284) [0x1972992b4]
+                1   ??? (CoreFoundation + 646680) [0x19729ee18]
+                  1   ??? (CoreFoundation + 649412) [0x19729f8c4]
+                    1   ??? (CoreFoundation + 503724) [0x19727bfac]
+                      1   ??? (QuartzCore + 946924) [0x19ee342ec]
+                        1   ??? (QuartzCore + 81468) [0x19ed60e3c]
+                          1   ??? (QuartzCore + 912912) [0x19ee2be10]
+                            1   ??? (QuartzCore + 742036) [0x19ee02294]
+                              1   ??? (QuartzCore + 1485824) [0x19eeb7c00]
+                                1   ??? (QuartzCore + 1485824) [0x19eeb7c00]
+                                  1   ??? (QuartzCore + 1485824) [0x19eeb7c00]
+                                    1   ??? (QuartzCore + 1485940) [0x19eeb7c74]
+                                      1   ??? (libobjc.A.dylib + 8128) [0x197034fc0]
+              1   ??? (CoreFoundation + 622648) [0x197299038]
+                1   ??? (CoreFoundation + 212404) [0x197234db4]
+              1   ??? (CoreFoundation + 622524) [0x197298fbc]
+                1   ??? (CoreFoundation + 1117392) [0x197311cd0]
+                  1   ??? (libsystem_c.dylib + 72544) [0x196f4cb60]
+                    1   ??? (libsystem_kernel.dylib + 12740) [0x1970f51c4]
+              1   ??? (CoreFoundation + 621948) [0x197298d7c]
+                1   ??? (CoreFoundation + 644688) [0x19729e650]
+                  1   ??? (CoreFoundation + 677800) [0x1972a67a8]
+                    1   ??? (CoreFoundation + 1357596) [0x19734c71c]
+                      1   ??? (CoreFoundation + 1348672) [0x19734a440]
+  9   ??? (libsystem_pthread.dylib + 14600) [0x19702a908]
+    8   ??? (libdispatch.dylib + 88940) [0x196fcfb6c]
+      6   ??? (libdispatch.dylib + 48736) [0x196fc5e60]
+        6   ??? (libdispatch.dylib + 45876) [0x196fc5334]
+          6   ??? (libdispatch.dylib + 17300) [0x196fbe394]
+            5   ??? (libdispatch.dylib + 10396) [0x196fbc89c]
+              1   ??? (<43D684F0-D618-3486-9914-D77FDB9BD772> + 353508) [0x103c9a4e4]
+                1   ??? (<43D684F0-D618-3486-9914-D77FDB9BD772> + 357144) [0x103c9b318]
+                  1   ??? (Foundation + 1265712) [0x197759030]
+                    1   ??? (Foundation + 1264040) [0x1977589a8]
+                      1   ??? (Foundation + 268604) [0x19766593c]
+                        1   ??? (CoreFoundation + 30360) [0x197208698]
+                          1   ??? (CoreFoundation + 1003744) [0x1972f60e0]
+                            1   ??? (CoreServicesInternal + 64684) [0x1984ffcac]
+                              1   ??? (CoreServicesInternal + 73760) [0x198502020]
+                                1   ??? (libsystem_kernel.dylib + 158000) [0x197118930]
+                                  1   <Kernel mode, Effective Thread QoS User Initiated, Requested Thread QoS User Initiated>
+              1   ??? (Reddit + 6084004) [0x1009b15a4]
+                1   ??? (Reddit + 3160148) [0x1006e7854]
+                  1   ??? (Foundation + 1266508) [0x19775934c]
+                    1   ??? (libsystem_kernel.dylib + 162744) [0x197119bb8]
+                      1   <Kernel mode, Effective Thread QoS User Initiated, Requested Thread QoS User Initiated>
+              1   ??? (Reddit + 6082520) [0x1009b0fd8]
+                1   ??? (Reddit + 3160932) [0x1006e7b64]
+                  1   ??? (Reddit + 3161780) [0x1006e7eb4]
+                    1   ??? (Foundation + 346808) [0x197678ab8]
+                      1   ??? (Foundation + 126508) [0x197642e2c]
+                        1   ??? (Foundation + 1236988) [0x197751ffc]
+                          1   ??? (Foundation + 347184) [0x197678c30]
+                            1   ??? (libremovefile.dylib + 23172) [0x1d3bf2a84]
+                              1   ??? (libremovefile.dylib + 21896) [0x1d3bf2588]
+                                1   ??? (libsystem_kernel.dylib + 165000) [0x19711a488]
+                                  1   <Effective Thread QoS User Initiated, Requested Thread QoS User Initiated>
+              1   ??? (Reddit + 4495352) [0x10082d7f8]
+                1   ??? (Reddit + 4490496) [0x10082c500]
+                  1   ??? (Reddit + 4490968) [0x10082c6d8]
+                    1   ??? (Foundation + 30160) [0x19762b5d0]
+                      1   ??? (CoreFoundation + 800568) [0x1972c4738]
+                        1   ??? (CoreFoundation + 795336) [0x1972c32c8]
+                          1   ??? (CoreFoundation + 856660) [0x1972d2254]
+                            1   ??? (CoreFoundation + 880256) [0x1972d7e80]
+                              1   ??? (CoreFoundation + 882164) [0x1972d85f4]
+                                1   ??? (libsystem_malloc.dylib + 75892) [0x19700e874]
+                                  1   ??? (libsystem_malloc.dylib + 57224) [0x197009f88]
+                                    1   ??? (libsystem_malloc.dylib + 57368) [0x19700a018]
+                                      1   <Effective Thread QoS User Initiated, Requested Thread QoS User Initiated>
+              1   ??? (Reddit + 4494444) [0x10082d46c]
+                1   ??? (Reddit + 4490444) [0x10082c4cc]
+                  1   ??? (libobjc.A.dylib + 154080) [0x1970589e0]
+                    1   <Effective Thread QoS User Initiated, Requested Thread QoS User Initiated>
+            1   ??? (QuartzCore + 164128) [0x19ed75120]
+              1   ??? (QuartzCore + 162932) [0x19ed74c74]
+                1   ??? (QuartzCore + 163220) [0x19ed74d94]
+                  1   <Effective Thread QoS User Initiated, Requested Thread QoS User Initiated>
+      1   ??? (libdispatch.dylib + 53516) [0x196fc710c]
+        1   ??? (libdispatch.dylib + 143756) [0x196fdd18c]
+          1   ??? (libdispatch.dylib + 144008) [0x196fdd288]
+            1   ??? (libsystem_kernel.dylib + 169292) [0x19711b54c]
+              1   <Kernel mode, Effective Thread QoS User Initiated, Requested Thread QoS User Initiated>
+      1   ??? (libdispatch.dylib + 53140) [0x196fc6f94]
+        1   ??? (libdispatch.dylib + 100652) [0x196fd292c]
+          1   ??? (libdispatch.dylib + 29828) [0x196fc1484]
+            1   ??? (libdispatch.dylib + 17300) [0x196fbe394]
+              1   ??? (libnetwork.dylib + 2897600) [0x1998876c0]
+                1   ??? (libnetwork.dylib + 2899968) [0x199888000]
+                  1   ??? (libnetwork.dylib + 2909912) [0x19988a6d8]
+                    1   ??? (libusrtcp.dylib + 119740) [0x19cf8b3bc]
+                      1   ??? (libusrtcp.dylib + 331872) [0x19cfbf060]
+                        1   ??? (libusrtcp.dylib + 200912) [0x19cf9f0d0]
+                          1   ??? (libusrtcp.dylib + 290832) [0x19cfb5010]
+                            1   <Effective Thread QoS Default, Requested Thread QoS Default>
+    1   ??? (libdispatch.dylib + 88608) [0x196fcfa20]
+      1   ??? (libdispatch.dylib + 153104) [0x196fdf610]
+        1   <Effective Thread QoS Default, Requested Thread QoS Default>
+  4   ??? (libsystem_pthread.dylib + 42868) [0x197031774]
+    2   <Kernel mode, Effective Thread QoS User Initiated, Requested Thread QoS User Initiated>
+    2   <Kernel mode>
+  2   ??? (libsystem_pthread.dylib + 7320) [0x197028c98]
+    1   ??? (Foundation + 1512184) [0x1977952f8]
+      1   ??? (UIKitCore + 12496476) [0x19bad3e5c]
+        1   ??? (Foundation + 32152) [0x19762bd98]
+          1   ??? (Foundation + 32448) [0x19762bec0]
+            1   ??? (CoreFoundation + 620080) [0x197298630]
+              1   ??? (CoreFoundation + 623284) [0x1972992b4]
+                1   ??? (CoreFoundation + 646680) [0x19729ee18]
+                  1   ??? (CoreFoundation + 649412) [0x19729f8c4]
+                    1   ??? (CoreFoundation + 503724) [0x19727bfac]
+                      1   ??? (libsystem_kernel.dylib + 16480) [0x1970f6060]
+                        1   <Kernel mode>
+    1   ??? (libdispatch.dylib + 83304) [0x196fce568]
+      1   ??? (libdispatch.dylib + 83888) [0x196fce7b0]
+        1   ??? (libdispatch.dylib + 48788) [0x196fc5e94]
+          1   ??? (libdispatch.dylib + 45876) [0x196fc5334]
+            1   ??? (libdispatch.dylib + 17300) [0x196fbe394]
+              1   ??? (libdispatch.dylib + 10396) [0x196fbc89c]
+                1   ??? (CoreMedia + 1331664) [0x19ec6d1d0]
+                  1   ??? (libxpc.dylib + 150220) [0x196f28acc]
+                    1   ??? (libxpc.dylib + 67128) [0x196f14638]
+                      1   ??? (libxpc.dylib + 150220) [0x196f28acc]
+                        1   ??? (libxpc.dylib + 67008) [0x196f145c0]
+                          1   ??? (libxpc.dylib + 78948) [0x196f17464]
+                            1   ??? (libxpc.dylib + 150220) [0x196f28acc]
+                              1   ??? (libxpc.dylib + 29304) [0x196f0b278]
+                                1   ??? (libxpc.dylib + 150248) [0x196f28ae8]
+                                  1   ??? (libobjc.A.dylib + 141768) [0x1970559c8]
+                                    1   ??? (libobjc.A.dylib + 114316) [0x19704ee8c]
+                                      1   ??? (libobjc.A.dylib + 127116) [0x19705208c]
+                                        1   ??? (libobjc.A.dylib + 125840) [0x197051b90]
+                                          1   <Effective Thread QoS Unspecified, Requested Thread QoS Unspecified>
+  1   ??? (libsystem_pthread.dylib + 14540) [0x19702a8cc]
+    1   ??? (libdispatch.dylib + 85908) [0x196fcef94]
+      1   ??? (libdispatch.dylib + 83888) [0x196fce7b0]
+        1   ??? (libdispatch.dylib + 27576) [0x196fc0bb8]
+          1   ??? (libdispatch.dylib + 29828) [0x196fc1484]
+            1   ??? (libdispatch.dylib + 17300) [0x196fbe394]
+              1   ??? (libdispatch.dylib + 10396) [0x196fbc89c]
+                1   ??? (<64166A45-8B79-36FF-87F7-F00F56B6035E> + 115308) [0x10164026c]
+                  1   ??? (<64166A45-8B79-36FF-87F7-F00F56B6035E> + 108644) [0x10163e864]
+                    1   ??? (CoreGraphics + 2003332) [0x19f268184]
+                      1   ??? (CoreGraphics + 2103820) [0x19f280a0c]
+                        1   ??? (CoreGraphics + 9388) [0x19f0814ac]
+                          1   ??? (CoreGraphics + 1974648) [0x19f261178]
+                            1   ??? (CoreGraphics + 1982744) [0x19f263118]
+                              1   ??? (CoreGraphics + 1944088) [0x19f259a18]
+                                1   ??? (ImageIO + 806688) [0x197bc9f20]
+                                  1   ??? (ImageIO + 816344) [0x197bcc4d8]
+                                    1   ??? (ImageIO + 759912) [0x197bbe868]
+                                      1   ??? (ImageIO + 791900) [0x197bc655c]
+                                        1   ??? (ImageIO + 787948) [0x197bc55ec]
+                                          1   ??? (ImageIO + 798396) [0x197bc7ebc]
+                                            1   ??? (ImageIO + 795060) [0x197bc71b4]
+                                              1   ??? (ImageIO + 1845736) [0x197cc79e8]
+                                                1   ??? (ImageIO + 1577492) [0x197c86214]
+                                                  1   <Effective Thread QoS User Initiated, Requested Thread QoS User Initiated>
+
+  Binary Images:
+           0x1003e4000 -                ???  com.reddit.Reddit 2020.24.0 (307189) <6407FA78-186C-3912-AB24-BD54ED4B8A1B>  /private/var/containers/Bundle/Application/48E7E149-09C8-485C-82C1-B8B353EF0A4E/Reddit.app/Reddit
+           0x101624000 -                ???  ???                                  <64166A45-8B79-36FF-87F7-F00F56B6035E>
+           0x103c44000 -                ???  ???                                  <43D684F0-D618-3486-9914-D77FDB9BD772>
+           0x104114000 -                ???  ???                                  <A251E605-53D3-3CA5-9D3E-26DF5D1A05F4>
+           0x196f04000 -        0x196f38fff  libxpc.dylib                         <40C6299E-31BD-3971-AF3E-B845E86A5209>  /usr/lib/system/libxpc.dylib
+           0x196f3b000 -        0x196fb9fff  libsystem_c.dylib                    <C4F2E49F-DFEC-369B-AF8D-57609C06082B>  /usr/lib/system/libsystem_c.dylib
+           0x196fba000 -        0x196ffbfff  libdispatch.dylib                    <28A090F9-05C2-3563-845F-4FE958EBDC4D>  /usr/lib/system/libdispatch.dylib
+           0x196ffc000 -        0x19701ffff  libsystem_malloc.dylib               <6379B758-0A24-3DE6-8BF4-83EE8049E818>  /usr/lib/system/libsystem_malloc.dylib
+           0x197020000 -        0x197026fff  libsystem_platform.dylib             <1B891D03-D09B-3A06-B08F-28D9FAFED4A3>  /usr/lib/system/libsystem_platform.dylib
+           0x197027000 -        0x197032fff  libsystem_pthread.dylib              <BFDBEB73-E71E-321D-8589-2FF410DCA347>  /usr/lib/system/libsystem_pthread.dylib
+           0x197033000 -        0x197068fff  libobjc.A.dylib                      <C4D36E08-700C-3CC1-B928-291DF6B6AC8A>  /usr/lib/libobjc.A.dylib
+           0x1970f2000 -        0x197122fff  libsystem_kernel.dylib               <3EF668B5-8D98-3DAF-A94C-CC8F2A657ABD>  /usr/lib/system/libsystem_kernel.dylib
+           0x197123000 -        0x19715cfff  libdyld.dylib                        <496AD165-6976-3479-8511-BF5BED814142>  /usr/lib/system/libdyld.dylib
+           0x197201000 -        0x1975aafff  CoreFoundation                       <334FCE90-3729-30B1-8F52-182B5ACEB454>  /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+           0x197624000 -        0x1978d1fff  Foundation                           <E4DEEB39-F560-3043-B1A5-62242DEE0F18>  /System/Library/Frameworks/Foundation.framework/Foundation
+           0x197b05000 -        0x197e6efff  ImageIO                              <6C4572A5-13F5-313E-BA90-15CB52C9D054>  /System/Library/Frameworks/ImageIO.framework/ImageIO
+           0x1984f0000 -        0x198519fff  CoreServicesInternal                 <EE038E17-89A7-3797-AD1B-0E3146E03E84>  /System/Library/PrivateFrameworks/CoreServicesInternal.framework/CoreServicesInternal
+           0x1995c4000 -        0x199c9bfff  libnetwork.dylib                     <C25CD823-BB2E-3492-A314-9DECB266A6D8>  /usr/lib/libnetwork.dylib
+           0x19aee9000 -        0x19c299fff  UIKitCore                            <8B922C39-CE14-3B3F-B9C1-A5414EBE342C>  /System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore
+           0x19cf6e000 -        0x19cfd7fff  libusrtcp.dylib                      <B0C506C3-EA3A-3168-BDBB-AB5AB08A6F40>  /usr/lib/libusrtcp.dylib
+           0x19eb28000 -        0x19ecd2fff  CoreMedia                            <9AD415CB-274C-34AB-9E60-7FF5419FE006>  /System/Library/Frameworks/CoreMedia.framework/CoreMedia
+           0x19ed4d000 -        0x19efc3fff  QuartzCore                           <86980C93-CB78-39CE-B156-67264C92551F>  /System/Library/Frameworks/QuartzCore.framework/QuartzCore
+           0x19f07f000 -        0x19f60afff  CoreGraphics                         <7EECC231-DCE8-315A-90D5-178BB1C2554F>  /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+           0x1a306f000 -        0x1a3077fff  GraphicsServices                     <A6CDA35F-0936-3EB7-981F-BF50EDB5B06E>  /System/Library/PrivateFrameworks/GraphicsServices.framework/GraphicsServices
+           0x1d3bed000 -        0x1d3bf2fff  libremovefile.dylib                  <E8027F47-D18E-3165-9019-B10E7FA5DE79>  /usr/lib/system/libremovefile.dylib
+           0x1d7baf000 -        0x1d7d9bfff  AVFCore                              <2C135C3D-F662-3425-883F-C55EC997E894>  /System/Library/PrivateFrameworks/AVFCore.framework/AVFCore
